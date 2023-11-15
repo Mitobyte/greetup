@@ -1,9 +1,8 @@
 import os
 import json
-import html
 
 # directory/folder path
-dir_path = r'./data/meetup'
+dir_path = r'../data/meetup'
 
 def generatePage(organization):
     # Get the organization information from the first event in the JSON data
