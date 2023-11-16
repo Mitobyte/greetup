@@ -49,6 +49,7 @@ for file_path in os.listdir(dir_path):
     print("Processing: " + file_path + " " + dir_path)
     oFile = open(os.path.join(dir_path, file_path, 'organizations.json'), 'r')
     organization = json.load(oFile)
+    organization = organization[0]
 
     f = open(os.path.join(dir_path, file_path, 'events.json'), 'r')
     events = json.load(f)

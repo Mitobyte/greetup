@@ -11,7 +11,7 @@ while IFS= read -r line; do
 
 	response=$(curl -s $url)
 	script_tags=$(echo $response | hq '{scripts: script[type="application/ld+json"]  | [@text]}')
-	organizations=$(echo $script_tags | xq '.scripts[]  | fromjson | select(type == "object" and .["@type"]=="Organization" and .["name"]!="Meetup")')
+	organizations=$(echo $script_tags | xq '[.scripts[]  | fromjson | select(type == "object" and .["@type"]=="Organization" and .["name"]!="Meetup")]')
 	events=$(echo $script_tags | xq '.scripts[]  | fromjson | select(type == "array")')
 
 	echo $organizations > "/greetup/data/meetup/$name/organizations.json"
