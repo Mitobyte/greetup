@@ -1,70 +1,67 @@
 import os
 import json
+import markdown
 
 # directory/folder path
 dir_path = r'../data/meetup'
 
+html_body = ''
+
 def generatePage(organization):
     # Get the organization information from the first event in the JSON data
-    organizationInfo = organization[0]['organizer']
-
-    # Use the name of the first event as the title
-    document_title = organization[0]['name']
-
-    # Display the event name in the h1 tag
-    newHtml = f'<h1>{document_title} Events</h1>'
+    organizationInfo = organization
 
     # Organization Information Section
-    newHtml = newHtml + '<section id="organization-info">'
-    newHtml = newHtml + f'<h2>{organizationInfo["name"]}</h2>'
+    newHtml = (
+        '<section id="organization-info">'
+        f'<h1>{organizationInfo["name"]}</h1>'
+    )
 
     # Display the organization information on the page
     if 'description' in organizationInfo:
-        newHtml = newHtml + f'<p>{organizationInfo["description"]}</p>'
+        newHtml += f'<p>{organizationInfo["description"]}</p>'
 
-    newHtml = newHtml + f'<p>For more information, you can visit their <a href="{organizationInfo["url"]}" target="_blank">website</a>.</p>'
-
-    newHtml = newHtml + '</section>'
-
-    # Event List Section
-    newHtml = newHtml + '<section>'
-    newHtml = newHtml + '<h2>Event List</h2>'
+    newHtml += (
+        f'<p>'
+        f'For more information, you can visit their <a href="{organizationInfo["url"]}" target="_blank">website</a>.'
+        f'</p>'
+        '</section>'
+        '<section id="organization-events">'
+        '<h2>Event List</h2>'
+    )
 
     # Loop through each event in the JSON data
-    for event in organization:
-        description = event["description"].replace("\\n", "<br/>")
-        newHtml = newHtml + '<div>'
-        newHtml = newHtml + f'<a href="{event["url"]}" target="_blank">{event["name"]}</a>'
-        newHtml = newHtml + f'<p>{event["startDate"]}</p>'
-        newHtml = newHtml + f'<p>{description}</p>'
-        newHtml = newHtml + '</div>'
+    for event in organization["events"]:
+        description = markdown.markdown(event["description"])
+        newHtml +=(
+            '<div>'
+            f'<a href="{event["url"]}" target="_blank">{event["name"]}</a>'
+            f'<p>{event["startDate"]}</p>'
+            f'<p>{description}</p>'
+            '</div>'
+        )
 
-    newHtml = newHtml + '</ul>'
-    newHtml = newHtml + '</section>'
+    newHtml += '</section>'
     return newHtml
-
-
-html_body = ''
 
 # Generate combined json file
 for file_path in os.listdir(dir_path):
-    # # Gets the organizer for the meetup
-    # f = open(os.path.join(dir_path, file_path, 'organizations.json'), 'r')
-    # organizerData = json.load(f)
-    # print(json.dumps(organizerData) + '\n')
+    print("Processing: " + file_path + " " + dir_path)
+    oFile = open(os.path.join(dir_path, file_path, 'organizations.json'), 'r')
+    organization = json.load(oFile)
 
-    # Gets the events for the meetup
     f = open(os.path.join(dir_path, file_path, 'events.json'), 'r')
-    data = json.load(f)
+    events = json.load(f)
 
-    # Gets the name of the meetup
-    html_body += generatePage(data)
+    organization['events'] = events
+
+    html_body += generatePage(organization)
 print(html_body)
 
 
 # Opening our text file in read only
 # mode using the open() function
-with open(r'meetup/index-template.html', 'r') as file:
+with open(r'index-template.html', 'r') as file:
 
     # Reading the content of the file
     # using the read() function and storing
@@ -77,8 +74,7 @@ with open(r'meetup/index-template.html', 'r') as file:
 
 # Opening our text file in write only
 # mode to write the replaced content
-with open(r'meetup/index.html', 'w') as file:
-
+with open(r'index.html', 'w') as file:
     # Writing the replaced data in our
     # text file
     file.write(data)
