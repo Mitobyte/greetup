@@ -1,4 +1,6 @@
 .idea
 .DS_Store
+.cache
+dist
 data
-meetup/index.html
+node_modules

@@ -7,7 +7,7 @@ while IFS= read -r line; do
     IFS=',' read -r name url <<< "$line"
 
 
-    mkdir -p "/greetup/data/meetup/$name"
+  mkdir -p "/greetup/data/meetup/$name"
 
 	response=$(curl -s $url)
 	script_tags=$(echo $response | hq '{scripts: script[type="application/ld+json"]  | [@text]}')
