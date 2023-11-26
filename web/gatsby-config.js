@@ -8,5 +8,16 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
-}
+  plugins: [
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require('tailwindcss'),
+          require('autoprefixer')
+        ],
+      },
+    },
+  ],
+};
+

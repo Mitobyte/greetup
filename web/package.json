@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-milwaukee-meetups",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A Gatsby site for Milwaukee Meetups",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -13,15 +13,18 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^5.12.4",
+    "autoprefixer": "^10.4.2",
+    "gatsby": "^5.12.11",
+    "gatsby-plugin-postcss": "^5.25.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.0.23"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/mitobyte/greetup.git"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/mitobyte/greetup/issues"
   }
 }
