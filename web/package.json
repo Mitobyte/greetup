@@ -13,6 +13,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.5",
     "autoprefixer": "^10.4.2",
     "gatsby": "^5.12.11",
     "gatsby-plugin-postcss": "^5.25.0",

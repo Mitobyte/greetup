@@ -1,19 +1,22 @@
 import * as React from "react"
+import { Container, CssBaseline, Typography } from '@mui/material';
 import OrganizationsPanel from "../components/organizationPanel"
 import JSONData from "../../../data/combined.json"
-import '../styles/tailwind.css';
 
 export default function Home() {
   return (
-    <div>
-      <header className="bg-blue-500 p-4 text-white text-center">
-        <h1 className="text-2xl font-semibold">Milwaukee Meetups</h1>
+    <Container component="main" maxWidth="md">
+      <CssBaseline />
+      <header>
+        <Typography variant="h2" align="center" color="primary" gutterBottom>
+          Milwaukee Meetups
+        </Typography>
       </header>
       <div className="p-4">
-        <p className="text-lg">
+        <Typography variant="h4" align="center" color="primary" gutterBottom>
           Milwaukee is home to a vibrant tech community. Here are some of the
           organizations that help make it great.
-        </p>
+        </Typography>
       </div>
       <div className="flex flex-wrap justify-around">
       {
@@ -22,6 +25,6 @@ export default function Home() {
         })
       }
       </div>
-    </div>
+    </Container>
   )
 }

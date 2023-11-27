@@ -1,13 +1,14 @@
 import * as React from "react"
+import OrganizationCard from "./OrganizationCard";
 
 export default function OrganizationPanel({ organization }) {
   return (
-    <div className="bg-white p-4 m-2 border rounded-md w-1/2">
+    <OrganizationCard>
       <h2 className="text-xl font-semibold mb-2">{organization.name}</h2>
 
       {organization.events.map((event, index) => {
           return <div key={`event-${index}`}>{event.name}</div>
       })}
-    </div>
+    </OrganizationCard>
   )
 }
