@@ -39,7 +39,7 @@ jobs:
       - name: Get the data
         run: |
           docker build -t data-generator ./data-generator
-          docker run -it --rm -v $(pwd):/data-generator data-generator bash /data-generator/meetup/fetch_and_store.sh
+          docker run --rm -v $(pwd):/data-generator data-generator bash /data-generator/meetup/fetch_and_store.sh
       - name: Detect package manager
         id: detect-package-manager
         working-directory: ./web
