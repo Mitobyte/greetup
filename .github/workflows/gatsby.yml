@@ -81,7 +81,7 @@ jobs:
             ${{ runner.os }}-gatsby-build-
       - name: Install dependencies
         working-directory: ./web
-        run: npm ${{ steps.detect-package-manager.outputs.command }}
+        run: npm install
       - name: Build with Gatsby
         working-directory: ./web
         env:
