@@ -81,13 +81,13 @@ jobs:
             ${{ runner.os }}-gatsby-build-
       - name: Install dependencies
         working-directory: ./web
-        run: npm install
+        run: yarn
       - name: Build with Gatsby
         working-directory: ./web
         env:
           PREFIX_PATHS: 'true'
-        run: npm run build
+        run: yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./web/public
+          path: ./web/dist
