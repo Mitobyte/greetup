@@ -20,5 +20,5 @@ for file_path in os.listdir(dir_path):
 
     organizations.append(organization)
 
-with open(os.path.join(dir_path, 'combined.json'), 'w') as outfile:
+with open(os.path.join('../data/combined.json'), 'w') as outfile:
     outfile.write(json.dumps(organizations, indent=4))
