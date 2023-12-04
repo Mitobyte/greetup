@@ -57,7 +57,7 @@ jobs:
         working-directory: ./data-generator
         run: |
           mkdir ../data
-          bash ./combine_data.sh
+          python3 combineOrganizations.py
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
