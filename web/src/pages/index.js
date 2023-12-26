@@ -1,30 +1,53 @@
 import * as React from "react"
-import { Container, CssBaseline, Typography } from '@mui/material';
+import Container from '@mui/material/Container';
+import CssBaseline from '@mui/material/CssBaseline';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import OrganizationsPanel from "../components/organizationPanel"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import JSONData from "../../../data/combined.json"
 
-export default function Home() {
+export default function Home({data}) {
   return (
-    <Container component="main" maxWidth="md">
+    <Container component="main" maxWidth="lg">
       <CssBaseline />
       <header>
-        <Typography variant="h2" align="center" color="primary" gutterBottom>
-          Milwaukee Meetups
-        </Typography>
+        <Grid container spacing={2}>
+          <Grid item md={6}>
+            <Img fixed={data.file.childImageSharp.fixed} />
+          </Grid>
+          <Grid item className='pt-4' md={6}>
+            <Typography  variant="h4" align="center" color="primary" gutterBottom>
+              Milwaukee is home to a vibrant tech community. Here are some of the
+              organizations that help make it great. <br/> Click on an organization to start!
+            </Typography>
+          </Grid>
+        </Grid>
       </header>
-      <div className="p-4">
-        <Typography variant="h4" align="center" color="primary" gutterBottom>
-          Milwaukee is home to a vibrant tech community. Here are some of the
-          organizations that help make it great.
-        </Typography>
-      </div>
-      <div className="flex flex-wrap justify-around">
+      <Grid container spacing={2}>
       {
         JSONData.map((organization, index) => {
-          return <OrganizationsPanel key={`org-${index}`} organization={organization} />
+          return <Grid item xs={6}>
+            <OrganizationsPanel key={`org-${index}`} organization={organization} />
+          </Grid>
         })
       }
-      </div>
+      </Grid>
     </Container>
   )
 }
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "logo.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 532, height: 214 ) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+  `
