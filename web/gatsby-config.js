@@ -18,9 +18,8 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-json`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
         typeName: `Json`,
         path: path.join(__dirname, `src`, `data`),
       },
