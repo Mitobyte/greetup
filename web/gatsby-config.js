@@ -18,16 +18,17 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-postcss`,
+      resolve: `gatsby-transformer-json`,
       options: {
-        postCssPlugins: [
-          require('tailwindcss'),
-          require('autoprefixer')
-        ],
+        name: `data`,
+        typeName: `Json`,
+        path: path.join(__dirname, `src`, `data`),
       },
     },
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-material-ui`
   ],
 };
 

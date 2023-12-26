@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid';
 import OrganizationsPanel from "../components/OrganizationPanel"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import JSONData from "../../../data/combined.json"
 
 export default function Home({data}) {
   return (
@@ -26,13 +25,13 @@ export default function Home({data}) {
         </Grid>
       </header>
       <Grid container spacing={2}>
-      {
-        JSONData.map((organization, index) => {
-          return <Grid item xs={6}>
-            <OrganizationsPanel key={`org-${index}`} organization={organization} />
-          </Grid>
-        })
-      }
+    {
+      data.allCombinedJson.edges.map((organization, index) => {
+        return <Grid item xs={6}>
+          <OrganizationsPanel key={`org-${index}`} organization={organization.node} />
+        </Grid>
+      })
+    }
       </Grid>
     </Container>
   )
@@ -40,6 +39,28 @@ export default function Home({data}) {
 
 export const query = graphql`
   query {
+    allCombinedJson {
+      edges {
+        node {
+          id
+          name
+          image
+          events {
+            description
+            endDate
+            image
+            location {
+              address {
+                streetAddress
+              }
+            }
+            name
+            startDate
+            url
+          }
+        }
+      }
+    },
     file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
