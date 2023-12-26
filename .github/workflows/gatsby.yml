@@ -56,7 +56,6 @@ jobs:
       - name: Combine the data
         working-directory: ./data-generator
         run: |
-          mkdir ../web/src/data
           python3 combineOrganizations.py
           ls ../web/src/data
           cat ../web/src/data/combined.json
