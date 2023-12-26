@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import OrganizationsPanel from "../components/OrganizationPanel"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function Home({data}) {
   return (
@@ -14,7 +14,7 @@ export default function Home({data}) {
       <header>
         <Grid container spacing={2}>
           <Grid item md={6}>
-            <Img fixed={data.file.childImageSharp.fixed} />
+            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
           </Grid>
           <Grid item className='pt-4' md={6}>
             <Typography  variant="h4" align="center" color="primary" gutterBottom>
@@ -34,43 +34,37 @@ export default function Home({data}) {
     }
       </Grid>
     </Container>
-  )
+  );
 }
 
-export const query = graphql`
-  query {
-    allCombinedJson {
-      edges {
-        node {
-          id
+export const query = graphql`{
+  allCombinedJson {
+    edges {
+      node {
+        id
+        name
+        image
+        url
+        events {
           name
-          image
+          startDate
           url
-          events {
-            description
-            endDate
-            image
-            location {
-              name
-              address {
-                streetAddress
-              }
-            }
+          description
+          endDate
+          image
+          location {
             name
-            startDate
-            url
+            address {
+              streetAddress
+            }
           }
-        }
-      }
-    },
-    file(relativePath: { eq: "logo.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(width: 532, height: 214 ) {
-          ...GatsbyImageSharpFixed
         }
       }
     }
   }
-  `
+  file(relativePath: {eq: "logo.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 532, height: 214, placeholder: BLURRED, layout: FIXED)
+    }
+  }
+}`
