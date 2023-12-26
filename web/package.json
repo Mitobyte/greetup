@@ -16,6 +16,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/material": "^5.2.5",
+    "@mui/icons-material": "^5.2.5",
     "autoprefixer": "^10.4.2",
     "gatsby": "^5.12.11",
     "gatsby-image": "^3.11.0",

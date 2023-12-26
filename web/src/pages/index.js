@@ -3,7 +3,7 @@ import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import OrganizationsPanel from "../components/organizationPanel"
+import OrganizationsPanel from "../components/OrganizationPanel"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import JSONData from "../../../data/combined.json"
