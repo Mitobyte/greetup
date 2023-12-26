@@ -16,7 +16,7 @@ for file_path in os.listdir(dir_path):
     f = open(os.path.join(dir_path, file_path, 'events.json'), 'r')
     events = json.load(f)
 
-    if not a:
+    if not events:
         organization['events'] = [{}]
     else:
         organization['events'] = events
