@@ -22,6 +22,7 @@
     "gatsby-transformer-json": "^5.11.0",
     "gatsby-source-filesystem": "^5.11.0",
     "gatsby-transformer-sharp": "^5.13.0",
+    "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-sharp": "^5.13.0",
     "gatsby-plugin-material-ui": "^4.1.0",
     "react": "^18.2.0",

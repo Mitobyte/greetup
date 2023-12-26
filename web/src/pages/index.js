@@ -45,11 +45,13 @@ export const query = graphql`
           id
           name
           image
+          url
           events {
             description
             endDate
             image
             location {
+              name
               address {
                 streetAddress
               }
