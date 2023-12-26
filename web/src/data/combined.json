@@ -1,0 +1,178 @@
+[
+    {
+        "address": {
+            "location": {
+                "address": {
+                    "addressRegion": "WI",
+                    "addressCountry": "us",
+                    "addressLocality": "Milwaukee",
+                    "@type": "PostalAddress"
+                },
+                "@type": "Place"
+            }
+        },
+        "name": "Tech MKE - Milwaukee's Full Stack Meetup Group",
+        "foundingDate": "2011-11-28T17:40:33.000Z",
+        "sameAs": [
+            "http://twitter.com/web414/",
+            "http://www.linkedin.com/groups?gid=57006",
+            "http://www.web414.com"
+        ],
+        "url": "https://www.meetup.com/techmke/",
+        "@type": "Organization",
+        "image": "https://secure.meetupstatic.com/photos/event/7/e/5/2/600_469232338.webp",
+        "@context": "https://schema.org",
+        "events": [
+            {
+                "description": "Rescheduled talk\n\nThe goal of this talk is to provide a set of core frameworks to successfully implement automation and AI initiatives in small to large size organizations. We'll also cover practical resources and tools to stay up to date in the field at a high-level.\n\nThis talk is presented by Luke Profio, MSDS. He is the Sr. PM of Emerging Technologies (AI/ML) and Digital Health at UW Health. At UW Health Luke also sits on the Artificial Intelligence Governance Committee. Luke is the founder of CarnegieMellon.ai and a research scientist for the Carnegie Mellon Racing Autonomous team.\n\nMore information on Luke can be found on his linkedin profile found here: https://www.linkedin.com/in/luke-profio-msds-266090220/\n\nDrinks and food will be provided. Street parking is free and available around the building. There is also a paid parking structure onsite.",
+                "organizer": {
+                    "url": "https://www.meetup.com/techmke/",
+                    "name": "Tech MKE - Milwaukee's Full Stack Meetup Group",
+                    "@type": "Organization"
+                },
+                "url": "https://www.meetup.com/techmke/events/297342305/",
+                "startDate": "2023-12-13T23:30:00.000Z",
+                "@type": "Event",
+                "endDate": "2023-12-14T02:00:00.000Z",
+                "performer": "Tech MKE - Milwaukee's Full Stack Meetup Group",
+                "name": "AI Strategy 101 ",
+                "location": {
+                    "address": {
+                        "addressLocality": "Milwaukee",
+                        "@type": "PostalAddress",
+                        "addressRegion": "WI",
+                        "streetAddress": "330 E Kilbourn Ave, Milwaukee, WI",
+                        "addressCountry": "us"
+                    },
+                    "name": "330 E Kilbourn Ave",
+                    "@type": "Place"
+                },
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "@context": "https://schema.org",
+                "eventStatus": "https://schema.org/EventScheduled"
+            }
+        ]
+    },
+    {
+        "sameAs": [],
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "address": {
+            "location": {
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "us",
+                    "addressLocality": "Milwaukee",
+                    "addressRegion": "WI"
+                },
+                "@type": "Place"
+            }
+        },
+        "image": "https://secure.meetupstatic.com/photos/event/6/f/0/d/600_496948429.webp",
+        "name": "Wisconsin .Net User Group",
+        "foundingDate": "2015-02-16T21:31:33.000Z",
+        "url": "https://www.meetup.com/wisconsin-net-users-group/",
+        "events": []
+    },
+    {
+        "name": "Milwaukee Code and Coffee / Code and Brews",
+        "address": {
+            "location": {
+                "address": {
+                    "addressCountry": "us",
+                    "addressLocality": "Milwaukee",
+                    "addressRegion": "WI",
+                    "@type": "PostalAddress"
+                },
+                "@type": "Place"
+            }
+        },
+        "@context": "https://schema.org",
+        "url": "https://www.meetup.com/milwaukee-code-and-coffee/",
+        "@type": "Organization",
+        "image": "https://secure.meetupstatic.com/photos/event/3/d/0/b/600_510675627.webp",
+        "foundingDate": "2022-11-21T22:22:49.000Z",
+        "sameAs": [],
+        "events": [
+            {
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "location": {
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Milwaukee",
+                        "addressRegion": "WI",
+                        "addressCountry": "us",
+                        "streetAddress": "507 S 2nd St, Milwaukee, WI"
+                    },
+                    "name": "Eagleknit Converge",
+                    "@type": "Place"
+                },
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Milwaukee Code and Coffee / Code and Brews",
+                    "url": "https://www.meetup.com/milwaukee-code-and-coffee/"
+                },
+                "name": "December Code and Coffee",
+                "@context": "https://schema.org",
+                "image": "https://secure.meetupstatic.com/photos/event/a/c/7/a/600_517244154.webp",
+                "description": "December 2nd will be our December Code + Coffee! event at Wickidcool sponsored by [Mistura](https://mistura.io/).\n\nWe are excited to invite you to our upcoming networking and coding event. This gathering is designed to foster connections within our local tech community. Whether you are a seasoned professional, a hobbyist, or just getting your feet wet in the world of coding, there's a place for you here. The event will offer opportunities for both individual coding and collaborative projects, accommodating different styles and preferences. If you'd prefer to engage in insightful conversations and discussions, you will find plenty of fellow software developers eager to share their experiences and ideas. Our goal is to facilitate a relaxed environment where knowledge exchange, collaboration, and innovation are the natural outcomes. We look forward to seeing you there, and can't wait to see the magic that happens when our diverse community comes together.",
+                "endDate": "2023-12-02T18:00:00.000Z",
+                "performer": "Milwaukee Code and Coffee / Code and Brews",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "startDate": "2023-12-02T15:00:00.000Z",
+                "url": "https://www.meetup.com/milwaukee-code-and-coffee/events/297321207/",
+                "@type": "Event"
+            },
+            {
+                "performer": "Milwaukee Code and Coffee / Code and Brews",
+                "@type": "Event",
+                "name": "December Code and Brews ",
+                "image": "https://secure.meetupstatic.com/photos/event/1/e/6/d/600_517327789.webp",
+                "url": "https://www.meetup.com/milwaukee-code-and-coffee/events/297404877/",
+                "organizer": {
+                    "name": "Milwaukee Code and Coffee / Code and Brews",
+                    "url": "https://www.meetup.com/milwaukee-code-and-coffee/",
+                    "@type": "Organization"
+                },
+                "location": {
+                    "address": {
+                        "addressLocality": "Milwaukee",
+                        "addressRegion": "WI",
+                        "addressCountry": "us",
+                        "@type": "PostalAddress",
+                        "streetAddress": "530 S 2nd St, Milwaukee, WI"
+                    },
+                    "@type": "Place",
+                    "name": "Indeed Brewing Company | Taproom & UpTop Rooftop of Walker\u2019s Point, Milwaukee"
+                },
+                "@context": "https://schema.org",
+                "description": "December 13th will be the December Code + Brews! The event at The Indeed Taproom. [Codeworks](https://codeworks-inc.com/) will provide the food. Indeed has buy one/get one drinks for this event.\n\nWe are excited to invite you to our upcoming networking and coding event. This gathering is designed to foster connections within our local tech community. Whether you are a seasoned professional, a hobbyist, or just getting your feet wet in the world of coding, there's a place for you here. The event will offer opportunities for both individual coding and collaborative projects, accommodating different styles and preferences. If you'd prefer to engage in insightful conversations and discussions, you will find plenty of fellow software developers eager to share their experiences and ideas. Our goal is to facilitate a relaxed environment where knowledge exchange, collaboration, and innovation are the natural outcomes. We look forward to seeing you there, and can't wait to see the magic that happens when our diverse community comes together.",
+                "startDate": "2023-12-13T23:00:00.000Z",
+                "endDate": "2023-12-14T02:00:00.000Z",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+            }
+        ]
+    },
+    {
+        "foundingDate": "2022-02-08T05:20:14.000Z",
+        "image": "https://secure.meetupstatic.com/photos/event/9/2/8/d/600_515377517.webp",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressLocality": "Milwaukee",
+                    "addressCountry": "us",
+                    "@type": "PostalAddress",
+                    "addressRegion": "WI"
+                }
+            }
+        },
+        "url": "https://www.meetup.com/techontap/",
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "sameAs": [],
+        "name": "Tech on Tap -Milwaukee's #1 IT Networking & Happy Hour Event",
+        "events": []
+    }
+]

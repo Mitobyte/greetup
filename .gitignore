@@ -1,6 +1,6 @@
 .idea
 .DS_Store
 .cache
+public/_gatsby
 dist
-data
 node_modules
