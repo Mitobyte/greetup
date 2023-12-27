@@ -1,0 +1,90 @@
+[
+    {
+        "sameAs": [
+            "http://twitter.com/web414/",
+            "http://www.linkedin.com/groups?gid=57006",
+            "http://www.web414.com"
+        ],
+        "name": "Tech MKE - Milwaukee's Full Stack Meetup Group",
+        "image": "https://secure.meetupstatic.com/photos/event/7/e/5/2/600_469232338.webp",
+        "url": "https://www.meetup.com/techmke/",
+        "address": {
+            "location": {
+                "address": {
+                    "addressCountry": "us",
+                    "addressLocality": "Milwaukee",
+                    "@type": "PostalAddress",
+                    "addressRegion": "WI"
+                },
+                "@type": "Place"
+            }
+        },
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "foundingDate": "2011-11-28T17:40:33.000Z",
+        "events": []
+    },
+    {
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressRegion": "WI",
+                    "addressLocality": "Milwaukee",
+                    "addressCountry": "us"
+                }
+            }
+        },
+        "image": "https://secure.meetupstatic.com/photos/event/6/f/0/d/600_496948429.webp",
+        "foundingDate": "2015-02-16T21:31:33.000Z",
+        "url": "https://www.meetup.com/wisconsin-net-users-group/",
+        "@context": "https://schema.org",
+        "name": "Wisconsin .Net User Group",
+        "sameAs": [],
+        "@type": "Organization",
+        "events": []
+    },
+    {
+        "@type": "Organization",
+        "address": {
+            "location": {
+                "address": {
+                    "addressLocality": "Milwaukee",
+                    "addressCountry": "us",
+                    "addressRegion": "WI",
+                    "@type": "PostalAddress"
+                },
+                "@type": "Place"
+            }
+        },
+        "sameAs": [],
+        "name": "Milwaukee Code and Coffee / Code and Brews",
+        "url": "https://www.meetup.com/milwaukee-code-and-coffee/",
+        "image": "https://secure.meetupstatic.com/photos/event/3/d/0/b/600_510675627.webp",
+        "foundingDate": "2022-11-21T22:22:49.000Z",
+        "@context": "https://schema.org",
+        "events": []
+    },
+    {
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Milwaukee",
+                    "addressRegion": "WI",
+                    "addressCountry": "us"
+                }
+            }
+        },
+        "image": "https://secure.meetupstatic.com/photos/event/9/2/8/d/600_515377517.webp",
+        "foundingDate": "2022-02-08T05:20:14.000Z",
+        "@context": "https://schema.org",
+        "sameAs": [],
+        "name": "Tech on Tap -Milwaukee's #1 IT Networking & Happy Hour Event",
+        "@type": "Organization",
+        "url": "https://www.meetup.com/techontap/",
+        "events": []
+    }
+]

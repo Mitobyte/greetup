@@ -1,6 +1,7 @@
 .idea
 .DS_Store
 .cache
-public
+public/**/*
 dist
 node_modules
+/data-generator/data/
