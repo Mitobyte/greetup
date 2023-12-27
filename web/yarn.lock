@@ -5614,14 +5614,6 @@ gatsby-telemetry@^4.13.0:
     lodash "^4.17.21"
     node-fetch "^2.6.11"
 
-gatsby-transformer-json@^5.11.0:
-  version "5.13.0"
-  resolved "https://registry.npmjs.org/gatsby-transformer-json/-/gatsby-transformer-json-5.13.0.tgz#16d5d2ed9a27c6712c731a3291e66656e6ee6390"
-  integrity sha512-w3q7UwTH9FqTigOD6y3y2BW7/vtKZpBOLA0+Lce40Wvoivqm8SC6VXlLTQBeP65E9lT1Cv6hPHMlSB0ZAJMbcg==
-  dependencies:
-    "@babel/runtime" "^7.20.13"
-    bluebird "^3.7.2"
-
 gatsby-transformer-sharp@^5.13.0:
   version "5.13.0"
   resolved "https://registry.npmjs.org/gatsby-transformer-sharp/-/gatsby-transformer-sharp-5.13.0.tgz#45447d17ff5f2f9e9a15b39c68dffe7684d07e91"

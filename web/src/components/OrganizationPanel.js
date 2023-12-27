@@ -16,7 +16,7 @@ export default function OrganizationPanel({ organization }) {
 
   return (
     <>
-      <Card className='mb-3 p-4' style={{background:'#101C79'}} onClick={() => setSelectedOrganization(organization)}>
+      <Card style={{background:'#101C79'}} onClick={() => setSelectedOrganization(organization)}>
         <CardActionArea className='bg-blue-900'>
           <CardMedia
             component="img"
