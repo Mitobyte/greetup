@@ -9,6 +9,7 @@ const path = require('path');
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/greetup",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
