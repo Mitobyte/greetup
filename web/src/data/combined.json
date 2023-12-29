@@ -1,90 +1,156 @@
 [
     {
+        "@context": "https://schema.org",
+        "name": "Tech MKE - Milwaukee's Full Stack Meetup Group",
+        "image": "https://secure.meetupstatic.com/photos/event/7/e/5/2/600_469232338.webp",
+        "@type": "Organization",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressRegion": "WI",
+                    "addressCountry": "us",
+                    "addressLocality": "Milwaukee"
+                }
+            }
+        },
         "sameAs": [
             "http://twitter.com/web414/",
             "http://www.linkedin.com/groups?gid=57006",
             "http://www.web414.com"
         ],
-        "name": "Tech MKE - Milwaukee's Full Stack Meetup Group",
-        "image": "https://secure.meetupstatic.com/photos/event/7/e/5/2/600_469232338.webp",
         "url": "https://www.meetup.com/techmke/",
-        "address": {
-            "location": {
-                "address": {
-                    "addressCountry": "us",
-                    "addressLocality": "Milwaukee",
-                    "@type": "PostalAddress",
-                    "addressRegion": "WI"
-                },
-                "@type": "Place"
-            }
-        },
-        "@context": "https://schema.org",
-        "@type": "Organization",
         "foundingDate": "2011-11-28T17:40:33.000Z",
         "events": []
     },
     {
         "address": {
             "location": {
-                "@type": "Place",
                 "address": {
-                    "@type": "PostalAddress",
-                    "addressRegion": "WI",
-                    "addressLocality": "Milwaukee",
-                    "addressCountry": "us"
-                }
-            }
-        },
-        "image": "https://secure.meetupstatic.com/photos/event/6/f/0/d/600_496948429.webp",
-        "foundingDate": "2015-02-16T21:31:33.000Z",
-        "url": "https://www.meetup.com/wisconsin-net-users-group/",
-        "@context": "https://schema.org",
-        "name": "Wisconsin .Net User Group",
-        "sameAs": [],
-        "@type": "Organization",
-        "events": []
-    },
-    {
-        "@type": "Organization",
-        "address": {
-            "location": {
-                "address": {
-                    "addressLocality": "Milwaukee",
                     "addressCountry": "us",
                     "addressRegion": "WI",
-                    "@type": "PostalAddress"
+                    "@type": "PostalAddress",
+                    "addressLocality": "Milwaukee"
                 },
                 "@type": "Place"
             }
         },
         "sameAs": [],
-        "name": "Milwaukee Code and Coffee / Code and Brews",
-        "url": "https://www.meetup.com/milwaukee-code-and-coffee/",
-        "image": "https://secure.meetupstatic.com/photos/event/3/d/0/b/600_510675627.webp",
-        "foundingDate": "2022-11-21T22:22:49.000Z",
+        "name": "Wisconsin .Net User Group",
+        "foundingDate": "2015-02-16T21:31:33.000Z",
+        "@type": "Organization",
+        "url": "https://www.meetup.com/wisconsin-net-users-group/",
         "@context": "https://schema.org",
+        "image": "https://secure.meetupstatic.com/photos/event/6/f/0/d/600_496948429.webp",
         "events": []
     },
     {
+        "image": "https://secure.meetupstatic.com/photos/event/3/d/0/b/600_510675627.webp",
+        "sameAs": [],
+        "name": "Milwaukee Code and Coffee / Code and Brews",
+        "foundingDate": "2022-11-21T22:22:49.000Z",
+        "address": {
+            "location": {
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressRegion": "WI",
+                    "addressLocality": "Milwaukee",
+                    "addressCountry": "us"
+                },
+                "@type": "Place"
+            }
+        },
+        "@type": "Organization",
+        "url": "https://www.meetup.com/milwaukee-code-and-coffee/",
+        "@context": "https://schema.org",
+        "events": [
+            {
+                "@context": "https://schema.org",
+                "endDate": "2024-01-11T02:00:00.000Z",
+                "name": "January Code and Brews ",
+                "description": "January 10th will be the January Code + Brews! The event at The Explorium. VBA Software will provide the food. The explorium has buy one/get one drinks for this event.\n\nWe are excited to invite you to our upcoming networking and coding event. This gathering is designed to foster connections within our local tech community. Whether you are a seasoned professional, a hobbyist, or just getting your feet wet in the world of coding, there's a place for you here. The event will offer opportunities for both individual coding and collaborative projects, accommodating different styles and preferences. If you'd prefer to engage in insightful conversations and discussions, you will find plenty of fellow software developers eager to share their experiences and ideas. Our goal is to facilitate a relaxed environment where knowledge exchange, collaboration, and innovation are the natural outcomes. We look forward to seeing you there, and can't wait to see the magic that happens when our diverse community comes together.",
+                "startDate": "2024-01-10T23:00:00.000Z",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "organizer": {
+                    "@type": "Organization",
+                    "url": "https://www.meetup.com/milwaukee-code-and-coffee/",
+                    "name": "Milwaukee Code and Coffee / Code and Brews"
+                },
+                "performer": "Milwaukee Code and Coffee / Code and Brews",
+                "image": "https://secure.meetupstatic.com/photos/event/e/7/d/d/600_518159357.webp",
+                "url": "https://www.meetup.com/milwaukee-code-and-coffee/events/298195281/",
+                "@type": "Event",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "location": {
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "143 W St Paul Ave, Milwaukee, WI",
+                        "addressRegion": "WI",
+                        "addressLocality": "Milwaukee",
+                        "addressCountry": "us"
+                    },
+                    "@type": "Place",
+                    "name": "The Explorium Brewpub Third Ward"
+                }
+            }
+        ]
+    },
+    {
+        "url": "https://www.meetup.com/techontap/",
+        "foundingDate": "2022-02-08T05:20:14.000Z",
+        "@context": "https://schema.org",
         "address": {
             "location": {
                 "@type": "Place",
                 "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Milwaukee",
                     "addressRegion": "WI",
-                    "addressCountry": "us"
+                    "addressLocality": "Milwaukee",
+                    "addressCountry": "us",
+                    "@type": "PostalAddress"
                 }
             }
         },
-        "image": "https://secure.meetupstatic.com/photos/event/9/2/8/d/600_515377517.webp",
-        "foundingDate": "2022-02-08T05:20:14.000Z",
-        "@context": "https://schema.org",
-        "sameAs": [],
-        "name": "Tech on Tap -Milwaukee's #1 IT Networking & Happy Hour Event",
         "@type": "Organization",
-        "url": "https://www.meetup.com/techontap/",
+        "name": "Tech on Tap -Milwaukee's #1 IT Networking & Happy Hour Event",
+        "image": "https://secure.meetupstatic.com/photos/event/9/2/8/d/600_515377517.webp",
+        "sameAs": [],
         "events": []
+    },
+    {
+        "url": "https://www.eventbrite.com/cc/data-meetups-2662819",
+        "title": "Data Meetups",
+        "description": "Our Data Meetups are an open-forum, open-door meeting where attendees drive the conversation following a Lean Coffee format.",
+        "name": "Data Meetups",
+        "events": [
+            {
+                "startDate": "2024-01-25T15:00:00Z",
+                "url": "https://www.eventbrite.com/e/data-meetup-data-tool-trends-current-and-future-state-tickets-774030424837",
+                "name": "Data Meetup - Data Tool Trends: Current and Future State",
+                "location": {
+                    "@type": "Place",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "43.033998",
+                        "longitude": "-87.90780819999998"
+                    },
+                    "address": {
+                        "addressCountry": "US",
+                        "streetAddress": "301 North Broadway",
+                        "postalCode": "53202",
+                        "@type": "PostalAddress",
+                        "addressRegion": "WI",
+                        "addressLocality": "Milwaukee"
+                    },
+                    "name": "Continuus Technologies"
+                },
+                "@type": "Event",
+                "@context": "http://schema.org",
+                "description": "The Data Meetups are back! Join us and data peers to discuss how to encourage a data driven culture among teams and with decision-makers.",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F655303349%2F184146591682%2F1%2Foriginal.20231207-232442?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=954072289ffbe22e94bd73bcf87d8cd3",
+                "endDate": "2024-01-25T16:00:00Z"
+            }
+        ]
     }
 ]

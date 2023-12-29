@@ -18,12 +18,14 @@ export default function OrganizationPanel({ organization }) {
     <>
       <Card style={{background:'#101C79'}} onClick={() => setSelectedOrganization(organization)}>
         <CardActionArea className='bg-blue-900'>
-          <CardMedia
-            component="img"
-            height="200"
-            image={organization.image}
-            alt={`${organization.name} image`}
-          />
+          { organization.image && (
+            <CardMedia
+              component="img"
+              height="200"
+              image={organization.image}
+              alt={`${organization.name} image`}
+            />
+          )}
           <CardContent>
               <Typography
                 variant="h4"
@@ -33,6 +35,15 @@ export default function OrganizationPanel({ organization }) {
               >
                 {organization.name}
               </Typography>
+
+            <Typography
+              variant="h6"
+              align="center"
+              color="#FFC52F"
+              gutterBottom
+            >
+              {organization.description}
+            </Typography>
           </CardContent>
           <CardActions>
               <a href={organization.url} target='_blank' className="text-sm">

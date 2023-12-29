@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cat ./meetups.csv | ./store_data.sh
+cat /app/meetup/meetups.csv | /app/meetup/store_data.sh
