@@ -52,6 +52,7 @@ jobs:
       - name: Get the eventbrite data
         working-directory: ./data-generator/eventbrite
         run: |
+          ls -al /app
           bash ./fetch_and_store.sh
       - name: Get the meetup data
         working-directory: ./data-generator/meetup
