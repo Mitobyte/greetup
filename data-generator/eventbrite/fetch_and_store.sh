@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cat /app/eventbrite/groups.csv | /app/eventbrite/store_data.sh
+cat /app/data-generator/eventbrite/groups.csv | /app/data-generator/eventbrite/store_data.sh
