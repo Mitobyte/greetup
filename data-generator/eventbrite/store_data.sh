@@ -1,12 +1,16 @@
 #!/bin/bash
 
-mkdir -p "/app/data/eventbrite"
+# dev mode
+#mkdir -p "/app/data/eventbrite"
+mkdir -p "../data/eventbrite"
 
 while IFS= read -r line; do
 	# Split the line by comma and assign to two variables
   IFS=',' read -r name url <<< "$line"
 
-  mkdir -p "/app/data/eventbrite/$name"
+# dev mode
+#  mkdir -p "/app/data/eventbrite/$name"
+  mkdir -p "../data/eventbrite/$name"
 
 	response=$(curl -s $url)
 	script_tags=$(echo $response | hq '{scripts: script[type="application/ld+json"]  | [@text]}')
@@ -17,7 +21,7 @@ while IFS= read -r line; do
 	organizations=$(echo $attr_tags | xq 'add | [.]')
 	events=$(echo $script_tags | xq '.scripts[] | [fromjson] ')
 
-  echo $organizations > "/app/data/eventbrite/$name/organizations.json"
-	echo $events > "/app/data/eventbrite/$name/events.json"
+  echo $organizations > "../data/eventbrite/$name/organizations.json"
+	echo $events > "../data/eventbrite/$name/events.json"
 
 done	
