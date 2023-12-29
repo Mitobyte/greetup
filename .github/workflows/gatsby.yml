@@ -49,7 +49,11 @@ jobs:
         uses: baptiste0928/cargo-install@v2
         with:
           crate: xq
-      - name: Get the data
+      - name: Get the eventbrite data
+        working-directory: ./data-generator/eventbrite
+        run: |
+          bash ./fetch_and_store.sh
+      - name: Get the meetup data
         working-directory: ./data-generator/meetup
         run: |
           bash ./fetch_and_store.sh
