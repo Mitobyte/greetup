@@ -1,6 +1,12 @@
 #!/bin/bash
 
-# dev mode
-#cat /app/eventbrite/groups.csv | /app/eventbrite/store_data.sh
+if [ "$DATA_ENV" = 'production' ]; then
+    # production mode
+    cat ./groups.csv | ./store_data.sh
+  else
+    # dev mode
+    cat /app/eventbrite/groups.csv | /app/eventbrite/store_data.sh
+fi
 
-cat ./groups.csv | ./store_data.sh
+
+

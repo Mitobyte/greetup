@@ -52,17 +52,17 @@ jobs:
       - name: Get the eventbrite data
         working-directory: ./data-generator/eventbrite
         run: |
+          export DATA_ENV=production
           bash ./fetch_and_store.sh
       - name: Get the meetup data
         working-directory: ./data-generator/meetup
         run: |
+          export DATA_ENV=production
           bash ./fetch_and_store.sh
       - name: Combine the data
         working-directory: ./data-generator
         run: |
           python3 combineOrganizations.py
-          ls ../web/src/data
-          cat ../web/src/data/combined.json
       - name: Setup Node
         uses: actions/setup-node@v3
         with:

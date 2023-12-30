@@ -1,7 +1,11 @@
 #!/bin/bash
 
-# dev mode
-#cat /app/meetup/meetups.csv | /app/meetup/store_data.sh
+if [ "$DATA_ENV" = 'production' ]; then
+  # production mode
+    cat ./groups.csv | ./store_data.sh
+  else
+    # dev mode
+    cat /app/meetup/groups.csv | /app/meetup/store_data.sh
+fi
 
-cat ./meetups.csv | ./store_data.sh
 
