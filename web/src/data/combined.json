@@ -1,94 +1,281 @@
 [
     {
         "@context": "https://schema.org",
-        "name": "Tech MKE - Milwaukee's Full Stack Meetup Group",
-        "image": "https://secure.meetupstatic.com/photos/event/7/e/5/2/600_469232338.webp",
+        "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/",
         "@type": "Organization",
+        "name": "Milwaukee Bitcoin Meetup",
+        "image": "https://secure.meetupstatic.com/photos/event/7/4/c/7/600_517589895.webp",
         "address": {
             "location": {
-                "@type": "Place",
                 "address": {
+                    "addressCountry": "us",
                     "@type": "PostalAddress",
                     "addressRegion": "WI",
-                    "addressCountry": "us",
                     "addressLocality": "Milwaukee"
-                }
+                },
+                "@type": "Place"
             }
         },
+        "foundingDate": "2022-04-12T17:58:57.000Z",
+        "sameAs": [],
+        "events": [
+            {
+                "image": "https://secure.meetupstatic.com/photos/event/a/6/f/8/600_517602744.webp",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "performer": "Milwaukee Bitcoin Meetup",
+                "@type": "Event",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/events/297831310/",
+                "@context": "https://schema.org",
+                "name": "Socratic Seminar",
+                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!",
+                "startDate": "2024-01-17T00:00:00.000Z",
+                "location": {
+                    "@type": "Place",
+                    "name": "Transfer Pizzeria Caf\u00e9",
+                    "address": {
+                        "addressCountry": "us",
+                        "addressRegion": "WI",
+                        "streetAddress": "101 W Mitchell St, Milwaukee, WI",
+                        "@type": "PostalAddress",
+                        "addressLocality": "Milwaukee"
+                    }
+                },
+                "organizer": {
+                    "name": "Milwaukee Bitcoin Meetup",
+                    "@type": "Organization",
+                    "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/"
+                },
+                "endDate": "2024-01-17T03:00:00.000Z"
+            },
+            {
+                "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/events/297678619/",
+                "organizer": {
+                    "name": "Milwaukee Bitcoin Meetup",
+                    "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/",
+                    "@type": "Organization"
+                },
+                "location": {
+                    "name": "Transfer Pizzeria Caf\u00e9",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "101 W Mitchell St, Milwaukee, WI",
+                        "addressRegion": "WI",
+                        "addressLocality": "Milwaukee",
+                        "addressCountry": "us"
+                    },
+                    "@type": "Place"
+                },
+                "startDate": "2024-02-21T00:00:00.000Z",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "image": "https://secure.meetupstatic.com/photos/event/a/6/f/8/600_517602744.webp",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "@type": "Event",
+                "performer": "Milwaukee Bitcoin Meetup",
+                "endDate": "2024-02-21T03:00:00.000Z",
+                "name": "Socratic Seminar",
+                "@context": "https://schema.org",
+                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!"
+            },
+            {
+                "location": {
+                    "address": {
+                        "streetAddress": "101 W Mitchell St, Milwaukee, WI",
+                        "addressLocality": "Milwaukee",
+                        "addressCountry": "us",
+                        "@type": "PostalAddress",
+                        "addressRegion": "WI"
+                    },
+                    "@type": "Place",
+                    "name": "Transfer Pizzeria Caf\u00e9"
+                },
+                "organizer": {
+                    "name": "Milwaukee Bitcoin Meetup",
+                    "@type": "Organization",
+                    "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/"
+                },
+                "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/events/kxkgjtygcfbzb/",
+                "endDate": "2024-03-20T02:00:00.000Z",
+                "startDate": "2024-03-19T23:00:00.000Z",
+                "name": "Socratic Seminar",
+                "image": "https://secure.meetupstatic.com/photos/event/a/6/f/8/600_517602744.webp",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "performer": "Milwaukee Bitcoin Meetup",
+                "@context": "https://schema.org",
+                "@type": "Event",
+                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+            },
+            {
+                "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/events/kxkgjtygcgbvb/",
+                "name": "Socratic Seminar",
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Milwaukee Bitcoin Meetup",
+                    "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/"
+                },
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "image": "https://secure.meetupstatic.com/photos/event/a/6/f/8/600_517602744.webp",
+                "@context": "https://schema.org",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "startDate": "2024-04-16T23:00:00.000Z",
+                "@type": "Event",
+                "endDate": "2024-04-17T02:00:00.000Z",
+                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!",
+                "location": {
+                    "name": "Transfer Pizzeria Caf\u00e9",
+                    "@type": "Place",
+                    "address": {
+                        "addressRegion": "WI",
+                        "streetAddress": "101 W Mitchell St, Milwaukee, WI",
+                        "addressCountry": "us",
+                        "addressLocality": "Milwaukee",
+                        "@type": "PostalAddress"
+                    }
+                },
+                "performer": "Milwaukee Bitcoin Meetup"
+            }
+        ]
+    },
+    {
         "sameAs": [
             "http://twitter.com/web414/",
             "http://www.linkedin.com/groups?gid=57006",
             "http://www.web414.com"
         ],
         "url": "https://www.meetup.com/techmke/",
-        "foundingDate": "2011-11-28T17:40:33.000Z",
-        "events": []
-    },
-    {
-        "address": {
-            "location": {
-                "address": {
-                    "addressCountry": "us",
-                    "addressRegion": "WI",
-                    "@type": "PostalAddress",
-                    "addressLocality": "Milwaukee"
-                },
-                "@type": "Place"
-            }
-        },
-        "sameAs": [],
-        "name": "Wisconsin .Net User Group",
-        "foundingDate": "2015-02-16T21:31:33.000Z",
         "@type": "Organization",
-        "url": "https://www.meetup.com/wisconsin-net-users-group/",
-        "@context": "https://schema.org",
-        "image": "https://secure.meetupstatic.com/photos/event/6/f/0/d/600_496948429.webp",
-        "events": []
-    },
-    {
-        "image": "https://secure.meetupstatic.com/photos/event/3/d/0/b/600_510675627.webp",
-        "sameAs": [],
-        "name": "Milwaukee Code and Coffee / Code and Brews",
-        "foundingDate": "2022-11-21T22:22:49.000Z",
+        "image": "https://secure.meetupstatic.com/photos/event/7/e/5/2/600_469232338.webp",
+        "foundingDate": "2011-11-28T17:40:33.000Z",
+        "name": "Tech MKE - Milwaukee's Full Stack Meetup Group",
         "address": {
             "location": {
+                "@type": "Place",
                 "address": {
                     "@type": "PostalAddress",
                     "addressRegion": "WI",
                     "addressLocality": "Milwaukee",
                     "addressCountry": "us"
-                },
-                "@type": "Place"
+                }
+            }
+        },
+        "@context": "https://schema.org",
+        "events": []
+    },
+    {
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressLocality": "Milwaukee",
+                    "@type": "PostalAddress",
+                    "addressRegion": "WI",
+                    "addressCountry": "us"
+                }
+            }
+        },
+        "foundingDate": "2015-02-16T21:31:33.000Z",
+        "image": "https://secure.meetupstatic.com/photos/event/6/f/0/d/600_496948429.webp",
+        "@type": "Organization",
+        "url": "https://www.meetup.com/wisconsin-net-users-group/",
+        "@context": "https://schema.org",
+        "sameAs": [],
+        "name": "Wisconsin .Net User Group",
+        "events": []
+    },
+    {
+        "sameAs": [],
+        "url": "https://www.meetup.com/social-nerds-in-milwaukee/",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressCountry": "us",
+                    "@type": "PostalAddress",
+                    "addressLocality": "Milwaukee",
+                    "addressRegion": "WI"
+                }
             }
         },
         "@type": "Organization",
+        "@context": "https://schema.org",
+        "foundingDate": "2018-12-28T23:15:58.000Z",
+        "name": "Social Nerds in Milwaukee",
+        "image": "https://secure.meetupstatic.com/photos/event/6/f/9/5/600_477388565.webp",
+        "events": [
+            {
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Social Nerds in Milwaukee",
+                    "url": "https://www.meetup.com/social-nerds-in-milwaukee/"
+                },
+                "endDate": "2024-01-19T03:00:00.000Z",
+                "performer": "Social Nerds in Milwaukee",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "startDate": "2024-01-19T01:00:00.000Z",
+                "@context": "https://schema.org",
+                "name": "Fun Times on the Lanes this Winter! Join the team, meet some new people! \ud83c\udfb3\ud83c\udf7b",
+                "url": "https://www.meetup.com/social-nerds-in-milwaukee/events/297625456/",
+                "description": "Winter doesn\u2019t have to be so dark & gloomy \u2013 join us on the lanes away from the cold to have a lot of fun, meet a bunch of new people, and knock some pins down + beers!\nJoin our super fun team in this awesome social bowling league. The last league they hosted was super fun so don\u2019t miss out this time \u2013 it may sell out due to high demand \u2013 people love to bowl in the winter! We\u2019ll be getting together and having a great time with friends while meeting some new people on the lanes! Don\u2019t worry about being good at bowling either \u2013 bowling skills are definitely optional! ;)\n**Day: Tuesday evenings**\n**Alley: Union Sports Annex**\n**Cost: Discounted price of $69 (Use code MILMUW24)for SIX weeks! Includes everything! (see below for details)**\n**Vibe check: Check out their IG for past league pics, https://bit.ly/BowlingLeague-IG**\n**The league has created a team for us called Pinbusters - here's the link: Pinbusters / https://bit.ly/3MLIiyw**\n(You can set up your own team with friends too if you\u2019d like! We\u2019ll all be hanging out either way!)\n_______________________________________________\nLEAGUE INFORMATION: https://bit.ly/MilwaukeeBowling\nJust to be clear since there was some confusion before, this is for a LEAGUE (dates below). The event date is when you should REGISTER by, we aren\u2019t meeting up on that date! We have an absolute blast every time we bowl. Big reminder: You have to register/pay through the leagues website in order to be a part of the league, not just RSVP here :)\nI'm a terrible bowler - is it a competitive league?\nNope! The league is more about having fun and being social so whether you're a great bowler or a terrible bowler, the league is a fun way to socialize and meet new people!\nIsn't bowling for, like, grandparents?\nNot in this league! If you're looking to socialize with tons of young professionals in their 20s-30s-40s, this is the league for you.\nAre there any hidden costs?\nZero! Included in your registration of $69 (With discount code applied) you get:\n-6 weeks of coed social bowling (1-3 games each week)\n-Bowling shoe rentals and league organization\n-Trivia w/ prizes most weeks\n-FREE team T-Shirts if you sign up early!\nWhat are the dates?\nTuesday evenings: Jan 23, Jan 30, Feb 6, Feb 13, Feb 20, Feb 27\nSounds awesome, where do I sign up?!\nSay no more \u2013 click here for all the info you need!\nAll League Information : https://bit.ly/MilwaukeeBowling\n\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\nThe league is filling up, so sign up soon!!\\\n\\If you have any questions, email the league\n\ndirectly here: http://bit.ly/2nKHno7",
+                "location": {
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "",
+                        "addressRegion": "",
+                        "addressCountry": ""
+                    }
+                },
+                "image": "https://secure.meetupstatic.com/photos/event/d/b/b/600_517563515.webp",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "@type": "Event"
+            }
+        ]
+    },
+    {
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressLocality": "Milwaukee",
+                    "addressCountry": "us",
+                    "addressRegion": "WI",
+                    "@type": "PostalAddress"
+                }
+            }
+        },
+        "foundingDate": "2022-11-21T22:22:49.000Z",
+        "image": "https://secure.meetupstatic.com/photos/event/3/d/0/b/600_510675627.webp",
+        "sameAs": [],
+        "name": "Milwaukee Code and Coffee / Code and Brews",
         "url": "https://www.meetup.com/milwaukee-code-and-coffee/",
+        "@type": "Organization",
         "@context": "https://schema.org",
         "events": [
             {
+                "performer": "Milwaukee Code and Coffee / Code and Brews",
+                "startDate": "2024-01-10T23:00:00.000Z",
                 "@context": "https://schema.org",
+                "image": "https://secure.meetupstatic.com/photos/event/e/7/d/d/600_518159357.webp",
+                "organizer": {
+                    "url": "https://www.meetup.com/milwaukee-code-and-coffee/",
+                    "name": "Milwaukee Code and Coffee / Code and Brews",
+                    "@type": "Organization"
+                },
+                "@type": "Event",
                 "endDate": "2024-01-11T02:00:00.000Z",
+                "url": "https://www.meetup.com/milwaukee-code-and-coffee/events/298195281/",
                 "name": "January Code and Brews ",
                 "description": "January 10th will be the January Code + Brews! The event at The Explorium. VBA Software will provide the food. The explorium has buy one/get one drinks for this event.\n\nWe are excited to invite you to our upcoming networking and coding event. This gathering is designed to foster connections within our local tech community. Whether you are a seasoned professional, a hobbyist, or just getting your feet wet in the world of coding, there's a place for you here. The event will offer opportunities for both individual coding and collaborative projects, accommodating different styles and preferences. If you'd prefer to engage in insightful conversations and discussions, you will find plenty of fellow software developers eager to share their experiences and ideas. Our goal is to facilitate a relaxed environment where knowledge exchange, collaboration, and innovation are the natural outcomes. We look forward to seeing you there, and can't wait to see the magic that happens when our diverse community comes together.",
-                "startDate": "2024-01-10T23:00:00.000Z",
                 "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-                "organizer": {
-                    "@type": "Organization",
-                    "url": "https://www.meetup.com/milwaukee-code-and-coffee/",
-                    "name": "Milwaukee Code and Coffee / Code and Brews"
-                },
-                "performer": "Milwaukee Code and Coffee / Code and Brews",
-                "image": "https://secure.meetupstatic.com/photos/event/e/7/d/d/600_518159357.webp",
-                "url": "https://www.meetup.com/milwaukee-code-and-coffee/events/298195281/",
-                "@type": "Event",
                 "eventStatus": "https://schema.org/EventScheduled",
                 "location": {
                     "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "143 W St Paul Ave, Milwaukee, WI",
+                        "addressCountry": "us",
                         "addressRegion": "WI",
                         "addressLocality": "Milwaukee",
-                        "addressCountry": "us"
+                        "@type": "PostalAddress",
+                        "streetAddress": "143 W St Paul Ave, Milwaukee, WI"
                     },
                     "@type": "Place",
                     "name": "The Explorium Brewpub Third Ward"
@@ -97,59 +284,250 @@
         ]
     },
     {
-        "url": "https://www.meetup.com/techontap/",
-        "foundingDate": "2022-02-08T05:20:14.000Z",
+        "url": "https://www.meetup.com/milwaukee-cyber-security-for-control-systems/",
+        "@context": "https://schema.org",
+        "name": "Milwaukee Cyber Security for Control Systems",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Milwaukee",
+                    "addressRegion": "WI",
+                    "addressCountry": "us"
+                }
+            }
+        },
+        "@type": "Organization",
+        "sameAs": [],
+        "foundingDate": "2016-10-18T03:46:53.000Z",
+        "image": "https://secure.meetupstatic.com/photos/event/9/b/3/e/600_455199742.webp",
+        "events": []
+    },
+    {
+        "image": "https://secure.meetupstatic.com/photos/event/9/2/8/d/600_515377517.webp",
+        "sameAs": [],
+        "name": "Tech on Tap -Milwaukee's #1 IT Networking & Happy Hour Event",
         "@context": "https://schema.org",
         "address": {
             "location": {
                 "@type": "Place",
                 "address": {
-                    "addressRegion": "WI",
-                    "addressLocality": "Milwaukee",
                     "addressCountry": "us",
-                    "@type": "PostalAddress"
+                    "@type": "PostalAddress",
+                    "addressLocality": "Milwaukee",
+                    "addressRegion": "WI"
                 }
             }
         },
+        "foundingDate": "2022-02-08T05:20:14.000Z",
+        "url": "https://www.meetup.com/techontap/",
         "@type": "Organization",
-        "name": "Tech on Tap -Milwaukee's #1 IT Networking & Happy Hour Event",
-        "image": "https://secure.meetupstatic.com/photos/event/9/2/8/d/600_515377517.webp",
-        "sameAs": [],
         "events": []
     },
     {
+        "title": "Rising Tides Analytics",
+        "description": "Rising Tides Analytics",
+        "image": "https://cdn.evbstatic.com/s3-build/prod/1475200-rc2023-12-19_16.04-3940058/django/images/logos/eb_orange_on_white_1200x630.png",
+        "url": "https://www.eventbrite.com/org/52116468323?ref=eofblike",
+        "name": "Rising Tides Analytics",
+        "events": [
+            {
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Rising Tides Analytics",
+                    "url": "https://www.eventbrite.com/o/rising-tides-analytics-52116468323"
+                },
+                "@type": "Event",
+                "description": "Stop by to talk data and enjoy a drink at Boone & Crockett on Thursday, October 5th from 5-7pm, hosted by Rising Tides",
+                "startDate": "2023-10-05T17:00:00-0500",
+                "location": {
+                    "name": "Boone & Crockett",
+                    "geo": {
+                        "latitude": "43.0226917",
+                        "@type": "GeoCoordinates",
+                        "longitude": "-87.9064083"
+                    },
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "postalCode": "53204",
+                        "addressRegion": "WI",
+                        "streetAddress": "818 South Water Street",
+                        "addressLocality": "Milwaukee",
+                        "addressCountry": "US"
+                    }
+                },
+                "endDate": "2023-10-05T19:00:00-0500",
+                "name": "Analytics After Dark",
+                "url": "https://www.eventbrite.com/e/analytics-after-dark-tickets-713787336137",
+                "@context": "http://schema.org",
+                "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F590455959%2F311802913255%2F1%2Foriginal.20230905-150501?h=230&w=460&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C4320%2C2160&s=6c613c20bd6cf59a72b8af4ed3a5b219",
+                "offers": {
+                    "highPrice": "0.00",
+                    "lowPrice": "0.00",
+                    "url": "https://www.eventbrite.com/e/analytics-after-dark-tickets-713787336137",
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "USD"
+                }
+            },
+            {
+                "name": "Analytics After Dark - Q2 2023",
+                "endDate": "2023-06-28T19:00:00-0500",
+                "offers": {
+                    "url": "https://www.eventbrite.com/e/analytics-after-dark-q2-2023-tickets-648429458967",
+                    "highPrice": "0.00",
+                    "lowPrice": "0.00",
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "USD"
+                },
+                "startDate": "2023-06-28T17:00:00-0500",
+                "location": {
+                    "address": {
+                        "postalCode": "53203",
+                        "streetAddress": "313 North Plankinton Avenue",
+                        "@type": "PostalAddress",
+                        "addressCountry": "US",
+                        "addressLocality": "Milwaukee",
+                        "addressRegion": "WI"
+                    },
+                    "name": "Ward4 - Milwaukee Coworking",
+                    "@type": "Place",
+                    "geo": {
+                        "longitude": "-87.9120133",
+                        "latitude": "43.0341774",
+                        "@type": "GeoCoordinates"
+                    }
+                },
+                "@type": "Event",
+                "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F527394409%2F311802913255%2F1%2Foriginal.20230601-210647?h=230&w=460&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C4320%2C2160&s=9863e53bbe9c605b05bdbbf928809a4d",
+                "organizer": {
+                    "name": "Rising Tides Analytics",
+                    "@type": "Organization",
+                    "url": "https://www.eventbrite.com/o/rising-tides-analytics-52116468323"
+                },
+                "@context": "http://schema.org",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "description": "Analytics After Dark returns for Q2 in 2023 at",
+                "url": "https://www.eventbrite.com/e/analytics-after-dark-q2-2023-tickets-648429458967"
+            },
+            {
+                "location": {
+                    "name": "NorthSouth Club",
+                    "geo": {
+                        "latitude": "43.0296783",
+                        "longitude": "-87.90888210000001",
+                        "@type": "GeoCoordinates"
+                    },
+                    "@type": "Place",
+                    "address": {
+                        "streetAddress": "230 East Pittsburgh Avenue",
+                        "postalCode": "53204",
+                        "@type": "PostalAddress",
+                        "addressCountry": "US",
+                        "addressLocality": "Milwaukee",
+                        "addressRegion": "WI"
+                    }
+                },
+                "startDate": "2023-03-08T17:00:00-0600",
+                "name": "Analytics After Dark",
+                "endDate": "2023-03-08T19:00:00-0600",
+                "offers": {
+                    "url": "https://www.eventbrite.com/e/analytics-after-dark-tickets-523805675877",
+                    "highPrice": "0.00",
+                    "@type": "AggregateOffer",
+                    "lowPrice": "0.00",
+                    "priceCurrency": "USD"
+                },
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "organizer": {
+                    "url": "https://www.eventbrite.com/o/rising-tides-analytics-52116468323",
+                    "@type": "Organization",
+                    "name": "Rising Tides Analytics"
+                },
+                "description": "Analytics After Dark returns in 2023 at NorthSouth",
+                "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F431269079%2F311802913255%2F1%2Foriginal.20230124-175554?h=230&w=460&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C100%2C3200%2C1600&s=50a4d1fb988ce6c689f47d1e147758ce",
+                "@context": "http://schema.org",
+                "@type": "Event",
+                "url": "https://www.eventbrite.com/e/analytics-after-dark-tickets-523805675877"
+            },
+            {
+                "description": "Join Rising Tides Analytics for our data and analytics happy hour, Analytics After",
+                "startDate": "2022-09-22T17:00:00-0500",
+                "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F339718629%2F311802913255%2F1%2Foriginal.20220822-150014?h=230&w=460&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C21%2C594%2C297&s=a03ec88163d66fa4bef8ead0ec13043c",
+                "endDate": "2022-09-22T20:00:00-0500",
+                "@type": "Event",
+                "location": {
+                    "name": "Vendetta Coffee Bar",
+                    "address": {
+                        "addressCountry": "US",
+                        "postalCode": "53204",
+                        "addressLocality": "Milwaukee",
+                        "streetAddress": "524 S. 2nd St.",
+                        "@type": "PostalAddress",
+                        "addressRegion": "WI"
+                    },
+                    "geo": {
+                        "latitude": "43.0256681",
+                        "@type": "GeoCoordinates",
+                        "longitude": "-87.91236959999999"
+                    },
+                    "@type": "Place"
+                },
+                "name": "Analytics After Dark",
+                "url": "https://www.eventbrite.com/e/analytics-after-dark-tickets-406258258387",
+                "offers": {
+                    "url": "https://www.eventbrite.com/e/analytics-after-dark-tickets-406258258387",
+                    "lowPrice": "0.00",
+                    "highPrice": "0.00",
+                    "priceCurrency": "USD",
+                    "@type": "AggregateOffer"
+                },
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "@context": "http://schema.org",
+                "organizer": {
+                    "name": "Rising Tides Analytics",
+                    "@type": "Organization",
+                    "url": "https://www.eventbrite.com/o/rising-tides-analytics-52116468323"
+                }
+            }
+        ]
+    },
+    {
+        "description": "Our Data Meetups are an open-forum, open-door meeting where attendees drive the conversation following a Lean Coffee format.",
+        "image": null,
         "url": "https://www.eventbrite.com/cc/data-meetups-2662819",
         "title": "Data Meetups",
-        "description": "Our Data Meetups are an open-forum, open-door meeting where attendees drive the conversation following a Lean Coffee format.",
         "name": "Data Meetups",
         "events": [
             {
-                "startDate": "2024-01-25T15:00:00Z",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
                 "url": "https://www.eventbrite.com/e/data-meetup-data-tool-trends-current-and-future-state-tickets-774030424837",
-                "name": "Data Meetup - Data Tool Trends: Current and Future State",
+                "@context": "http://schema.org",
+                "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F655303349%2F184146591682%2F1%2Foriginal.20231207-232442?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=954072289ffbe22e94bd73bcf87d8cd3",
+                "startDate": "2024-01-25T15:00:00Z",
+                "endDate": "2024-01-25T16:00:00Z",
                 "location": {
-                    "@type": "Place",
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": "43.033998",
-                        "longitude": "-87.90780819999998"
-                    },
                     "address": {
                         "addressCountry": "US",
-                        "streetAddress": "301 North Broadway",
-                        "postalCode": "53202",
-                        "@type": "PostalAddress",
+                        "addressLocality": "Milwaukee",
                         "addressRegion": "WI",
-                        "addressLocality": "Milwaukee"
+                        "@type": "PostalAddress",
+                        "streetAddress": "301 North Broadway",
+                        "postalCode": "53202"
                     },
-                    "name": "Continuus Technologies"
+                    "@type": "Place",
+                    "name": "Continuus Technologies",
+                    "geo": {
+                        "latitude": "43.033998",
+                        "longitude": "-87.90780819999998",
+                        "@type": "GeoCoordinates"
+                    }
                 },
+                "name": "Data Meetup - Data Tool Trends: Current and Future State",
                 "@type": "Event",
-                "@context": "http://schema.org",
-                "description": "The Data Meetups are back! Join us and data peers to discuss how to encourage a data driven culture among teams and with decision-makers.",
-                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-                "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F655303349%2F184146591682%2F1%2Foriginal.20231207-232442?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=954072289ffbe22e94bd73bcf87d8cd3",
-                "endDate": "2024-01-25T16:00:00Z"
+                "description": "The Data Meetups are back! Join us and data peers to discuss how to encourage a data driven culture among teams and with decision-makers."
             }
         ]
     }

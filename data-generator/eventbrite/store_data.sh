@@ -23,7 +23,12 @@ while IFS= read -r line; do
 	attr_tags+=$(echo $response | hq '{image: meta[property="og:image"]  | @(content)}'),
 	attr_tags+=$(echo $response | hq '{url: meta[property="og:url"] | @(content)}')]
 	organizations=$(echo $attr_tags | xq 'add | [.]')
-	events=$(echo $script_tags | xq '.scripts[] | [fromjson] ')
+
+	events=$(echo $script_tags | xq '.scripts[] | fromjson | select(type == "array")')
+  isEmpty=$([ -z "$events" ] && echo "Empty" || echo "Not empty")
+  if [ "$isEmpty" = 'Empty' ]; then
+    events=$(echo $script_tags | xq '.scripts[] | [fromjson]')
+  fi
 
   echo $organizations > "$DATA_DIR/$name/organizations.json"
 	echo $events > "$DATA_DIR/$name/events.json"
