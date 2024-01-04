@@ -2,7 +2,7 @@
 
 if [ "$DATA_ENV" = 'production' ]; then
     # production mode
-    export DATA_DIR=../data/meetup/
+    export DATA_DIR='../data/meetup/'
   else
     # dev mode
     export 'DATA_DIR'='/app/data/meetup'
