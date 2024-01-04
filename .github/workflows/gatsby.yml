@@ -57,6 +57,7 @@ jobs:
         run: |
           export DATA_ENV=production
           bash ./fetch_and_store.sh
+          ls -al ../data/eventbrite
       - name: Get the meetup data
         working-directory: ./data-generator/meetup
         run: |
