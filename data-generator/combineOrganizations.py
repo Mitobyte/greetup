@@ -25,7 +25,23 @@ for dir_path in paths:
         if not events:
             organization['events'] = []
         else:
-            organization['events'] = events
+            convertedEvents = []
+            for event in events:
+                convertedEvent = {}
+                convertedEvent['name'] = event['name']
+                convertedEvent['description'] = event['description']
+                convertedEvent['startDate'] = event['startDate']
+                convertedEvent['endDate'] = event['endDate']
+
+                # handle nested location in eventbrite
+                if event.get('location') is None and event.get('address') is not None:
+                    convertedEvent['location'] = event['address']['location']
+                else:
+                    convertedEvent['location'] = event['location']
+
+                convertedEvents.append(convertedEvent)
+
+            organization['events'] = convertedEvents
 
         organizations.append(organization)
 
