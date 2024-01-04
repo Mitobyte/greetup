@@ -63,6 +63,7 @@ jobs:
         run: |
           export DATA_ENV=production
           bash ./fetch_and_store.sh
+          ls -al ../data/meetup
       - name: Combine the data
         working-directory: ./data-generator
         run: |
