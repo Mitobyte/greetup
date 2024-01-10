@@ -43,8 +43,6 @@ jobs:
         uses: ATiltedTree/setup-rust@v1
         with:
           rust-version: stable
-      - name: Build | Compile
-        run: cargo check
       - name: Install cargo-html-query from crates.io
         uses: baptiste0928/cargo-install@v2
         with:
