@@ -33,7 +33,7 @@ export default function Home({data}) {
       <Grid container spacing={2}>
     {
       JSONData.map((organization, index) => {
-        return <Grid item xs={6}>
+        return <Grid item xs={12} md={6}>
           <OrganizationsPanel key={`org-${index}`} organization={organization} />
         </Grid>
       })
