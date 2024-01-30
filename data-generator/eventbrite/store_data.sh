@@ -27,10 +27,12 @@ while IFS= read -r line; do
 	events=$(echo $script_tags | xq '.scripts[] | fromjson | select(type == "array")')
   isEmpty=$([ -z "$events" ] && echo "Empty" || echo "Not empty")
   if [ "$isEmpty" = 'Empty' ]; then
-    events=$(echo $script_tags | xq '.scripts[] | [fromjson]')
+    echo "No events found for $name"
+    echo "[]" > "$DATA_DIR/$name/events.json"
+  else
+    echo $events > "$DATA_DIR/$name/events.json"
   fi
 
   echo $organizations > "$DATA_DIR/$name/organizations.json"
-	echo $events > "$DATA_DIR/$name/events.json"
 
 done
