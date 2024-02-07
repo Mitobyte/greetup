@@ -47,7 +47,7 @@ const EventCard = ({ event }) => {
             color="#FFC52F"
             gutterBottom
           >
-            {location.address.streetAddress}
+            {location?.address?.streetAddress}
           </Typography>
 
           <Typography
