@@ -2,7 +2,7 @@
 #
 # To get started with Gatsby see: https://www.gatsbyjs.com/docs/quick-start/
 #
-name: Deploy Gatsby site to Pages
+name: Build and Deploy Gatsby site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -95,7 +95,7 @@ jobs:
       - name: Build with Gatsby
         working-directory: ./web
         env:
-          PREFIX_PATHS: 'true'
+          PREFIX_PATHS: 'false'
         run: yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

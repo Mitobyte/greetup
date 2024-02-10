@@ -9,7 +9,7 @@ const path = require('path');
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: "/greetup",
+  pathPrefix: "/",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -21,7 +21,8 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-material-ui`
+    `gatsby-plugin-material-ui`,
+    `gatsby-plugin-react-helmet`,
   ],
 };
 
