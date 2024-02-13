@@ -60,7 +60,7 @@ const EventCard = ({ event }) => {
           </Typography>
         </CardContent>
         <CardActions>
-          <a href={url} target='_blank'>
+          <a href={location.url} target='_blank'>
             <Typography
               variant="h6"
               align="Left"
