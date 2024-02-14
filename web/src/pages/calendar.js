@@ -1,36 +1,76 @@
-import * as React from "react"
+import React, {useEffect, useState} from "react"
 import {graphql} from "gatsby";
 import Grid from '@mui/material/Grid';
-import {Header} from "../components/Header";
-import JSONData from "../data/combined.json";
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
+import JSONData from "../data/combined.json";
+import {Header} from "../components/Header";
+import OrganizationFilter from "../components/OrganizationFilter";
+import Popper from "@mui/material/Popper";
+import Box from "@mui/material/Box";
 
 export default function CalendarPage({data}) {
+  const [organizations, setOrganizations] = useState([]);
+  const [events, setEvents] = useState([]);
+  const [popoverAnchor, setPopoverAnchor] = useState(undefined);
+  const [currentEvent, setCurrentEvent] = useState(undefined);
 
-  const events = JSONData.map((organization) => {
-    return organization.events.map((event) => {
-      return {
-        title: event.name,
-        start: Date.parse(event.startDate),
-        end: Date.parse(event.endDate),
-        allDay: false,
-        resource: organization.name,
-        color: "purple",
-      }
-    })
-  }).flat();
+  const getEvents = (inputOrganizations) => {
+    return inputOrganizations.map((organization) => {
+      return organization.events.map((event) => {
+        const url = event.url || event.location?.url || '';
+        return {
+          title: event.name,
+          start: Date.parse(event.startDate),
+          end: Date.parse(event.endDate),
+          allDay: false,
+          url,
+          resource: organization.name,
+          color: "purple",
+        }
+      })
+    }).flat();
+  }
+
+  useEffect(() => {
+    setOrganizations(JSONData);
+  }, []);
+
+  useEffect(() => {
+    const tmpEvents = getEvents(organizations);
+    setEvents(tmpEvents);
+  }, [organizations]);
+
+  const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
+    const tmpEvents = getEvents(selectedOrganizations);
+    setEvents(tmpEvents);
+  }
 
   const handleEventClick = (clickInfo) => {
-    alert('Event: ' + clickInfo.event.title);
+    const {event} = clickInfo;
+    if (event.url !== '') {
+      window.open(event.url);
+    }
+
+    clickInfo.jsEvent.preventDefault();
+  }
+
+  const handleMouseEnter = (eventInfo) => {
+    setPopoverAnchor(eventInfo.el);
+    setCurrentEvent(eventInfo.event);
+  }
+
+  const handleMouseLeave = (eventInfo) => {
+    setPopoverAnchor(undefined);
+    setCurrentEvent(undefined);
   }
 
   const renderEventContent = (eventInfo) => {
     return (
       <div>
-        <b>{eventInfo.startTime}</b>
+        <b>{eventInfo.timeText}</b>
         <i>{eventInfo.event.title}</i>
       </div>
     )
@@ -43,7 +83,14 @@ export default function CalendarPage({data}) {
          <a href='/mke_tech_events.ics' download='calendar.ics'>Download ics file</a>
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid item xs={4}>
+          <OrganizationFilter
+            organizations={organizations}
+            selectedOrganizationsChanged={handleSelectedOrganizationsChanged}
+          />
+        </Grid>
+
+        <Grid item xs={8}>
           <FullCalendar
             plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
             headerToolbar={{
@@ -61,9 +108,18 @@ export default function CalendarPage({data}) {
             events={events}
             eventClick={handleEventClick}
             eventContent={renderEventContent}
+            eventMouseEnter={handleMouseEnter}
+            eventMouseLeave={handleMouseLeave}
           />
         </Grid>
       </Grid>
+
+      <Popper open={popoverAnchor !== undefined} anchorEl={popoverAnchor}>
+        <Box sx={{ border: 1, p: 1, bgcolor: 'black', color: 'white' }}>
+          <b>{currentEvent?.extendedProps.resource}</b><br/>
+          {currentEvent?.title}
+        </Box>
+      </Popper>
     </Header>
   );
 }
