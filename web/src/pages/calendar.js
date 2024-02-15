@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react"
 import {graphql} from "gatsby";
 import Grid from '@mui/material/Grid';
+import Popover from "@mui/material/Popover";
+import Typography from "@mui/material/Typography";
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
@@ -8,8 +10,6 @@ import interactionPlugin from '@fullcalendar/interaction'
 import JSONData from "../data/combined.json";
 import {Header} from "../components/Header";
 import OrganizationFilter from "../components/OrganizationFilter";
-import Popper from "@mui/material/Popper";
-import Box from "@mui/material/Box";
 
 export default function CalendarPage({data}) {
   const [organizations, setOrganizations] = useState([]);
@@ -76,6 +76,9 @@ export default function CalendarPage({data}) {
     )
   }
 
+  const open = Boolean(popoverAnchor);
+  const id = open ? 'simple-popover' : undefined;
+
   return (
     <Header data={data}>
       <Grid container>
@@ -109,17 +112,24 @@ export default function CalendarPage({data}) {
             eventClick={handleEventClick}
             eventContent={renderEventContent}
             eventMouseEnter={handleMouseEnter}
-            eventMouseLeave={handleMouseLeave}
           />
         </Grid>
       </Grid>
 
-      <Popper open={popoverAnchor !== undefined} anchorEl={popoverAnchor}>
-        <Box sx={{ border: 1, p: 1, bgcolor: 'black', color: 'white' }}>
+      <Popover
+        id={id}
+        open={open}
+        anchorEl={popoverAnchor}
+        onClose={handleMouseLeave}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+      >
           <b>{currentEvent?.extendedProps.resource}</b><br/>
-          {currentEvent?.title}
-        </Box>
-      </Popper>
+          {currentEvent?.title}<br/>
+          <a href={currentEvent?.url} target='_blank'>More Info</a>
+      </Popover>
     </Header>
   );
 }

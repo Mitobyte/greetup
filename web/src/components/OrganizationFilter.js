@@ -26,7 +26,7 @@ const OrganizationFilter = ({ organizations, selectedOrganizationsChanged }) => 
       <Grid item xs={12}>
         {organizations.map((organization, index) => {
           return (
-            <Grid item xs={12}>
+            <Grid key={`organization-${index}`}item xs={12}>
               <label>
                 <input
                   type='checkbox'
