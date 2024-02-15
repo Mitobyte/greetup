@@ -67,6 +67,10 @@ jobs:
         working-directory: ./data-generator
         run: |
           python3 combineOrganizations.py
+      - name: Generage ics file
+        working-directory: ./data-generator
+        run: |
+          python3 generateIcs.py
       - name: Setup Node
         uses: actions/setup-node@v3
         with:

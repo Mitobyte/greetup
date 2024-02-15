@@ -6,11 +6,13 @@ import {Header} from "../components/Header";
 import {graphql} from "gatsby";
 
 export default function Home({data}) {
+  const organizations = JSONData.sort((a, b) => a.name.localeCompare(b.name));
+
   return (
     <Header data={data}>
       <Grid container spacing={2}>
         {
-          JSONData.map((organization, index) => {
+          organizations.map((organization, index) => {
             return <Grid item xs={12} md={6}>
               <OrganizationsPanel key={`org-${index}`} organization={organization} />
             </Grid>

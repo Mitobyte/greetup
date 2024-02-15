@@ -35,7 +35,7 @@ export default function CalendarPage({data}) {
   }
 
   useEffect(() => {
-    setOrganizations(JSONData);
+    setOrganizations(JSONData.sort((a, b) => a.name.localeCompare(b.name)));
   }, []);
 
   useEffect(() => {
