@@ -63,6 +63,9 @@ jobs:
           export DATA_ENV=production
           bash ./fetch_and_store.sh
           ls -al ../data/meetup
+      - name: Install ics
+        run: |
+          pip3 install ics
       - name: Combine the data
         working-directory: ./data-generator
         run: |
