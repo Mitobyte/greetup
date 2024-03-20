@@ -32,6 +32,7 @@ for dir_path in paths:
                 convertedEvent['description'] = event['description']
                 convertedEvent['startDate'] = event['startDate']
                 convertedEvent['endDate'] = event['endDate']
+                convertedEvent['url'] = event['url']
 
                 # handle nested location in eventbrite
                 if event.get('location') is None and event.get('address') is not None:
