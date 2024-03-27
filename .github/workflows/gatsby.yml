@@ -51,18 +51,12 @@ jobs:
         uses: baptiste0928/cargo-install@v2
         with:
           crate: xq
-      - name: Get the eventbrite data
-        working-directory: ./data-generator/eventbrite
+      - name: Get the group data
+        working-directory: ./data-generator/groups
         run: |
           export DATA_ENV=production
           bash ./fetch_and_store.sh
-          ls -al ../data/eventbrite
-      - name: Get the meetup data
-        working-directory: ./data-generator/meetup
-        run: |
-          export DATA_ENV=production
-          bash ./fetch_and_store.sh
-          ls -al ../data/meetup
+          ls -al ../data
       - name: Install ics
         run: |
           pip3 install ics
