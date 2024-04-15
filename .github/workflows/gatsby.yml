@@ -39,10 +39,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup | Rust
-        uses: ATiltedTree/setup-rust@v1
+      - name: Install minimal stable
+        uses: actions-rs/toolchain@v1
         with:
-          rust-version: stable
+          profile: minimal
+          toolchain: stable
       - name: Install cargo-html-query from crates.io
         uses: baptiste0928/cargo-install@v2
         with:
