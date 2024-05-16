@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react"
 import {graphql} from "gatsby";
 import Grid from '@mui/material/Grid';
 import Popover from "@mui/material/Popover";
-import Typography from "@mui/material/Typography";
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'

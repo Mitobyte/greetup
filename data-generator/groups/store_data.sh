@@ -17,9 +17,9 @@ while IFS= read -r line; do
   echo $type
 
   mkdir -p "$DATA_DIR/$name"
+  response=$(curl -s $url)
 
   if [ "$type" == "meetup" ]; then
-    response=$(curl -s $url)
     script_tags=$(echo $response | hq '{scripts: script[type="application/ld+json"]  | [@text]}')
     organizations=$(echo $script_tags | xq '[.scripts[]  | fromjson | select(type == "object" and .["@type"]=="Organization" and .["name"]!="Meetup")]')
     events=$(echo $script_tags | xq '.scripts[]  | fromjson | select(type == "array")')
@@ -29,7 +29,6 @@ while IFS= read -r line; do
   fi
 
   if [ "$type" == "eventbrite" ]; then
-  	response=$(curl -s $url)
   	script_tags=$(echo $response | hq '{scripts: script[type="application/ld+json"]  | [@text]}')
   	attr_tags=[$(echo $response | hq '{title: meta[property="og:title"]  | @(content)}'),
   	attr_tags+=$(echo $response | hq '{description: meta[property="og:description"]  | @(content)}'),
@@ -49,4 +48,12 @@ while IFS= read -r line; do
     echo $organizations > "$DATA_DIR/$name/organizations.json"
   fi
 
+  if [ "$type" == "linkedin" ]; then
+    script_tags=$(echo $response | hq '{scripts: script[type="application/ld+json"]  | [@text]}')
+    organizations=$(echo $script_tags | xq '[.scripts[]  | fromjson | select(type == "object" and .["@type"]=="Organization" and .["name"]!="Meetup")]')
+    events=$(echo $script_tags | xq '.scripts[]  | fromjson | select(type == "array")')
+
+    echo $organizations > "$DATA_DIR/$name/organizations.json"
+    echo $events > "$DATA_DIR/$name/events.json"
+  fi
 done
