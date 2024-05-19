@@ -57,9 +57,9 @@ while IFS= read -r line; do
       else
         echo $events > "$DATA_DIR/$name/events.json"
       fi
-
-      echo $organizations > "$DATA_DIR/$name/organizations.json"
     fi
+    
+    echo $organizations > "$DATA_DIR/$name/organizations.json"
   fi
 
   if [ "$type" == "linkedin" ]; then
@@ -73,7 +73,7 @@ while IFS= read -r line; do
       organizations=$(echo $script_tags | xq '[.scripts[]  | fromjson | select(type == "object" and .["@type"]=="Organization" and .["name"]!="Meetup")]')
       events=$(echo $script_tags | xq '.scripts[]  | fromjson | select(type == "array")')
     fi
-    
+
     echo $organizations > "$DATA_DIR/$name/organizations.json"
     echo $events > "$DATA_DIR/$name/events.json"
   fi
