@@ -1,163 +1,135 @@
 [
     {
+        "description": "Rising Tides Analytics",
+        "title": "Rising Tides Analytics",
+        "image": "https://cdn.evbstatic.com/s3-build/prod/1626170-rc2024-05-16_16.04-36b671a/django/images/logos/eb_orange_on_white_1200x630.png",
+        "url": "https://www.eventbrite.com/org/52116468323?ref=eofblike",
+        "name": "Rising Tides Analytics",
+        "events": []
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "foundingDate": "2023-11-16T04:54:39.000Z",
+        "image": "https://secure.meetupstatic.com/photos/event/d/7/0/b/600_518455051.webp",
+        "address": {
+            "location": {
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "us",
+                    "addressRegion": "WI",
+                    "addressLocality": "Milwaukee"
+                },
+                "@type": "Place"
+            }
+        },
+        "sameAs": [],
+        "name": "AWS Milwaukee User Group",
+        "url": "https://www.meetup.com/milwaukee-cloud-computing-meetup-group/",
+        "events": []
+    },
+    {
+        "sameAs": [],
+        "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/",
+        "image": "https://secure.meetupstatic.com/photos/event/7/4/c/7/600_517589895.webp",
+        "foundingDate": "2022-04-12T17:58:57.000Z",
         "address": {
             "location": {
                 "@type": "Place",
                 "address": {
                     "addressRegion": "WI",
-                    "addressLocality": "Milwaukee",
                     "@type": "PostalAddress",
-                    "addressCountry": "us"
+                    "addressCountry": "us",
+                    "addressLocality": "Milwaukee"
                 }
             }
         },
-        "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/",
         "@type": "Organization",
+        "@context": "https://schema.org",
         "name": "Milwaukee Bitcoin Meetup",
-        "sameAs": [],
-        "@context": "https://schema.org",
-        "foundingDate": "2022-04-12T17:58:57.000Z",
-        "image": "https://secure.meetupstatic.com/photos/event/7/4/c/7/600_517589895.webp",
         "events": [
             {
                 "name": "Socratic Seminar",
-                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!",
-                "startDate": "2024-02-21T00:00:00.000Z",
-                "endDate": "2024-02-21T03:00:00.000Z",
+                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!\n\nTransfer is a proud venue sponsor of the Milwaukee Bitcoin Meetup. Please place your orders at the bar and then proceed promptly to the event space, where food orders will arrive when ready. By doing so, we can ensure that the bar and restaurant areas remain easily accessible for all other guests. Thank you.",
+                "startDate": "2024-05-28T23:00:00.000Z",
+                "endDate": "2024-05-29T02:00:00.000Z",
+                "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/events/300484607/",
                 "location": {
-                    "address": {
-                        "addressCountry": "us",
-                        "streetAddress": "101 W Mitchell St, Milwaukee, WI",
-                        "addressRegion": "WI",
-                        "addressLocality": "Milwaukee",
-                        "@type": "PostalAddress"
-                    },
-                    "name": "Transfer Pizzeria Caf\u00e9",
-                    "@type": "Place"
-                }
-            },
-            {
-                "name": "Socratic Seminar",
-                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!",
-                "startDate": "2024-03-19T23:00:00.000Z",
-                "endDate": "2024-03-20T02:00:00.000Z",
-                "location": {
-                    "@type": "Place",
-                    "name": "Transfer Pizzeria Caf\u00e9",
-                    "address": {
-                        "addressLocality": "Milwaukee",
-                        "streetAddress": "101 W Mitchell St, Milwaukee, WI",
-                        "addressRegion": "WI",
-                        "addressCountry": "us",
-                        "@type": "PostalAddress"
-                    }
-                }
-            },
-            {
-                "name": "Socratic Seminar",
-                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!",
-                "startDate": "2024-04-16T23:00:00.000Z",
-                "endDate": "2024-04-17T02:00:00.000Z",
-                "location": {
-                    "name": "Transfer Pizzeria Caf\u00e9",
                     "@type": "Place",
                     "address": {
                         "addressRegion": "WI",
                         "addressCountry": "us",
                         "@type": "PostalAddress",
-                        "streetAddress": "101 W Mitchell St, Milwaukee, WI",
-                        "addressLocality": "Milwaukee"
-                    }
-                }
-            },
-            {
-                "name": "Socratic Seminar",
-                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!",
-                "startDate": "2024-05-21T23:00:00.000Z",
-                "endDate": "2024-05-22T02:00:00.000Z",
-                "location": {
-                    "@type": "Place",
-                    "name": "Transfer Pizzeria Caf\u00e9",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressRegion": "WI",
                         "addressLocality": "Milwaukee",
-                        "addressCountry": "us",
                         "streetAddress": "101 W Mitchell St, Milwaukee, WI"
+                    },
+                    "name": "Transfer Pizzeria Caf\u00e9"
+                }
+            },
+            {
+                "name": "Socratic Seminar",
+                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!\n\nTransfer is a proud venue sponsor of the Milwaukee Bitcoin Meetup. Please place your orders at the bar and then proceed promptly to the event space, where food orders will arrive when ready. By doing so, we can ensure that the bar and restaurant areas remain easily accessible for all other guests. Thank you.",
+                "startDate": "2024-06-26T23:00:00.000Z",
+                "endDate": "2024-06-27T02:00:00.000Z",
+                "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/events/300254908/",
+                "location": {
+                    "address": {
+                        "addressCountry": "us",
+                        "streetAddress": "101 W Mitchell St, Milwaukee, WI",
+                        "addressLocality": "Milwaukee",
+                        "@type": "PostalAddress",
+                        "addressRegion": "WI"
+                    },
+                    "@type": "Place",
+                    "name": "Transfer Pizzeria Caf\u00e9"
+                }
+            },
+            {
+                "name": "Socratic Seminar",
+                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!\n\nTransfer is a proud venue sponsor of the Milwaukee Bitcoin Meetup. Please place your orders at the bar and then proceed promptly to the event space, where food orders will arrive when ready. By doing so, we can ensure that the bar and restaurant areas remain easily accessible for all other guests. Thank you.",
+                "startDate": "2024-07-23T23:00:00.000Z",
+                "endDate": "2024-07-24T02:00:00.000Z",
+                "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/events/qphnktygckbfc/",
+                "location": {
+                    "name": "Transfer Pizzeria Caf\u00e9",
+                    "@type": "Place",
+                    "address": {
+                        "addressLocality": "Milwaukee",
+                        "streetAddress": "101 W Mitchell St, Milwaukee, WI",
+                        "addressCountry": "us",
+                        "@type": "PostalAddress",
+                        "addressRegion": "WI"
+                    }
+                }
+            },
+            {
+                "name": "Socratic Seminar",
+                "description": "You're invited to our Socratic Seminar Meetup! This event is designed for dynamic and engaging discussions centered around Bitcoin. Modeled after Socrates' method of inquiry, we'll foster an open environment where everyone's voice is valued. Through thought-provoking questions and shared insights, we aim to explore diverse perspectives, challenge ideas, and deepen our understanding together. This meetup is perfect for those eager to enhance their critical thinking skills or simply engage in stimulating conversation. The main goal of a Socratic Seminar is not to debate or argue but to deeply explore ideas, understand different perspectives, and collaboratively construct meaning from specific Bitcoin-related text or topic at hand. Join us for an interactive and respectful dialogue where everyone's contributions shape our collective exploration of ideas!\n\nTransfer is a proud venue sponsor of the Milwaukee Bitcoin Meetup. Please place your orders at the bar and then proceed promptly to the event space, where food orders will arrive when ready. By doing so, we can ensure that the bar and restaurant areas remain easily accessible for all other guests. Thank you.",
+                "startDate": "2024-08-27T23:00:00.000Z",
+                "endDate": "2024-08-28T02:00:00.000Z",
+                "url": "https://www.meetup.com/milwaukee-bitcoin-meetup/events/qphnktygclbkc/",
+                "location": {
+                    "@type": "Place",
+                    "name": "Transfer Pizzeria Caf\u00e9",
+                    "address": {
+                        "addressRegion": "WI",
+                        "addressLocality": "Milwaukee",
+                        "addressCountry": "us",
+                        "streetAddress": "101 W Mitchell St, Milwaukee, WI",
+                        "@type": "PostalAddress"
                     }
                 }
             }
         ]
     },
     {
-        "@type": "Organization",
-        "address": {
-            "location": {
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Milwaukee",
-                    "addressRegion": "WI",
-                    "addressCountry": "us"
-                },
-                "@type": "Place"
-            }
-        },
-        "name": "Miltown Game Developers",
         "@context": "https://schema.org",
-        "image": "https://secure.meetupstatic.com/photos/event/6/5/6/c/600_477385964.webp",
-        "url": "https://www.meetup.com/miltown-game-developers/",
-        "foundingDate": "2009-01-20T02:01:28.000Z",
         "sameAs": [
-            "https://www.facebook.com/groups/MiltownGameDevelopers",
-            "https://discord.gg/NJfVrK3"
+            "http://twitter.com/milwaukeeagile/",
+            "http://www.linkedin.com/groups?mostPopular=&gid=3048172"
         ],
-        "events": [
-            {
-                "name": "Saturday Workgroup (Virtual)",
-                "description": "Let's hang out and work on our games online! Bring a coffee and your latest project if you'd like to share.\n\nWe're meeting on Discord for it's better video sharing capabilities. If you don't already have an account, no worries!, you'll be prompted to provide one upon joining the channel.\n\nHere's our typical agenda:\n1. Idle Chatter\n2. Area Events and Happenings\n3. Scheduling Presentations (making sure all attendees who want to present have time)\n4. Presentations\n\nWe like to take screenshots of the presentations to post here on Meetup.com, so others get a sense of what we do and the cool projects that come through here. Screenshots are attributed with the name of the work (as best known) and the presenter's name or online handle, as per their preference. We're guessing that if you're wanting to show off your projects in the meetup, it isn't a stretch to have a screenshot posted here on the site as well. BUT! If you'd rather not have your work posted on Meetup.com, or you have another concern, please let a host know and we'll accommodate you as best we can.",
-                "startDate": "2024-02-10T17:00:00.000Z",
-                "endDate": "2024-02-10T19:00:00.000Z",
-                "location": {
-                    "url": "https://www.meetup.com/miltown-game-developers/events/298694666/",
-                    "@type": "VirtualLocation"
-                }
-            },
-            {
-                "name": "Saturday Workgroup (Virtual)",
-                "description": "Let's hang out and work on our games online! Bring a coffee and your latest project if you'd like to share.\n\nWe're meeting on Discord for it's better video sharing capabilities. If you don't already have an account, no worries!, you'll be prompted to provide one upon joining the channel.\n\nHere's our typical agenda:\n1. Idle Chatter\n2. Area Events and Happenings\n3. Scheduling Presentations (making sure all attendees who want to present have time)\n4. Presentations\n\nWe like to take screenshots of the presentations to post here on Meetup.com, so others get a sense of what we do and the cool projects that come through here. Screenshots are attributed with the name of the work (as best known) and the presenter's name or online handle, as per their preference. We're guessing that if you're wanting to show off your projects in the meetup, it isn't a stretch to have a screenshot posted here on the site as well. BUT! If you'd rather not have your work posted on Meetup.com, or you have another concern, please let a host know and we'll accommodate you as best we can.",
-                "startDate": "2024-02-24T17:00:00.000Z",
-                "endDate": "2024-02-24T19:00:00.000Z",
-                "location": {
-                    "url": "https://www.meetup.com/miltown-game-developers/events/dkgntsygcdbgc/",
-                    "@type": "VirtualLocation"
-                }
-            },
-            {
-                "name": "Saturday Workgroup (Virtual)",
-                "description": "Let's hang out and work on our games online! Bring a coffee and your latest project if you'd like to share.\n\nWe're meeting on Discord for it's better video sharing capabilities. If you don't already have an account, no worries!, you'll be prompted to provide one upon joining the channel.\n\nHere's our typical agenda:\n1. Idle Chatter\n2. Area Events and Happenings\n3. Scheduling Presentations (making sure all attendees who want to present have time)\n4. Presentations\n\nWe like to take screenshots of the presentations to post here on Meetup.com, so others get a sense of what we do and the cool projects that come through here. Screenshots are attributed with the name of the work (as best known) and the presenter's name or online handle, as per their preference. We're guessing that if you're wanting to show off your projects in the meetup, it isn't a stretch to have a screenshot posted here on the site as well. BUT! If you'd rather not have your work posted on Meetup.com, or you have another concern, please let a host know and we'll accommodate you as best we can.",
-                "startDate": "2024-03-09T17:00:00.000Z",
-                "endDate": "2024-03-09T19:00:00.000Z",
-                "location": {
-                    "@type": "VirtualLocation",
-                    "url": "https://www.meetup.com/miltown-game-developers/events/dkgntsygcfbmb/"
-                }
-            },
-            {
-                "name": "Saturday Workgroup (Virtual)",
-                "description": "Let's hang out and work on our games online! Bring a coffee and your latest project if you'd like to share.\n\nWe're meeting on Discord for it's better video sharing capabilities. If you don't already have an account, no worries!, you'll be prompted to provide one upon joining the channel.\n\nHere's our typical agenda:\n1. Idle Chatter\n2. Area Events and Happenings\n3. Scheduling Presentations (making sure all attendees who want to present have time)\n4. Presentations\n\nWe like to take screenshots of the presentations to post here on Meetup.com, so others get a sense of what we do and the cool projects that come through here. Screenshots are attributed with the name of the work (as best known) and the presenter's name or online handle, as per their preference. We're guessing that if you're wanting to show off your projects in the meetup, it isn't a stretch to have a screenshot posted here on the site as well. BUT! If you'd rather not have your work posted on Meetup.com, or you have another concern, please let a host know and we'll accommodate you as best we can.",
-                "startDate": "2024-03-23T16:00:00.000Z",
-                "endDate": "2024-03-23T18:00:00.000Z",
-                "location": {
-                    "@type": "VirtualLocation",
-                    "url": "https://www.meetup.com/miltown-game-developers/events/dkgntsygcfbfc/"
-                }
-            }
-        ]
-    },
-    {
-        "image": "https://secure.meetupstatic.com/photos/event/7/e/5/2/600_469232338.webp",
-        "@type": "Organization",
-        "name": "Tech MKE - Milwaukee's Full Stack Meetup Group",
+        "image": "https://secure.meetupstatic.com/photos/event/b/e/1/0/600_515388656.webp",
+        "name": "Milwaukee Agile",
         "address": {
             "location": {
                 "@type": "Place",
@@ -169,96 +141,45 @@
                 }
             }
         },
-        "foundingDate": "2011-11-28T17:40:33.000Z",
-        "url": "https://www.meetup.com/techmke/",
-        "sameAs": [
-            "http://twitter.com/web414/",
-            "http://www.linkedin.com/groups?gid=57006",
-            "http://www.web414.com"
-        ],
-        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.meetup.com/milwaukee-agile/",
+        "foundingDate": "2009-05-19T04:35:14.000Z",
         "events": []
     },
     {
+        "@context": "https://schema.org",
+        "image": "https://secure.meetupstatic.com/photos/event/9/2/8/d/600_515377517.webp",
+        "sameAs": [],
         "address": {
             "location": {
                 "@type": "Place",
                 "address": {
-                    "addressRegion": "WI",
                     "addressLocality": "Milwaukee",
+                    "addressRegion": "WI",
                     "@type": "PostalAddress",
                     "addressCountry": "us"
                 }
             }
         },
-        "@context": "https://schema.org",
         "@type": "Organization",
-        "sameAs": [],
-        "image": "https://secure.meetupstatic.com/photos/event/c/9/6/f/600_475131567.webp",
-        "url": "https://www.meetup.com/the-milwaukee-product-brew/",
-        "name": "The Milwaukee Product Brew",
-        "foundingDate": "2018-09-18T22:41:42.000Z",
+        "foundingDate": "2022-02-08T05:20:14.000Z",
+        "url": "https://www.meetup.com/techontap/",
+        "name": "Tech on Tap -Milwaukee's #1 IT Networking & Happy Hour Event",
         "events": [
             {
-                "name": "AI: Transforming Service Management with Herzum",
-                "description": "Artificial Intelligence is changing what customers expect and how companies do business. Join us for a unique experience organized by Herzum, your Atlassian Cloud and ITSM specialist partner. Herzum's experts will delve into the transformative impact of AI on ITSM and customer service.\n\nThis event, designed to foster camaraderie among professionals in the tech world, will be an informal session where we delve into the future of Atlassian and AI.\n\n**Agenda:**\n\n1. Welcome and Registration\n2. Introduction: AI and the Future of Service Management\n3. Panel Discussion: AI Transformation Strategies\n4. Open Session: Questions and Answers\n5. Networking and Camaraderie\n\n**Event Details:**\n\n* Date: February 8th, 2024\n* Time: 4:00 pm\n* Location: Porter Kitchen & Deck\n* Limited Seats: Register Now!\n\nAt Herzum, we understand the importance of preparing for changes in the tech landscape. We position this event as an opportunity to discover how our expertise and knowledge can guide you through digital transformation. Join us and uncover your company's potential in a world beyond traditional support.\n\n*We look forward to sharing an enriching evening with you as we explore the future of technology in your organization together!*",
-                "startDate": "2024-02-08T22:00:00.000Z",
-                "endDate": "2024-02-09T00:00:00.000Z",
+                "name": "MAY TECH ON TAP @ VENNTURE BREW CO - BROOKFIELD",
+                "description": "## Time & Location\n\nMay 23, 2024, 4:30 PM \u2013 7:30 PM\nVennture Brew Co., 2970 N Brookfield Rd, Brookfield, WI 53045, USA\n\n## About the event\n\n**MAY TECH ON TAP - Presented by ValorTech**\nJoin us for our May installment of Tech on Tap as we visit Vennture Bre Co's BRAND NEW location in Brookfield!\n\n**Guest Speaker - Lena DeLaet: Director, Summerfest Tech**\nLena leads Milwaukee World Festival's efforts to produce the Midwest's premier tech event, Summerfest Tech. Summerfest Tech's goal is to convene technologists, startups, investors, non-profits, and all other members of the tech ecosystem through a multi-day event featuring relevant talk tracks, keynotes, breakout sessions, a pitch competition, and networking events.\n\n**About Summerfest Tech**\nSummerfest Tech began in 2018 with the goal of leveraging the Summerfest brand to showcase technology and provide a forum for attendees from the tech and business community to network, educate, and celebrate the evolution of technology. Summerfest Tech continues to champion the regional business community, while shining the spotlight on Wisconsin\u2019s growing reputation as a tech hub, highlighting the growth and opportunity in the region. Programming from local, regional, and national speakers, as well as a cash-prize pitch competition, connects the tech community around relevant topics. Summerfest Tech will be held June 27-29, 2023, free of charge, in-person and available virtually.\n\n**About ValorTech**\nLocated within Milwaukee's largest carrier hotel & data center, the historic Wells Building, ValorTech\u00ae delivers our clients military-grade IT security, resources and performance.\n\nWe're bred from world-class service & structure and are proud to be a Service Disabled Veteran Owned Small Business (SDVOB). We hold ourselves to a higher standard of ethics and believe integrity comes before all. We consider our employees AND our clients family.\n\nOur complete set of professional information technology offerings include managed IT services (Monitoring, user support, system support), managed security services (Data, network, people), data center services (Co-location, public, private, hybrid), professional services (network & infrastructure, talent services, cloud migration, consulting) and technology investments (Gear, software, licensing).\n\nWe've earned our stripes. Our industry certifications, education and experience are the backbone of our security-first, comprehensive approach to mission-critical digital business & strategy. Let Valortech show you how we deliver Military-Grade IT Support\u2122.\n\n**About Vennture Brew Co.**\nVennture Brew Co. is made up of coffee and beer nerds Simon McConico and Rob Gustafson. Above our passion for coffee and beer, we both share the desire to create a culture that connects us with the people that consume it. Vennture is a hybrid brewery, coffee roastery, taproom and cafe.\n\nThe idea started as we explored the world of coffee and beer. We thought, what if we created space that combines best of both, a coffee shop and a brewery? That would be the best place ever. We put everything we had (literally everything) into making our dream a reality, and in 2018 \"The Night Crew\" (the name we gave ourselves during build out) hung up our tools and picked up new ones and started making coffee and beer.\n\nIn the 5 years we've been open we've seen a lot of growth, hired some amazing people, met a lot of new friends, witnessed first hand owning a business during a global pandemic, and fostered a community that keeps us going each and every day.",
+                "startDate": "2024-05-23T21:30:00.000Z",
+                "endDate": "2024-05-24T00:30:00.000Z",
+                "url": "https://www.meetup.com/techontap/events/300740514/",
                 "location": {
+                    "@type": "Place",
+                    "name": "Vennture Brew Co - Brookfield",
                     "address": {
-                        "@type": "PostalAddress",
+                        "addressRegion": "WI",
+                        "addressLocality": "Brookfield",
                         "addressCountry": "us",
-                        "addressLocality": "Chicago",
-                        "addressRegion": "IL",
-                        "streetAddress": "150 N Riverside Plaza, Chicago, IL"
-                    },
-                    "@type": "Place",
-                    "name": "Porter Kitchen & Deck"
-                }
-            },
-            {
-                "name": "Leading the Revolution: Practical Applications of AI in Your Business",
-                "description": "In the second installment of our specialized AI Webinar series, Herzum\u2019s **experienced consultants will present concrete ways to utilize AI within your company.** Our experts call upon their decades of knowledge and transformation experience to expand upon practical applications of AI in your business.\n\nJoin Herzum\u2019s consultants as we break down the complexity of artificial intelligence and explore how this technological revolution can drive your company's success. Our experts will share valuable insights on how to effectively integrate artificial intelligence into your operations and in turn, boost efficiency, optimize performance, and propel your organization into the future.\n\n**Webinar Agenda:**\n\n1. Introduction to Artificial Intelligence: We will understand the basics of establishing a solid foundation.\n2. Practical Applications: We will explore case studies and real-world examples of how AI transforms companies into different sectors.\n3. The Path Forward: We will provide a detailed plan on how your company can effectively embrace and capitalize on artificial intelligence.\n4. Questions and Answers: This is your chance to interact directly with our experts and address your concerns!\n\nThis webinar is part of a series of specialized events on artificial intelligence that will address more advanced and specific topics in future sessions. Get ready to discover how artificial intelligence can drive innovation and productivity in your business.\n\n**Registration Details:**\nReserve your spot now to ensure you don't miss this exclusive webinar. Register [here](https://attendee.gotowebinar.com/register/2713352142091166046?source=meetup) and join us on February 28th at 10 am (Chicago time) to explore the future of artificial intelligence in business.\n***Herzum invites you to be part of the AI transformation!***",
-                "startDate": "2024-02-28T16:00:00.000Z",
-                "endDate": "2024-02-28T17:00:00.000Z",
-                "location": {
-                    "url": "https://www.meetup.com/the-milwaukee-product-brew/events/298806353/",
-                    "@type": "VirtualLocation"
-                }
-            }
-        ]
-    },
-    {
-        "@context": "https://schema.org",
-        "image": "https://secure.meetupstatic.com/photos/event/6/f/0/d/600_496948429.webp",
-        "name": "Wisconsin .Net User Group",
-        "@type": "Organization",
-        "url": "https://www.meetup.com/wisconsin-net-users-group/",
-        "address": {
-            "location": {
-                "address": {
-                    "addressLocality": "Milwaukee",
-                    "addressRegion": "WI",
-                    "addressCountry": "us",
-                    "@type": "PostalAddress"
-                },
-                "@type": "Place"
-            }
-        },
-        "foundingDate": "2015-02-16T21:31:33.000Z",
-        "sameAs": [],
-        "events": [
-            {
-                "name": "The .NET ABC of things you pretend to know about",
-                "description": "**The .NET ABC of things you pretend to know about**\n\nEver pretended to know what a specific technical term means? And after a while it just became awkward to ask?\n\nWe've all been there. The software development industry is one of knowledge workers, combine that with an alarming amount of developers suffering of imposter syndrome and we get the \"yes I know what that means\", instead of asking for an explanation.\n\nIn this session we will go through terminologies like tree-shaking, linking, just-in-time, garbage collection and many others that I have discovered people are pretending to know about. Even if you can place the words, I will try to give you a better understanding of what it actually does.\n\nFood Sponsor: **New Resources**\nLocation Sponsor: **TBD**",
-                "startDate": "2024-03-15T23:00:00.000Z",
-                "endDate": "2024-03-16T01:00:00.000Z",
-                "location": {
-                    "@type": "Place",
-                    "address": {
-                        "addressLocality": "",
-                        "addressCountry": "",
-                        "addressRegion": "",
+                        "streetAddress": "2970 N Brookfield Rd, Brookfield, WI",
                         "@type": "PostalAddress"
                     }
                 }
@@ -266,360 +187,744 @@
         ]
     },
     {
-        "image": "https://secure.meetupstatic.com/photos/event/6/f/9/5/600_477388565.webp",
-        "url": "https://www.meetup.com/social-nerds-in-milwaukee/",
-        "foundingDate": "2018-12-28T23:15:58.000Z",
-        "address": {
-            "location": {
-                "@type": "Place",
-                "address": {
-                    "addressLocality": "Milwaukee",
-                    "addressRegion": "WI",
-                    "@type": "PostalAddress",
-                    "addressCountry": "us"
-                }
-            }
-        },
         "@type": "Organization",
-        "@context": "https://schema.org",
-        "name": "Social Nerds in Milwaukee",
-        "sameAs": [],
-        "events": []
-    },
-    {
-        "name": "Milwaukee Code and Coffee / Code and Brews",
-        "foundingDate": "2022-11-21T22:22:49.000Z",
+        "image": "https://secure.meetupstatic.com/photos/event/2/e/b/0/600_310631952.webp",
+        "foundingDate": "2013-03-31T13:33:25.000Z",
+        "url": "https://www.meetup.com/milwaukee-functional-programming-user-group/",
+        "sameAs": [
+            "http://twitter.com/mkefp/"
+        ],
+        "name": "Milwaukee Functional Programming User Group",
         "address": {
             "location": {
                 "address": {
-                    "@type": "PostalAddress",
                     "addressRegion": "WI",
+                    "@type": "PostalAddress",
                     "addressLocality": "Milwaukee",
                     "addressCountry": "us"
                 },
                 "@type": "Place"
             }
         },
-        "@type": "Organization",
         "@context": "https://schema.org",
-        "image": "https://secure.meetupstatic.com/photos/event/3/d/0/b/600_510675627.webp",
-        "url": "https://www.meetup.com/milwaukee-code-and-coffee/",
+        "events": []
+    },
+    {
+        "image": "https://secure.meetupstatic.com/photos/event/9/b/3/e/600_455199742.webp",
+        "address": {
+            "location": {
+                "address": {
+                    "addressLocality": "Milwaukee",
+                    "addressCountry": "us",
+                    "@type": "PostalAddress",
+                    "addressRegion": "WI"
+                },
+                "@type": "Place"
+            }
+        },
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.meetup.com/milwaukee-cyber-security-for-control-systems/",
+        "foundingDate": "2016-10-18T03:46:53.000Z",
+        "name": "Milwaukee Cyber Security for Control Systems",
         "sameAs": [],
         "events": [
             {
-                "name": "February Code and Coffee",
-                "description": "February 3rd will be our February Code + Coffee! event at Eaglenit sponsored by [NVisia](https://www.nvisia.com/).\n\nWe are excited to invite you to our upcoming networking and coding event. This gathering is designed to foster connections within our local tech community. Whether you are a seasoned professional, a hobbyist, or just getting your feet wet in the world of coding, there's a place for you here. The event will offer opportunities for both individual coding and collaborative projects, accommodating different styles and preferences. If you'd prefer to engage in insightful conversations and discussions, you will find plenty of fellow software developers eager to share their experiences and ideas. Our goal is to facilitate a relaxed environment where knowledge exchange, collaboration, and innovation are the natural outcomes. We look forward to seeing you there, and can't wait to see the magic that happens when our diverse community comes together.",
-                "startDate": "2024-02-03T15:00:00.000Z",
-                "endDate": "2024-02-03T18:00:00.000Z",
+                "name": "Intersecting Risks: Aligning OT, IT, & Enterprise Security w Business Priorities",
+                "description": "To join this discussion, register now at: https://attendee.gotowebinar.com/register/4976321895333512287?source=05222024Meetupevnt\n\nIn today's interconnected business and digital ecosystem, safeguarding against cyber threats, enterprise risk, and operational vulnerabilities is paramount.\nJoin us for an insightful panel discussion where experts from diverse domains converge to address the critical intersections of Operational Technology (OT) security, Information Technology (IT) security, and Enterprise Security.\nExplore the imperative need for a holistic approach to risk management that encompasses the intricacies of business functions, IT infrastructure, operational technologies, physical security, engineering systems, financial, and executive management perspectives.\nGain practical insights into effectively representing and mitigating risks to business operations, ensuring resilience, and fortifying against evolving threats in an ever-changing landscape.\nTopics:\n\u2022 Understanding Critical Intersections\n\u2022 Information Technology (IT) Security Challenges\n\u2022 Operational Technology (OT) Security Challenges\n\u2022 Physical Security & Operational Safety Challenges\n\u2022 Evolving Threat Landscape\n\u2022 Overcoming Differences\n\u2022 Executive Management:\n\u2022 Business-Centric Approach\nSpeakers:\nMichelle Balderson\n\u2022 Principal Security Architect, ISSQUARED Inc.\nhttps://www.linkedin.com/in/michelle-balderson-34498a13/\nKristin Demoranville\n\u2022 Founder and CEO of Anzensage\n\u2022 Co-Founder and CEO AnzenOT\n\u2022 Podcast Host: Bites and Bytes Podcast\nhttps://www.linkedin.com/in/demoranvillekristin/\nRoya Gordon\n\u2022 Executive Industry Consultant Hexagon, Operational Technology (OT) Cybersecurity\n\u2022 Founding Board Member, Houston Chapter, IoT Security Foundation\nhttps://www.linkedin.com/in/roya-gordon-ot-cyber-sme/\nNajo Ifield\n\u2022 Executive Directors CyberRisk Alliance\n\u2022 B-sides NOLA Event Producer\n\u2022 Member of the Executive Committee, Outreach Chair, Control System Cyber Security Association International - (CS)2AI\nhttps://www.linkedin.com/in/najoifield/\n\nRegister now at: https://attendee.gotowebinar.com/register/4976321895333512287?source=05222024Meetupevnt\n\n\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\n\\#\\# All past seminars and symposiums are available to *paid* CS2AI.ORG members. Check out the Resources area of our website in the Members Portal [https://www.cs2ai.org/](https://www.cs2ai.org/)\n\n## **Becoming a paid member is quick and easy (and helps us keep offering these educational opportunities!). Join now!** [https://www.cs2ai.org/plans-pricing](https://www.cs2ai.org/plans-pricing)\n\n\\#\\# Certificates for Professional Development/Continuing Education Units \\(PDUs/CEUs\\) are available for all registered individuals who attend at least one hour of the event\\.\n\\#\\# If you're interested in speaking at a future \\(CS\\)2AI event\\, having your organization become a Strategic Alliance Partner\\, or engaging in any of the other ways available\\, please contact us on our [https://www.cs2ai.org/get-involved](https://www.cs2ai.org/get-involved)\n\\#\\# Please note that \\(CS\\)2AI ONLINE events are provided free of charge as educational career development content through **the support of our paid members** and the generous **contributions of our corporate Strategic Alliance Partners**. Contact information used in registering for our directly supported seminars may be shared with sponsors funding those specific events. Unless noted on the Gotowebinar registration page, all events are open for direct funding support.",
+                "startDate": "2024-05-22T17:00:00.000Z",
+                "endDate": "2024-05-22T18:30:00.000Z",
+                "url": "https://www.meetup.com/milwaukee-cyber-security-for-control-systems/events/300986362/",
+                "location": {
+                    "url": "https://www.meetup.com/milwaukee-cyber-security-for-control-systems/events/300986362/",
+                    "@type": "VirtualLocation"
+                }
+            }
+        ]
+    },
+    {
+        "foundingDate": "2011-11-28T17:40:33.000Z",
+        "url": "https://www.meetup.com/techmke/",
+        "@type": "Organization",
+        "name": "Tech MKE - Milwaukee's Full Stack Meetup Group",
+        "@context": "https://schema.org",
+        "image": "https://secure.meetupstatic.com/photos/event/7/e/5/2/600_469232338.webp",
+        "sameAs": [
+            "http://twitter.com/web414/",
+            "http://www.linkedin.com/groups?gid=57006",
+            "http://www.web414.com"
+        ],
+        "address": {
+            "location": {
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Milwaukee",
+                    "addressCountry": "us",
+                    "addressRegion": "WI"
+                },
+                "@type": "Place"
+            }
+        },
+        "events": []
+    },
+    {
+        "url": "https://www.meetup.com/mke-xr/",
+        "sameAs": [],
+        "name": "MKE XR",
+        "address": {
+            "location": {
+                "address": {
+                    "addressRegion": "WI",
+                    "addressLocality": "Milwaukee",
+                    "@type": "PostalAddress",
+                    "addressCountry": "us"
+                },
+                "@type": "Place"
+            }
+        },
+        "@context": "https://schema.org",
+        "foundingDate": "2023-12-09T13:32:00.000Z",
+        "@type": "Organization",
+        "events": []
+    },
+    {
+        "@context": "https://schema.org",
+        "image": "https://secure.meetupstatic.com/photos/event/6/5/6/c/600_477385964.webp",
+        "address": {
+            "location": {
+                "address": {
+                    "addressRegion": "WI",
+                    "addressLocality": "Milwaukee",
+                    "addressCountry": "us",
+                    "@type": "PostalAddress"
+                },
+                "@type": "Place"
+            }
+        },
+        "name": "Miltown Game Developers",
+        "@type": "Organization",
+        "foundingDate": "2009-01-20T02:01:28.000Z",
+        "sameAs": [
+            "https://www.facebook.com/groups/MiltownGameDevelopers",
+            "https://discord.gg/NJfVrK3"
+        ],
+        "url": "https://www.meetup.com/miltown-game-developers/",
+        "events": [
+            {
+                "name": "In-Person Meetup!",
+                "description": "We are meeting at RSVR in Bay View! It's a virtual reality arcade, and a great spot for showcasing games.\n\nAV equipment is on site. All the same, we encourage members to bring any equipment they might rely on for presenting. Speaking of, please let me (Joe) know ahead of time if you plan to present so we can make time for all who wish to.\n\nLastly, please RSVP here on meetup if you're planning on coming so the venue management has an idea of how many to expect.\n\nThanks, and I'm looking forward to this one!\n\\- Joe",
+                "startDate": "2024-05-27T23:30:00.000Z",
+                "endDate": "2024-05-28T01:30:00.000Z",
+                "url": "https://www.meetup.com/miltown-game-developers/events/300883877/",
+                "location": {
+                    "name": "RSVR Milwaukee",
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Milwaukee",
+                        "addressRegion": "WI",
+                        "addressCountry": "us",
+                        "streetAddress": "2210 S Kinnickinnic Ave, Milwaukee, WI"
+                    }
+                }
+            },
+            {
+                "name": "Saturday Workgroup (Virtual)",
+                "description": "Let's hang out and work on our games online! Bring a coffee and your latest project if you'd like to share.\n\nWe're meeting on Discord for it's better video sharing capabilities. If you don't already have an account, no worries!, you'll be prompted to provide one upon joining the channel.\n\nHere's our typical agenda:\n1. Idle Chatter\n2. Area Events and Happenings\n3. Scheduling Presentations (making sure all attendees who want to present have time)\n4. Presentations\n\nWe like to take screenshots of the presentations to post here on Meetup.com, so others get a sense of what we do and the cool projects that come through here. Screenshots are attributed with the name of the work (as best known) and the presenter's name or online handle, as per their preference. We're guessing that if you're wanting to show off your projects in the meetup, it isn't a stretch to have a screenshot posted here on the site as well. BUT! If you'd rather not have your work posted on Meetup.com, or you have another concern, please let a host know and we'll accommodate you as best we can.",
+                "startDate": "2024-06-01T16:00:00.000Z",
+                "endDate": "2024-06-01T18:00:00.000Z",
+                "url": "https://www.meetup.com/miltown-game-developers/events/300980493/",
+                "location": {
+                    "@type": "VirtualLocation",
+                    "url": "https://www.meetup.com/miltown-game-developers/events/300980493/"
+                }
+            },
+            {
+                "name": "Saturday Workgroup (Virtual)",
+                "description": "Let's hang out and work on our games online! Bring a coffee and your latest project if you'd like to share.\n\nWe're meeting on Discord for it's better video sharing capabilities. If you don't already have an account, no worries!, you'll be prompted to provide one upon joining the channel.\n\nHere's our typical agenda:\n1. Idle Chatter\n2. Area Events and Happenings\n3. Scheduling Presentations (making sure all attendees who want to present have time)\n4. Presentations\n\nWe like to take screenshots of the presentations to post here on Meetup.com, so others get a sense of what we do and the cool projects that come through here. Screenshots are attributed with the name of the work (as best known) and the presenter's name or online handle, as per their preference. We're guessing that if you're wanting to show off your projects in the meetup, it isn't a stretch to have a screenshot posted here on the site as well. BUT! If you'd rather not have your work posted on Meetup.com, or you have another concern, please let a host know and we'll accommodate you as best we can.",
+                "startDate": "2024-06-15T16:00:00.000Z",
+                "endDate": "2024-06-15T18:00:00.000Z",
+                "url": "https://www.meetup.com/miltown-game-developers/events/dkgntsygcjbtb/",
+                "location": {
+                    "url": "https://www.meetup.com/miltown-game-developers/events/dkgntsygcjbtb/",
+                    "@type": "VirtualLocation"
+                }
+            },
+            {
+                "name": "Saturday Workgroup (Virtual)",
+                "description": "Let's hang out and work on our games online! Bring a coffee and your latest project if you'd like to share.\n\nWe're meeting on Discord for it's better video sharing capabilities. If you don't already have an account, no worries!, you'll be prompted to provide one upon joining the channel.\n\nHere's our typical agenda:\n1. Idle Chatter\n2. Area Events and Happenings\n3. Scheduling Presentations (making sure all attendees who want to present have time)\n4. Presentations\n\nWe like to take screenshots of the presentations to post here on Meetup.com, so others get a sense of what we do and the cool projects that come through here. Screenshots are attributed with the name of the work (as best known) and the presenter's name or online handle, as per their preference. We're guessing that if you're wanting to show off your projects in the meetup, it isn't a stretch to have a screenshot posted here on the site as well. BUT! If you'd rather not have your work posted on Meetup.com, or you have another concern, please let a host know and we'll accommodate you as best we can.",
+                "startDate": "2024-06-29T16:00:00.000Z",
+                "endDate": "2024-06-29T18:00:00.000Z",
+                "url": "https://www.meetup.com/miltown-game-developers/events/dkgntsygcjbmc/",
+                "location": {
+                    "url": "https://www.meetup.com/miltown-game-developers/events/dkgntsygcjbmc/",
+                    "@type": "VirtualLocation"
+                }
+            }
+        ]
+    },
+    {
+        "image": null,
+        "description": "Our Data Meetups are an open-forum, open-door meeting where attendees drive the conversation following a Lean Coffee format.",
+        "url": "https://www.eventbrite.com/cc/data-meetups-2662819",
+        "title": "Data Meetups",
+        "name": "Data Meetups",
+        "events": []
+    },
+    {
+        "image": "https://secure.meetupstatic.com/photos/event/5/1/1/c/600_493760764.webp",
+        "foundingDate": "2018-05-22T21:54:42.000Z",
+        "address": {
+            "location": {
+                "address": {
+                    "addressCountry": "us",
+                    "addressLocality": "Milwaukee",
+                    "addressRegion": "WI",
+                    "@type": "PostalAddress"
+                },
+                "@type": "Place"
+            }
+        },
+        "sameAs": [],
+        "url": "https://www.meetup.com/salesforce-saturday-milwaukee/",
+        "name": "Salesforce Saturday Milwaukee",
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "events": [
+            {
+                "name": "Salesforce Saturday",
+                "description": "Salesforce Saturday in MKE is a remote event where we will cover all kinds of topics. Sometimes they are guided and sometimes they are open forum.",
+                "startDate": "2024-06-08T14:00:00.000Z",
+                "endDate": "2024-06-08T15:00:00.000Z",
+                "url": "https://www.meetup.com/salesforce-saturday-milwaukee/events/300783393/",
+                "location": {
+                    "url": "https://www.meetup.com/salesforce-saturday-milwaukee/events/300783393/",
+                    "@type": "VirtualLocation"
+                }
+            },
+            {
+                "name": "Salesforce Saturday",
+                "description": "Salesforce Saturday in MKE is a remote event where we will cover all kinds of topics. Sometimes they are guided and sometimes they are open forum.",
+                "startDate": "2024-07-13T14:00:00.000Z",
+                "endDate": "2024-07-13T15:00:00.000Z",
+                "url": "https://www.meetup.com/salesforce-saturday-milwaukee/events/300958138/",
+                "location": {
+                    "@type": "VirtualLocation",
+                    "url": "https://www.meetup.com/salesforce-saturday-milwaukee/events/300958138/"
+                }
+            },
+            {
+                "name": "Salesforce Saturday",
+                "description": "Salesforce Saturday in MKE is a remote event where we will cover all kinds of topics. Sometimes they are guided and sometimes they are open forum.",
+                "startDate": "2024-08-10T14:00:00.000Z",
+                "endDate": "2024-08-10T15:00:00.000Z",
+                "url": "https://www.meetup.com/salesforce-saturday-milwaukee/events/vsgrktygclbnb/",
+                "location": {
+                    "@type": "VirtualLocation",
+                    "url": "https://www.meetup.com/salesforce-saturday-milwaukee/events/vsgrktygclbnb/"
+                }
+            },
+            {
+                "name": "Salesforce Saturday",
+                "description": "Salesforce Saturday in MKE is a remote event where we will cover all kinds of topics. Sometimes they are guided and sometimes they are open forum.",
+                "startDate": "2024-09-14T14:00:00.000Z",
+                "endDate": "2024-09-14T15:00:00.000Z",
+                "url": "https://www.meetup.com/salesforce-saturday-milwaukee/events/vsgrktygcmbsb/",
+                "location": {
+                    "@type": "VirtualLocation",
+                    "url": "https://www.meetup.com/salesforce-saturday-milwaukee/events/vsgrktygcmbsb/"
+                }
+            }
+        ]
+    },
+    {
+        "name": "dc414",
+        "image": "https://secure.meetupstatic.com/photos/event/d/9/2/2/600_499975586.webp",
+        "@type": "Organization",
+        "foundingDate": "2012-10-20T19:07:47.000Z",
+        "sameAs": [
+            "http://twitter.com/dc414/",
+            "https://dc414.org"
+        ],
+        "url": "https://www.meetup.com/dc414group/",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressCountry": "us",
+                    "addressLocality": "Milwaukee",
+                    "@type": "PostalAddress",
+                    "addressRegion": "WI"
+                }
+            }
+        },
+        "@context": "https://schema.org",
+        "events": [
+            {
+                "name": "dc414 - Public Hacker Meetup",
+                "description": "Come join us and connect with your fellow hackers at our monthly dc414 meeting.\n\nFood and drink available at the bar, and is welcome in the meeting. For more details visit dc414.org (https://dc414.org/) or email info@dc414.org\n\n\\-\\- Your Milwaukee area Hacker group",
+                "startDate": "2024-06-08T00:00:00.000Z",
+                "endDate": "2024-06-08T03:00:00.000Z",
+                "url": "https://www.meetup.com/dc414group/events/301097285/",
+                "location": {
+                    "name": "Dickens Grille & Spirits",
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "9646 W Greenfield Ave, West Allis, WI",
+                        "addressRegion": "WI",
+                        "addressLocality": "West Allis",
+                        "addressCountry": "us"
+                    }
+                }
+            },
+            {
+                "name": "dc414 - Public Hacker Meetup",
+                "description": "Come join us and connect with your fellow hackers at our monthly dc414 meeting.\n\nFood and drink available at the bar, and is welcome in the meeting. For more details visit dc414.org (https://dc414.org/) or email info@dc414.org\n\n\\-\\- Your Milwaukee area Hacker group",
+                "startDate": "2024-07-06T00:00:00.000Z",
+                "endDate": "2024-07-06T03:00:00.000Z",
+                "url": "https://www.meetup.com/dc414group/events/tscfbtygckbhb/",
+                "location": {
+                    "@type": "Place",
+                    "name": "Dickens Grille & Spirits",
+                    "address": {
+                        "streetAddress": "9646 W Greenfield Ave, West Allis, WI",
+                        "@type": "PostalAddress",
+                        "addressLocality": "West Allis",
+                        "addressRegion": "WI",
+                        "addressCountry": "us"
+                    }
+                }
+            },
+            {
+                "name": "dc414 - Public Hacker Meetup",
+                "description": "Come join us and connect with your fellow hackers at our monthly dc414 meeting.\n\nFood and drink available at the bar, and is welcome in the meeting. For more details visit dc414.org (https://dc414.org/) or email info@dc414.org\n\n\\-\\- Your Milwaukee area Hacker group",
+                "startDate": "2024-08-03T00:00:00.000Z",
+                "endDate": "2024-08-03T03:00:00.000Z",
+                "url": "https://www.meetup.com/dc414group/events/tscfbtygclbdb/",
+                "location": {
+                    "address": {
+                        "addressRegion": "WI",
+                        "streetAddress": "9646 W Greenfield Ave, West Allis, WI",
+                        "addressCountry": "us",
+                        "addressLocality": "West Allis",
+                        "@type": "PostalAddress"
+                    },
+                    "@type": "Place",
+                    "name": "Dickens Grille & Spirits"
+                }
+            },
+            {
+                "name": "dc414 - Public Hacker Meetup",
+                "description": "Come join us and connect with your fellow hackers at our monthly dc414 meeting.\n\nFood and drink available at the bar, and is welcome in the meeting. For more details visit dc414.org (https://dc414.org/) or email info@dc414.org\n\n\\-\\- Your Milwaukee area Hacker group",
+                "startDate": "2024-09-07T00:00:00.000Z",
+                "endDate": "2024-09-07T03:00:00.000Z",
+                "url": "https://www.meetup.com/dc414group/events/tscfbtygcmbjb/",
+                "location": {
+                    "name": "Dickens Grille & Spirits",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "9646 W Greenfield Ave, West Allis, WI",
+                        "addressLocality": "West Allis",
+                        "addressRegion": "WI",
+                        "addressCountry": "us"
+                    },
+                    "@type": "Place"
+                }
+            }
+        ]
+    },
+    {
+        "@type": "Organization",
+        "image": "https://secure.meetupstatic.com/photos/event/c/9/6/f/600_475131567.webp",
+        "url": "https://www.meetup.com/the-milwaukee-product-brew/",
+        "foundingDate": "2018-09-18T22:41:42.000Z",
+        "@context": "https://schema.org",
+        "name": "The Milwaukee Product Brew",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressRegion": "WI",
+                    "addressCountry": "us",
+                    "addressLocality": "Milwaukee",
+                    "@type": "PostalAddress"
+                }
+            }
+        },
+        "sameAs": [],
+        "events": [
+            {
+                "name": "Boosting Efficiency: CI/CD in Open DevOps",
+                "description": "Are you seeking a revolution in your software development processes? Join our exclusive webinar on Continuous Integration and Continuous Delivery (CI/CD) within the framework of Open DevOps, where we will explore the most advanced practices and cutting-edge tools to propel your projects to success.\n\nIn this event tailored for developers, DevOps Engineers, IT Managers, and CIOs, you'll discover how DevOps practices radically transform how we work, fostering unprecedented collaboration among development, operations, and quality assurance teams. We'll delve into how CI/CD implementation speeds up the development lifecycle, reduces errors, and enhances software quality while optimizing delivery times.\n\nMoreover, we'll discuss how Artificial Intelligence is revolutionizing DevOps processes. From intelligent automation to predictive analytics, we'll showcase how AI boosts efficiency and accuracy at every stage of the development cycle.\nKey topics include:\n\n* AI-Powered Automation: Explore how AI technologies are streamlining DevOps workflows and automating repetitive tasks precisely.\n* Predictive Analytics: Learn how predictive analytics models provide insights into potential issues before they occur, enabling proactive problem-solving.\n* Containerization and Orchestration: Understand the role of containerization tools like Docker and Kubernetes in facilitating seamless application deployment and scaling.\n* Security in DevOps: Discuss best practices for integrating security into the DevOps pipeline to ensure robust protection against cyber threats.\n* Monitoring and Observability: Discover advanced monitoring techniques and tools for gaining comprehensive insights into system performance and behavior.\n* Culture and Collaboration: Explore strategies for fostering a DevOps culture of collaboration, communication, and continuous improvement within your organization.\n\nWe'll highlight the fundamental reasons why companies should embrace DevOps practices. You'll learn how DevOps drives innovation and competitiveness in any organization, from enhanced agility to reduced operating costs.\n\nThis event will also underscore the advantages of OpenDevOps, offering flexibility and freedom to choose the right tools for each team. We'll explore how seamless integration with multiple tools can amplify your DevOps efforts, enabling full customization of your development environment.\n\nRegister now to unlock the secrets of successful DevOps and OpenDevOps implementation, taking your software development to new heights!",
+                "startDate": "2024-06-20T15:00:00.000Z",
+                "endDate": "2024-06-20T16:00:00.000Z",
+                "url": "https://www.meetup.com/the-milwaukee-product-brew/events/301005043/",
+                "location": {
+                    "@type": "VirtualLocation",
+                    "url": "https://www.meetup.com/the-milwaukee-product-brew/events/301005043/"
+                }
+            }
+        ]
+    },
+    {
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Milwaukee",
+                    "addressRegion": "WI",
+                    "addressCountry": "us"
+                }
+            }
+        },
+        "@context": "https://schema.org",
+        "url": "https://www.meetup.com/divi-society-milwaukee/",
+        "name": "Divi Milwaukee",
+        "foundingDate": "2018-06-13T21:02:56.000Z",
+        "sameAs": [],
+        "@type": "Organization",
+        "image": "https://secure.meetupstatic.com/photos/event/8/b/d/7/600_482375799.webp",
+        "events": []
+    },
+    {
+        "name": "Milwaukee Code and Coffee / Code and Brews",
+        "url": "https://www.meetup.com/milwaukee-code-and-coffee/",
+        "image": "https://secure.meetupstatic.com/photos/event/3/d/0/b/600_510675627.webp",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressRegion": "WI",
+                    "addressLocality": "Milwaukee",
+                    "@type": "PostalAddress",
+                    "addressCountry": "us"
+                }
+            }
+        },
+        "@type": "Organization",
+        "foundingDate": "2022-11-21T22:22:49.000Z",
+        "@context": "https://schema.org",
+        "sameAs": [],
+        "events": [
+            {
+                "name": "June Code and Coffee",
+                "description": "June 1st will be our June Code + Coffee! event at [Eagleint](https://www.eagleknitmke.com/), food provided by [Codeworks](https://codeworks-inc.com/).\n\nWe are excited to invite you to our upcoming networking and coding event. This gathering is designed to foster connections within our local tech community. Whether you are a seasoned professional, a hobbyist, or just getting your feet wet in the world of coding, there's a place for you here. The event will offer opportunities for both individual coding and collaborative projects, accommodating different styles and preferences. If you'd prefer to engage in insightful conversations and discussions, you will find plenty of fellow software developers eager to share their experiences and ideas.\n\nOur goal is to facilitate a relaxed environment where knowledge exchange, collaboration, and innovation are the natural outcomes. We look forward to seeing you there, and can't wait to see the magic that happens when our diverse community comes together.",
+                "startDate": "2024-06-01T14:00:00.000Z",
+                "endDate": "2024-06-01T17:00:00.000Z",
+                "url": "https://www.meetup.com/milwaukee-code-and-coffee/events/300554393/",
                 "location": {
                     "@type": "Place",
                     "name": "Eagleknit Converge",
                     "address": {
                         "@type": "PostalAddress",
                         "addressRegion": "WI",
-                        "addressCountry": "us",
+                        "addressLocality": "Milwaukee",
                         "streetAddress": "507 S 2nd St, Milwaukee, WI",
-                        "addressLocality": "Milwaukee"
+                        "addressCountry": "us"
+                    }
+                }
+            },
+            {
+                "name": "Hack & Tell @ Formlabs",
+                "description": "Are you working on a website, app, game, pet project, or just want to learn something new? It can be difficult to find time to work on these things. The Hack & Tell is an event that gives you a dedicated time, space, and a group of people who also would like to build something interesting. Spend the whole day working on your project, or helping others with theirs.\n\nThe Hack & Tell is NOT an event where everyone has to work on the same thing. You can work alone, with a group, or with people you just met that morning. The Hack & Tell does NOT require you to present your project, but you can if you\u2019d like! The Hack & Tell organizers do NOT want any rights to your intellectual property. Anything you dream up or work on is yours.\n\nIf you present, you will be entered into a drawing for some small, but fun, prizes.\n\n**What should I Bring?**\nBring whatever you need to work on your project. Laptop, charger, power strips, maybe a short extension cord. In the past, people have brought entire VR setups with desktop computers!\n\n**Will there be food?**\nAs of right now, we will not be providing food. We are looking for sponsors to see if we can, but for the time being we won't be providing anything. Though, Formlabs is in the amazing 3rd Ward with tons of food options.\n\n**Are there prizes?**\nIf you present your project progress at the end of the day, you will be entered into a drawing for some small prizes. Typically these are fun / small things such as board games, notepads, etc.\n\n**Where should I park?**\nThere are street parking available, paid parking garage options, and public transportation stops in the area. You can use apps like SpotHero to help find parking ahead of time if need be.\n\n**Agenda**\nDoors Open - Coffee\n8:30 AM - 8:45 AM\n\n***\n\n**Doors Open**\nFind a good spot to set up shop for the day.\n9:00 AM\n\n***\n\n**Work Time**\nShort introduction about who you are, and what you plan to work on.\n9:30 AM - 12:00 PM\n\n***\n\n**Lunch**\nWork on your project. Feel free to walk around and chat with others to see what they are working on.\n12:00 PM\n\n***\n\n**Work Time**\nNo set end time for lunch. Be sure to take a break though, this is a great time to see what others are working on.\n12:00 PM - 3:30 PM\n\n***\n\n**Project Presentations & Raffle**\nWork on your project. Feel free to walk around and chat with others to see what they are working on.\n3:30 PM - 4:30 PM\n\n***\n\nGive a short presentation on the progress you made during the day. This is optional, but if you do present, you will be entered into a drawing for some fun prizes.",
+                "startDate": "2024-06-08T14:00:00.000Z",
+                "endDate": "2024-06-08T21:30:00.000Z",
+                "url": "https://www.meetup.com/milwaukee-code-and-coffee/events/301087083/",
+                "location": {
+                    "@type": "Place",
+                    "name": "Formlabs MKE",
+                    "address": {
+                        "streetAddress": ", Milwaukee, WI",
+                        "addressLocality": "Milwaukee",
+                        "addressCountry": "us",
+                        "@type": "PostalAddress",
+                        "addressRegion": "WI"
                     }
                 }
             }
         ]
     },
     {
-        "@context": "https://schema.org",
-        "image": "https://secure.meetupstatic.com/photos/event/b/e/1/0/600_515388656.webp",
-        "foundingDate": "2009-05-19T04:35:14.000Z",
-        "url": "https://www.meetup.com/milwaukee-agile/",
-        "address": {
-            "location": {
-                "@type": "Place",
-                "address": {
-                    "addressRegion": "WI",
-                    "@type": "PostalAddress",
-                    "addressLocality": "Milwaukee",
-                    "addressCountry": "us"
-                }
-            }
-        },
-        "sameAs": [
-            "http://twitter.com/milwaukeeagile/",
-            "http://www.linkedin.com/groups?mostPopular=&gid=3048172"
-        ],
-        "name": "Milwaukee Agile",
-        "@type": "Organization",
-        "events": [
-            {
-                "name": "Annual Planning & Agility",
-                "description": "We'll kick off the year with the timely topic \"Annual Planning & Agility\". It can be frustrating to reconcile the goals of an annual plan with the simultaneous goal of being agile. Luckily, agile teams are pretty good at adapting new techniques to make things work.\n\nCome share your questions, frustrations and best advice for how you can be agile in a company that practices traditional annual planning.\n\nTracey Barrett will lead this presentation and discussion. Tracey is the organizer of Milwaukee Agile and the head of nvisia in Wisconsin, where she has a broad view into how companies in the area set their technology plans and look to accomplish them through agile methods.\n\nLooking forward to seeing everyone!\n\\-\\-\\-\\-\\-\\-\n\nMilwaukee Agile events are designed to spur discussion and build community. Newer practitioners are free to bring questions. Experienced practitioners bring their knowledge. Newcomers are always welcome. The general format is:\n\n5:30 Pizza, beer, soda and networking\n6:00 Brief presentation, introducing the night's topic\nApproximately 15-20 minutes later: Discussion begins\nWrap-up by 7:30",
-                "startDate": "2024-01-30T23:30:00.000Z",
-                "endDate": "2024-01-31T01:30:00.000Z",
-                "location": {
-                    "name": "330 E Kilbourn Ave",
-                    "address": {
-                        "addressCountry": "us",
-                        "streetAddress": "330 E Kilbourn Ave, Milwaukee, WI",
-                        "addressLocality": "Milwaukee",
-                        "@type": "PostalAddress",
-                        "addressRegion": "WI"
-                    },
-                    "@type": "Place"
-                }
-            }
-        ]
-    },
-    {
-        "url": "https://www.meetup.com/milwaukee-cyber-security-for-control-systems/",
-        "foundingDate": "2016-10-18T03:46:53.000Z",
-        "image": "https://secure.meetupstatic.com/photos/event/9/b/3/e/600_455199742.webp",
-        "sameAs": [],
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Milwaukee Cyber Security for Control Systems",
-        "address": {
-            "location": {
-                "@type": "Place",
-                "address": {
-                    "addressRegion": "WI",
-                    "addressCountry": "us",
-                    "@type": "PostalAddress",
-                    "addressLocality": "Milwaukee"
-                }
-            }
-        },
-        "events": [
-            {
-                "name": "(CS)\u00b2AI Online\u2122 Seminar: How to Apply 62443 \u2013 A Practical Guide",
-                "description": "Join us for a discussion of how to apply 62443 with one of the key figures in its creation. Register now at:\nhttps://attendee.gotowebinar.com/register/3039123143420891479?source=01312024MeetupEvt\n\nISA/IEC62443 is the consensus-based international standard covering industrial automation and control system security. The standard has been under development by the International Society of Automation since 2002, and is constantly evolving. While the reference number is well known in control systems security circles, detailed knowledge varies, including what it covers, what it proscribes, and, perhaps most importantly, how to implement it. In this presentation, Steve Mustard will give an overview of ISA/IEC62443, help navigate through the documents, discuss where to use it and how to implement and validate it. This presentation will be of interest to control system product vendors seeking to demonstrate security by design, asset owners seeking to secure their control system environments, and integrators/consultants looking to manage projects involving control systems security.\nSpeaker:\nSteve Mustard, President & CEO at National Automation and CS2AI Senior Fellow, Inc. Licensed Professional Engineer (Texas, Kansas) and UK Chartered Engineer with technical development and management experience in process automation and business process re-engineering across multiple sectors.\n\nFellow of Institution of Engineering and Technology and former Chairman of Americas Regional Board, former Chairman of Control & Automation Technical & Professional Network, former Council member.\nSenior Member of ISA, Certified Automation Professional (CAP) and former board member of Automation Federation. GIAC Global Industrial Cyber Security Professional (GICSP). GSX Certified Mission Critical Professional (CMCP), and former Chair of Automation Federation's Cyber-security committee. Member of ISA99 committee.\n\nRegister now at:\nhttps://attendee.gotowebinar.com/register/3039123143420891479?source=01312024MeetupEvt\n\n\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\n\\#\\# All past seminars and symposiums are available to paid CS2AI\\.ORG members\\. Check out the Resources area of our website in the Members Portal [https://www.cs2ai.org/](https://www.cs2ai.org/)\n\n\\#\\# Certificates for Professional Development/Continuing Education Units \\(PDUs/CEUs\\) are available for all registered individuals who attend at least one hour of the event\\.\n\n\\#\\# If you're interested in speaking at a future \\(CS\\)2AI event\\, having your organization become a Strategic Alliance Partner\\, or engaging in any of the other ways available\\, please contact us on our [https://www.cs2ai.org/get-involved](https://www.cs2ai.org/get-involved)\n\n\\#\\# Please note that \\(CS\\)2AI ONLINE events are provided free of charge as educational career development content through **the support of our paid members** and the generous **contributions of our corporate Strategic Alliance Partners**. Contact information used in registering for our directly supported seminars may be shared with sponsors funding those specific events. Unless noted on the Gotowebinar registration page, all events are open for direct funding support.",
-                "startDate": "2024-01-31T18:00:00.000Z",
-                "endDate": "2024-01-31T19:30:00.000Z",
-                "location": {
-                    "url": "https://www.meetup.com/milwaukee-cyber-security-for-control-systems/events/298804120/",
-                    "@type": "VirtualLocation"
-                }
-            },
-            {
-                "name": "Steering Through the Storm: Proactive Vulnerability Management in OT",
-                "description": "Join us for a discussion of creating an effective OT cyber security program based on the \"Virtual Loop!\"\n\nPlease note that Meetup RSVPs do not integrate with our webinar platform. Registration for this event is required at:\nhttps://attendee.gotowebinar.com/register/2617865054465642327?source=02072024MeetupEvt\n\nProactive Vulnerability Management in OT requires a deep dive into the complexities of Operational Technology. Effective management hinges on precise asset identification and a thorough understanding of unique enterprise risks. This approach leads to targeted vulnerability monitoring and patch management, essential in navigating the dynamic landscape of OT security. Emphasize on proactive strategies for vulnerability classification and implementation of robust remediation plans, ensuring a resilient cybersecurity posture in the midst of ever-evolving threats.\n\nSpeaker - Jean-jacques Gignac - Head of Alliances, OEMs, Partnerships & International Sales, Framatome Cyber, Cyberwatch & Foxguard\nhttps://www.linkedin.com/in/jegignac19otcybersecurityotics/\n\nThis event is sponsored by Foxguard (Framatome)\n\nPlease note that Meetup RSVPs do not integrate with our webinar platform. Registration for this event is required at:\nhttps://attendee.gotowebinar.com/register/2617865054465642327?source=02072024MeetupEvt\n\n\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\n\\#\\# All past seminars and symposiums are available to paid CS2AI\\.ORG members\\. Check out the Resources area of our website in the Members Portal [https://www.cs2ai.org/](https://www.cs2ai.org/)\n\n\\#\\# Certificates for Professional Development/Continuing Education Units \\(PDUs/CEUs\\) are available for all registered individuals who attend at least one hour of the event\\.\n\n\\#\\# If you're interested in speaking at a future \\(CS\\)2AI event\\, having your organization become a Strategic Alliance Partner\\, or engaging in any of the other ways available\\, please contact us on our [https://www.cs2ai.org/get-involved](https://www.cs2ai.org/get-involved)\n\n\\#\\# Please note that \\(CS\\)2AI ONLINE events are provided free of charge as educational career development content through **the support of our paid members** and the generous **contributions of our corporate Strategic Alliance Partners**. Contact information used in registering for our directly supported seminars may be shared with sponsors funding those specific events. Unless noted on the Gotowebinar registration page, all events are open for direct funding support.",
-                "startDate": "2024-02-07T18:00:00.000Z",
-                "endDate": "2024-02-07T19:30:00.000Z",
-                "location": {
-                    "@type": "VirtualLocation",
-                    "url": "https://www.meetup.com/milwaukee-cyber-security-for-control-systems/events/298803972/"
-                }
-            }
-        ]
-    },
-    {
-        "@context": "https://schema.org",
-        "address": {
-            "location": {
-                "@type": "Place",
-                "address": {
-                    "addressCountry": "us",
-                    "addressRegion": "WI",
-                    "@type": "PostalAddress",
-                    "addressLocality": "Milwaukee"
-                }
-            }
-        },
-        "name": "Tech on Tap -Milwaukee's #1 IT Networking & Happy Hour Event",
-        "image": "https://secure.meetupstatic.com/photos/event/9/2/8/d/600_515377517.webp",
-        "@type": "Organization",
-        "sameAs": [],
-        "url": "https://www.meetup.com/techontap/",
-        "foundingDate": "2022-02-08T05:20:14.000Z",
-        "events": [
-            {
-                "name": "FEBRUARY TECH ON TAP @ LAKEFRONT BREWERY",
-                "description": "**Tech on Tap @ Lakefront Brewery - Presented by ValorCares Foundation**\n\n**\\*\\*TWO FREE DRINKS TO ALL TECH ON TAP MEETUP PAID MEMBERS\\*\\***\n\n**About The ValorCares Foundation**\nValorCares is a veteran-founded, non-profit organization whose mission is to positively transform the lives of in-need families and children across Wisconsin and beyond. We believe that every child deserves a chance to succeed and be happy. That's why we work to provide them with the resources they need to grow, learn, and thrive.\nSpecifically, ValorCares supports and contributes to educational funding for children of fallen heroes. Join us in our support of vets and their families by bringing two non-perishable food items to donate.\n\n**About Lakefront Brewery**\n*Creating natural, sustainable, innovative food and beverages while celebrating Milwaukee hospitality to our visiting guests.\"\\*\n\nAccording to Brewery President Russ Klisch, the whole brewery started with his brother, Jim. Near his birthday, Jim expressed interest in beer making, and Russ humored him with the gift of a homebrewing book. To Russ\u2019 surprise, Jim read the book, and brewed a beer. By Russ\u2019 account, Jim was no gourmet cook, but he made a pretty good beer. Impressed, Russ decided he could brew one better. In short, sibling rivalry and common interest lead to both brothers entering homebrewing contests and winning awards. It wasn\u2019t long before family and friends encouraged them to turn their hobby into a business.\nThe Brothers decided to start small and chose a location within walking distance of their home: the site of a former bakery in Milwaukee\u2019s Riverwest neighborhood. They began brewing with 55-gallon, stainless steel drums and used dairy equipment. On December 2, 1987 they sold their first barrel of beer to a tavern within \u201crolling distance\u201d of the brewery.\nLakefront\u2019s production grew with their popularity: by 1988, sales jumped to 72 barrels; by 1989, 125 barrels; and sales began doubling after that. In 1990, owner Russ Klisch built his own bottling machine and began bottling their beer. The Brothers brought in more used equipment to meet the ever-expanding demand; a visiting food critic once commented that Lakefront was a \u201cFrankenstein operation\u201d, because all their equipment had lived and died in a previous life. In 1998, production had reached nearly 3,000 barrels in the small 3,600 square foot space, and Jim and Russ decided it was time to move.\nThe search was on for a new location and the City of Milwaukee had a building to sell. In 1908, Lakefront Brewery\u2019s current building housed the Milwaukee Electric Railway and Light Company\u2019s coal-fired power plant. In 1998, the City considered tearing down the old power plant location, unless a non-industrial business was interested in the location. The City thought beer making an appropriate industry, and allowed them to buy the building and move in.\nThe move was completed, and additions were made to both the building and brewery. In 2000, Russ replaced the homemade brewing equipment with a real brew house. Production has increased throughout the years, and in 2017 had reached 46,848 barrels. Lakefront currently offers 20 different beers available in over 30 states and distributed to Ukraine, South Korea, Sweden, China and Canada. The brewery is known for its innovative ales and lagers, as well as its infamous brewery tour.\nLakefront\u2019s pioneering spirit has created many U.S. brewing-industry firsts. Among these, the brewery introduced the first beer in the United States made from 100% in-state-grown ingredients with the barley, wheat, hops and a first-of-its-kind, indigenous Wisconsin yeast strain (Wisconsinite Summer Weiss), the first certified organic brewery, producing the country\u2019s oldest certified organic beer (Organic E.S.B.), and the first government-certified, gluten-free beer (New Grist).\nLakefront Brewery has one of the most popular brewery tours in the United States; over 80,000 people tour the brewery each year. Lakefront was one of the first\u2014if not the first\u2014to offer beer at the beginning, during, and after the tour instead of requiring visitors to wait until the end.",
-                "startDate": "2024-02-28T22:30:00.000Z",
-                "endDate": "2024-02-29T01:30:00.000Z",
-                "location": {
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressRegion": "WI",
-                        "streetAddress": "1872 N Commerce St, Milwaukee, WI",
-                        "addressLocality": "Milwaukee",
-                        "addressCountry": "us"
-                    },
-                    "@type": "Place",
-                    "name": "Lakefront Brewery"
-                }
-            }
-        ]
-    },
-    {
+        "foundingDate": "2012-10-21T02:44:38.000Z",
         "sameAs": [
             "http://twitter.com/mkejs/",
             "https://www.youtube.com/channel/UCRusqsREGWYn4EHZX4Tofqw"
         ],
-        "@context": "https://schema.org",
+        "url": "https://www.meetup.com/milwaukee-javascript-user-group/",
+        "@type": "Organization",
         "name": "MilwaukeeJS",
+        "image": "https://secure.meetupstatic.com/photos/event/3/c/1/4/600_466515380.webp",
         "address": {
             "location": {
                 "@type": "Place",
                 "address": {
-                    "addressCountry": "us",
+                    "@type": "PostalAddress",
                     "addressLocality": "Milwaukee",
                     "addressRegion": "WI",
-                    "@type": "PostalAddress"
+                    "addressCountry": "us"
                 }
             }
         },
-        "@type": "Organization",
-        "image": "https://secure.meetupstatic.com/photos/event/3/c/1/4/600_466515380.webp",
-        "foundingDate": "2012-10-21T02:44:38.000Z",
-        "url": "https://www.meetup.com/milwaukee-javascript-user-group/",
+        "@context": "https://schema.org",
         "events": []
     },
     {
-        "foundingDate": "2015-05-19T01:36:54.000Z",
         "@type": "Organization",
+        "url": "https://www.meetup.com/nscodermilwaukee/",
+        "name": "NSCoder Night Milwaukee",
+        "image": "https://secure.meetupstatic.com/photos/event/9/5/6/600_446282390.webp",
+        "foundingDate": "2012-06-25T14:57:04.000Z",
         "address": {
             "location": {
                 "@type": "Place",
                 "address": {
-                    "addressRegion": "WI",
-                    "addressLocality": "Milwaukee",
                     "addressCountry": "us",
+                    "addressLocality": "Milwaukee",
+                    "addressRegion": "WI",
                     "@type": "PostalAddress"
                 }
             }
         },
-        "@context": "https://schema.org",
-        "name": "AWS Milwaukee",
-        "url": "https://www.meetup.com/mkeaws/",
         "sameAs": [
-            "https://awswisconsin.com/"
+            "http://www.facebook.com/NSCoderNightMilwaukee"
         ],
-        "image": "https://secure.meetupstatic.com/photos/event/8/8/0/9/600_490054825.webp",
+        "@context": "https://schema.org",
         "events": [
             {
-                "name": "AWS re:Invent re:Cap",
-                "description": "Welcome to 2024 and our first meetup of the year. If you were not one of the 50k people that made it to Las Vegas this year for re:Invent we will be covering all the major AWS announcements in our AWS re:Cap.\n\nSpeaker:\n[Andy Hall, AWS Enterprise Solutions Architect](https://www.linkedin.com/in/andythall/)\n\nAgenda:\nDoors open at 5:00 to grab a piece of pizza and find a seat. Andy Hall will be presenting our re:Cap between 5:30-6:30.\n\nLocation:\nThank you to NM for hosting the event!\n[Northwestern Mutual - Tower](https://maps.app.goo.gl/ee11RUURqtu8aAbt8)\n[805 E Mason Street \u00b7 Milwaukee, WI](https://maps.app.goo.gl/ee11RUURqtu8aAbt8)\nMason Street at the main entrance\n\nWith almost 200 announcements across almost 30 areas, we won't be able to cover everything but will provide highlights and common themes across those announcements....and yes, you can expect to hear three letters mentioned frequently.....AI and Q.",
-                "startDate": "2024-02-06T23:00:00.000Z",
-                "endDate": "2024-02-07T01:00:00.000Z",
+                "name": "NSCoder Night",
+                "description": "We'll meet up to learn about what's new in iOS, macOS, tvOS, watchOS, and Serverside Swift.",
+                "startDate": "2024-06-05T00:00:00.000Z",
+                "endDate": "2024-06-05T02:00:00.000Z",
+                "url": "https://www.meetup.com/nscodermilwaukee/events/301049686/",
                 "location": {
                     "@type": "Place",
+                    "name": "collectivo coffee",
                     "address": {
-                        "addressRegion": "wi",
+                        "streetAddress": "2301 S. Kinnickinnic Ave., Milwaukee, WI",
+                        "addressRegion": "WI",
+                        "addressLocality": "Milwaukee",
                         "addressCountry": "us",
-                        "addressLocality": "Milwaukee",
-                        "@type": "PostalAddress",
-                        "streetAddress": "805 E Mason Street, Milwaukee, wi"
-                    },
-                    "name": "Northwestern Mutual - Tower"
-                }
-            }
-        ]
-    },
-    {
-        "title": "Rising Tides Analytics",
-        "image": "https://cdn.evbstatic.com/s3-build/prod/1500474-rc2024-01-29_16.04-7be8224/django/images/logos/eb_orange_on_white_1200x630.png",
-        "description": "Rising Tides Analytics",
-        "url": "https://www.eventbrite.com/org/52116468323?ref=eofblike",
-        "name": "Rising Tides Analytics",
-        "events": [
-            {
-                "name": "Analytics After Dark",
-                "description": "Stop by to talk data and enjoy a drink at Boone & Crockett on Thursday, October 5th from 5-7pm, hosted by Rising Tides",
-                "startDate": "2023-10-05T17:00:00-0500",
-                "endDate": "2023-10-05T19:00:00-0500",
-                "location": {
-                    "address": {
-                        "postalCode": "53204",
-                        "addressCountry": "US",
-                        "@type": "PostalAddress",
-                        "streetAddress": "818 South Water Street",
-                        "addressRegion": "WI",
-                        "addressLocality": "Milwaukee"
-                    },
-                    "@type": "Place",
-                    "name": "Boone & Crockett",
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": "43.0226917",
-                        "longitude": "-87.9064083"
-                    }
-                }
-            },
-            {
-                "name": "Analytics After Dark - Q2 2023",
-                "description": "Analytics After Dark returns for Q2 in 2023 at",
-                "startDate": "2023-06-28T17:00:00-0500",
-                "endDate": "2023-06-28T19:00:00-0500",
-                "location": {
-                    "@type": "Place",
-                    "name": "Ward4 - Milwaukee Coworking",
-                    "geo": {
-                        "latitude": "43.0341774",
-                        "@type": "GeoCoordinates",
-                        "longitude": "-87.9120133"
-                    },
-                    "address": {
-                        "streetAddress": "313 North Plankinton Avenue",
-                        "addressCountry": "US",
-                        "addressRegion": "WI",
-                        "postalCode": "53203",
-                        "addressLocality": "Milwaukee",
                         "@type": "PostalAddress"
                     }
                 }
             },
             {
-                "name": "Analytics After Dark",
-                "description": "Analytics After Dark returns in 2023 at NorthSouth",
-                "startDate": "2023-03-08T17:00:00-0600",
-                "endDate": "2023-03-08T19:00:00-0600",
+                "name": "NSCoder Night",
+                "description": "We'll meet up to learn about what's new in iOS, macOS, tvOS, watchOS, and Serverside Swift.",
+                "startDate": "2024-07-03T00:00:00.000Z",
+                "endDate": "2024-07-03T02:00:00.000Z",
+                "url": "https://www.meetup.com/nscodermilwaukee/events/sfkcjrygckbdb/",
                 "location": {
-                    "name": "NorthSouth Club",
-                    "@type": "Place",
                     "address": {
-                        "addressCountry": "US",
+                        "addressCountry": "us",
+                        "streetAddress": "2301 S. Kinnickinnic Ave., Milwaukee, WI",
                         "addressRegion": "WI",
                         "addressLocality": "Milwaukee",
-                        "postalCode": "53204",
-                        "@type": "PostalAddress",
-                        "streetAddress": "230 East Pittsburgh Avenue"
+                        "@type": "PostalAddress"
                     },
-                    "geo": {
-                        "longitude": "-87.90888210000001",
-                        "latitude": "43.0296783",
-                        "@type": "GeoCoordinates"
-                    }
+                    "@type": "Place",
+                    "name": "collectivo coffee"
                 }
             },
             {
-                "name": "Analytics After Dark",
-                "description": "Join Rising Tides Analytics for our data and analytics happy hour, Analytics After",
-                "startDate": "2022-09-22T17:00:00-0500",
-                "endDate": "2022-09-22T20:00:00-0500",
+                "name": "NSCoder Night",
+                "description": "We'll meet up to learn about what's new in iOS, macOS, tvOS, watchOS, and Serverside Swift.",
+                "startDate": "2024-08-07T00:00:00.000Z",
+                "endDate": "2024-08-07T02:00:00.000Z",
+                "url": "https://www.meetup.com/nscodermilwaukee/events/sfkcjrygclbjb/",
                 "location": {
-                    "geo": {
-                        "latitude": "43.0256681",
-                        "longitude": "-87.91236959999999",
-                        "@type": "GeoCoordinates"
-                    },
-                    "name": "Vendetta Coffee Bar",
                     "address": {
                         "addressLocality": "Milwaukee",
+                        "streetAddress": "2301 S. Kinnickinnic Ave., Milwaukee, WI",
                         "addressRegion": "WI",
                         "@type": "PostalAddress",
-                        "addressCountry": "US",
-                        "streetAddress": "524 S. 2nd St.",
-                        "postalCode": "53204"
+                        "addressCountry": "us"
                     },
+                    "name": "collectivo coffee",
                     "@type": "Place"
+                }
+            },
+            {
+                "name": "NSCoder Night",
+                "description": "We'll meet up to learn about what's new in iOS, macOS, tvOS, watchOS, and Serverside Swift.",
+                "startDate": "2024-09-04T00:00:00.000Z",
+                "endDate": "2024-09-04T02:00:00.000Z",
+                "url": "https://www.meetup.com/nscodermilwaukee/events/sfkcjrygcmbfb/",
+                "location": {
+                    "@type": "Place",
+                    "name": "collectivo coffee",
+                    "address": {
+                        "addressRegion": "WI",
+                        "@type": "PostalAddress",
+                        "streetAddress": "2301 S. Kinnickinnic Ave., Milwaukee, WI",
+                        "addressCountry": "us",
+                        "addressLocality": "Milwaukee"
+                    }
                 }
             }
         ]
     },
     {
-        "title": "Data Meetups",
-        "image": null,
-        "url": "https://www.eventbrite.com/cc/data-meetups-2662819",
-        "description": "Our Data Meetups are an open-forum, open-door meeting where attendees drive the conversation following a Lean Coffee format.",
-        "name": "Data Meetups",
+        "image": "https://secure.meetupstatic.com/photos/event/6/f/0/d/600_496948429.webp",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressCountry": "us",
+                    "@type": "PostalAddress",
+                    "addressLocality": "Milwaukee",
+                    "addressRegion": "WI"
+                }
+            }
+        },
+        "name": "Wisconsin .Net User Group",
+        "sameAs": [],
+        "foundingDate": "2015-02-16T21:31:33.000Z",
+        "@type": "Organization",
+        "url": "https://www.meetup.com/wisconsin-net-users-group/",
+        "@context": "https://schema.org",
+        "events": [
+            {
+                "name": "Microsoft Build Recap By Brian Haydin",
+                "description": "**Microsoft Build Recap By Brian Haydin**\n\nJoin us for an engaging discussion following the [Microsoft Build](https://build.microsoft.com/) conference in Seattle, where technology enthusiasts and industry professionals come together to explore the latest innovations and trends in the tech world. Microsoft Build has a rich history of showcasing groundbreaking technologies and inspiring developers to push the boundaries of what's possible.\n\nThis year, the main theme of Microsoft Build is **\"How will AI shape your future?\"** highlighting the pivotal role that artificial intelligence plays in shaping the future of technology and innovation.\n\nOur speaker, **Brian Haydin**, a tech expert who attended [Microsoft Build](https://build.microsoft.com/), will share his firsthand experiences and insights from the event.\n\nThis event will be live streamed on [Youtube]( https://www.youtube.com/watch?v=cYiWUDE2cH8)\n\nPresenter: **Brian Haydin**\nFood and Location Sponsor: **Concurrency**",
+                "startDate": "2024-05-28T23:00:00.000Z",
+                "endDate": "2024-05-29T01:00:00.000Z",
+                "url": "https://www.meetup.com/wisconsin-net-users-group/events/300707901/",
+                "location": {
+                    "name": "Concurrency, Inc.",
+                    "@type": "Place",
+                    "address": {
+                        "addressCountry": "us",
+                        "addressRegion": "WI",
+                        "streetAddress": "13600 Bishops Ct Suite 250, Brookfield, WI",
+                        "@type": "PostalAddress",
+                        "addressLocality": "Brookfield"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "url": "https://www.meetup.com/social-nerds-in-milwaukee/",
+        "@context": "https://schema.org",
+        "address": {
+            "location": {
+                "address": {
+                    "addressCountry": "us",
+                    "addressLocality": "Milwaukee",
+                    "@type": "PostalAddress",
+                    "addressRegion": "WI"
+                },
+                "@type": "Place"
+            }
+        },
+        "@type": "Organization",
+        "foundingDate": "2018-12-28T23:15:58.000Z",
+        "image": "https://secure.meetupstatic.com/photos/event/6/f/9/5/600_477388565.webp",
+        "sameAs": [],
+        "name": "Social Nerds in Milwaukee",
+        "events": []
+    },
+    {
+        "url": "https://www.meetup.com/milsec/",
+        "name": "Milwaukee Information Security Group #milsec",
+        "@context": "https://schema.org",
+        "image": "https://secure.meetupstatic.com/photos/event/2/1/0/4/600_515468452.webp",
+        "sameAs": [
+            "http://twitter.com/milsec/"
+        ],
+        "@type": "Organization",
+        "foundingDate": "2015-11-29T20:25:45.000Z",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressLocality": "Milwaukee",
+                    "@type": "PostalAddress",
+                    "addressRegion": "WI",
+                    "addressCountry": "us"
+                }
+            }
+        },
+        "events": []
+    },
+    {
+        "@type": "Organization",
+        "image": "https://secure.meetupstatic.com/photos/event/8/8/0/9/600_490054825.webp",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressLocality": "Milwaukee",
+                    "@type": "PostalAddress",
+                    "addressRegion": "WI",
+                    "addressCountry": "us"
+                }
+            }
+        },
+        "foundingDate": "2015-05-19T01:36:54.000Z",
+        "name": "AWS Milwaukee",
+        "@context": "https://schema.org",
+        "url": "https://www.meetup.com/mkeaws/",
+        "sameAs": [
+            "https://www.linkedin.com/groups/7056549/"
+        ],
+        "events": []
+    },
+    {
+        "url": "https://www.meetup.com/pmi-milwaukee-southeast-wi-chapter/",
+        "@type": "Organization",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressLocality": "Milwaukee",
+                    "@type": "PostalAddress",
+                    "addressCountry": "us",
+                    "addressRegion": "WI"
+                }
+            }
+        },
+        "name": "PMI Milwaukee/Southeast WI Chapter",
+        "sameAs": [],
+        "image": "https://secure.meetupstatic.com/photos/event/2/4/b/5/600_469629397.webp",
+        "@context": "https://schema.org",
+        "foundingDate": "2018-03-16T02:01:00.000Z",
+        "events": [
+            {
+                "name": "Boosting Efficiency: CI/CD in Open DevOps",
+                "description": "Are you seeking a revolution in your software development processes? Join our exclusive webinar on Continuous Integration and Continuous Delivery (CI/CD) within the framework of Open DevOps, where we will explore the most advanced practices and cutting-edge tools to propel your projects to success.\n\nIn this event tailored for developers, DevOps Engineers, IT Managers, and CIOs, you'll discover how DevOps practices radically transform how we work, fostering unprecedented collaboration among development, operations, and quality assurance teams. We'll delve into how CI/CD implementation speeds up the development lifecycle, reduces errors, and enhances software quality while optimizing delivery times.\n\nMoreover, we'll discuss how Artificial Intelligence is revolutionizing DevOps processes. From intelligent automation to predictive analytics, we'll showcase how AI boosts efficiency and accuracy at every stage of the development cycle.\nKey topics include:\n\n* AI-Powered Automation: Explore how AI technologies are streamlining DevOps workflows and automating repetitive tasks precisely.\n* Predictive Analytics: Learn how predictive analytics models provide insights into potential issues before they occur, enabling proactive problem-solving.\n* Containerization and Orchestration: Understand the role of containerization tools like Docker and Kubernetes in facilitating seamless application deployment and scaling.\n* Security in DevOps: Discuss best practices for integrating security into the DevOps pipeline to ensure robust protection against cyber threats.\n* Monitoring and Observability: Discover advanced monitoring techniques and tools for gaining comprehensive insights into system performance and behavior.\n* Culture and Collaboration: Explore strategies for fostering a DevOps culture of collaboration, communication, and continuous improvement within your organization.\n\nWe'll highlight the fundamental reasons why companies should embrace DevOps practices. You'll learn how DevOps drives innovation and competitiveness in any organization, from enhanced agility to reduced operating costs.\n\nThis event will also underscore the advantages of OpenDevOps, offering flexibility and freedom to choose the right tools for each team. We'll explore how seamless integration with multiple tools can amplify your DevOps efforts, enabling full customization of your development environment.\n\nRegister now to unlock the secrets of successful DevOps and OpenDevOps implementation, taking your software development to new heights!",
+                "startDate": "2024-06-20T15:00:00.000Z",
+                "endDate": "2024-06-20T16:00:00.000Z",
+                "url": "https://www.meetup.com/pmi-milwaukee-southeast-wi-chapter/events/301005045/",
+                "location": {
+                    "@type": "VirtualLocation",
+                    "url": "https://www.meetup.com/pmi-milwaukee-southeast-wi-chapter/events/301005045/"
+                }
+            }
+        ]
+    },
+    {
+        "@context": "https://schema.org",
+        "sameAs": [],
+        "@type": "Organization",
+        "foundingDate": "2023-10-13T17:48:07.000Z",
+        "address": {
+            "location": {
+                "@type": "Place",
+                "address": {
+                    "addressCountry": "us",
+                    "addressLocality": "Milwaukee",
+                    "addressRegion": "WI",
+                    "@type": "PostalAddress"
+                }
+            }
+        },
+        "name": "Milwaukee Homelab Group",
+        "image": "https://secure.meetupstatic.com/photos/event/c/a/7/a/600_516531834.webp",
+        "url": "https://www.meetup.com/milwaukee-homelab-group/",
         "events": []
     }
 ]
