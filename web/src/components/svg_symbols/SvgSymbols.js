@@ -95,6 +95,13 @@ export const SvgSymbols = ()=>{
                     <use href="#p" viewBox="0 0 48.018803 77.757126" y="18.0722" x="210.7197" />
                     <use href="#s" viewBox="0 0 45.935558 57.810055" y="18.0722" x="266.2903" />
                 </symbol>
+
+                <symbol id="full_logo" viewBox="0 0 622.5113 200.7773">
+                    {/* viewBox="0 0 622.5113 200.7773" */}
+                    <use href="#m_icon" viewBox="0 0 195.899414 181.036621" y="0.0018" x="0.0009" />
+                    <use href="#milwaukee_group" viewBox="0 0 77.785622 404.48465" y="0.0018" x="218.0275" />
+                    <use href="#meetups_group" viewBox="0 0 312.2258 95.829277" y="104.9498" x="218.0275" />
+                </symbol>
             </defs>
 
         </svg>
