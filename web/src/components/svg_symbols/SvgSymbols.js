@@ -85,6 +85,16 @@ export const SvgSymbols = ()=>{
                     <use href="#e" viewBox="0 0 51.108807 57.947678" y="19.8248" x="293.9142" />
                     <use href="#e" viewBox="0 0 51.108807 57.947678" y="19.8248" x="353.3758" />
                 </symbol>
+
+                <symbol id="meetups_group" style={{fill: 'var(--color02)'}}>
+                    {/* viewBox="0 0 312.2258 95.829277" */}
+                    <use href="#e" viewBox="0 0 51.108807 57.947678" y="18.0722" x="0" />
+                    <use href="#e" viewBox="0 0 51.108807 57.947678" y="18.0722" x="59.3204" />
+                    <use href="#t" viewBox="0 0 26.978025 75.361397" y="0" x="116.6091" />
+                    <use href="#u" viewBox="0 0 44.948601 56.694752" y="19.3221" x="151.191" />
+                    <use href="#p" viewBox="0 0 48.018803 77.757126" y="18.0722" x="210.7197" />
+                    <use href="#s" viewBox="0 0 45.935558 57.810055" y="18.0722" x="266.2903" />
+                </symbol>
             </defs>
 
         </svg>
