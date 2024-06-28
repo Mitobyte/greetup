@@ -8785,6 +8785,7 @@ __metadata:
     gatsby-image: "npm:^3.11.0"
     gatsby-plugin-css: "npm:^2.1.0"
     gatsby-plugin-image: "npm:^3.13.0"
+    gatsby-plugin-manifest: "npm:^5.13.1"
     gatsby-plugin-material-ui: "npm:^4.1.0"
     gatsby-plugin-react-helmet: "npm:^5.12.0"
     gatsby-plugin-sharp: "npm:^5.13.0"
@@ -8883,6 +8884,21 @@ __metadata:
     gatsby-source-filesystem:
       optional: true
   checksum: 10c0/00e82f49bba04407cc1667c9e12fac9cd404289daafb028d47cfb0f4643865dec0e5930761abde145a2b2d2090aa00f3976a860fe89ee9045d04a79591ab7875
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-manifest@npm:^5.13.1":
+  version: 5.13.1
+  resolution: "gatsby-plugin-manifest@npm:5.13.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.13"
+    gatsby-core-utils: "npm:^4.13.1"
+    gatsby-plugin-utils: "npm:^4.13.1"
+    semver: "npm:^7.5.3"
+    sharp: "npm:^0.32.6"
+  peerDependencies:
+    gatsby: ^5.0.0-next
+  checksum: 10c0/517b0b896513414592eb042d371b288771b317b90173724361be6cf1706bb9c87a47dcf65200868f412c743599977aa210a6307799cd95ab2c59c3cb328f38bf
   languageName: node
   linkType: hard
 

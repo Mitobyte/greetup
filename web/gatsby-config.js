@@ -18,6 +18,12 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options:{
+        "icon": 'src/images/favicon.svg'
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
