@@ -8,7 +8,7 @@
     --squishGrowth-h-start: 800px;
     --squishGrowth-h-speed: 5;
     --squishGrowth-h-max: var(--tiny-1-4);
-    box-shadow: hsl(var(--gray-400), 1) 0px var(--line-narrow) var(--line-semiBold);
+    box-shadow: hsl(var(--gray-950), .77) 0px var(--line-narrow) var(--line-bold);
 }
 
 .icon{
