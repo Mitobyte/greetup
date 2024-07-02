@@ -1,1 +1,13 @@
 @import url('../../styles/global.css');
+
+.pageContainer{
+    overflow: visible;
+}
+
+.navBarContainer{
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: auto;
+    z-index: 88;
+}
