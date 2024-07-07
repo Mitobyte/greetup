@@ -3,7 +3,7 @@ import * as styles from './Hero.module.css';
 
 export const Hero = ()=>{
     return(
-        <section className={styles.mainContainer}>
+        <header className={styles.mainContainer}>
             <div className={styles.backgroundPhoto}></div>
             <div className={styles.backgroundFilter}></div>
             <div className={styles.backgroundGradient}></div>
@@ -17,6 +17,6 @@ export const Hero = ()=>{
                     Milwaukee is home to a vibrant and thriving tech community. This website is dedicated to showcasing upcoming events so you can stay in the loop and get involved with whatever interests you. 
                 </p>
             </article>
-        </section>
+        </header>
     );
 }
