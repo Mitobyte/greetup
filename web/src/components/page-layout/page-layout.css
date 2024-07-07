@@ -1,9 +1,5 @@
 @import url('../../styles/global.css');
 
-.pageContainer{
-    overflow: visible;
-}
-
 .navBarContainer{
     position: sticky;
     top: 0;
