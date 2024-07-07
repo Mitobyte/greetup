@@ -102,6 +102,35 @@ export const SvgSymbols = ()=>{
                     <use href="#milwaukee_group" viewBox="0 0 77.785622 404.48465" y="0.0018" x="218.0275" />
                     <use href="#meetups_group" viewBox="0 0 312.2258 95.829277" y="104.9498" x="218.0275" />
                 </symbol>
+
+                <symbol id="close_button" viewBox="0 0 20 20">
+                    <line
+                        style={{
+                            'stroke-linecap' : 'round',
+                            'stroke-miter-limit' : '10',
+                            'stroke-width' : 'var(--stroke)',
+                            'stroke' : 'var(--stroke-color)' 
+
+                        }}
+                        x1="1.494972"
+                        y1="1.496602"
+                        x2="18.505028"
+                        y2="18.525202"
+                    />
+                    <line
+                        style={{
+                            'stroke-linecap' : 'round',
+                            'stroke-miter-limit' : '10',
+                            'stroke-width' : 'var(--stroke)',
+                            'stroke' : 'var(--stroke-color)' 
+
+                        }}
+                        x1="18.505028"
+                        y1="1.496602"
+                        x2="1.494972"
+                        y2="18.506657"
+                    />
+                </symbol>
             </defs>
 
         </svg>
