@@ -13,15 +13,6 @@ export const EventList = ({data, key}) =>{
                             <h3 className={`srcryTxt ${styles.eventName}`}>{item.name}</h3>
                             <Location data={item.location} />
                             <DateComponent start={item.startDate} end={item.endDate} />
-                            {/*
-                                item.description &&
-                                <article className={styles.descriptionContainer}>
-                                    <h6 className={`srcryTxt ${styles.descriptionTitle}`}>Description</h6>
-                                    <p className={`srcryTxt ${styles.descriptionText}`}>
-                                        {item.description}
-                                    </p>
-                                </article>
-                            */}
                             <a className={`srcryTxt ${styles.joinButton}`} href={item.url} target="_blank">
                                 Join Event
                             </a>
