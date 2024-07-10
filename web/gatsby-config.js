@@ -29,6 +29,8 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
+    `@emotion/react`,
+    `@emotion/styled`
   ],
 };
 
