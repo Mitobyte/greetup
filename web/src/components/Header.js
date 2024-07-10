@@ -5,10 +5,13 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Container from '@mui/material/Container';
 import Typography from "@mui/material/Typography";
+import { PageLayout } from "./page-layout/page-layout";
 
 export const Header = ({data, children}) => {
 
   return (
+    <></>
+    /*<PageLayout></PageLayout>
     <Container>
       <CssBaseline />
       <header>
@@ -39,6 +42,6 @@ export const Header = ({data, children}) => {
         </Grid>
       </Grid>
       {children}
-    </Container>
+    </Container>*/
   )
 }
