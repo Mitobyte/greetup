@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as styles from './OrganizationCard.module.css';
 
-export const OrganizationCard = ({data}, key)=>{
+export const OrganizationCard = ({data, selection})=>{
 
     return(
         <article className={styles.mainContainer}>
@@ -20,7 +20,10 @@ export const OrganizationCard = ({data}, key)=>{
                         <span className={styles.eventCount}>{data.events.length}</span> upcoming event{data.events.length > 1 ? 's': ''}!!!
                     </p>
 
-                    <button className={`srcryTxt ${styles.viewButton}`}>
+                    <button
+                        className={`srcryTxt ${styles.viewButton}`}
+                        onClick={()=> selection(data.events)}
+                    >
                         view events
                     </button>
                 </article>
