@@ -9,6 +9,7 @@ import interactionPlugin from '@fullcalendar/interaction'
 import JSONData from "../data/combined.json";
 import {Header} from "../components/Header";
 import OrganizationFilter from "../components/OrganizationFilter";
+import { PageLayout } from "../components/page-layout/page-layout";
 
 export default function CalendarPage({data}) {
   const [organizations, setOrganizations] = useState([]);
@@ -79,7 +80,10 @@ export default function CalendarPage({data}) {
   const id = open ? 'simple-popover' : undefined;
 
   return (
-    <Header data={data}>
+    <PageLayout data={data}>
+      <p>calendar</p>
+    </PageLayout>
+    /*<Header data={data}>
       <Grid container>
         <Grid item xs={12}>
          <a href='/mke_tech_events.ics' download='calendar.ics'>Download ics file</a>
@@ -129,7 +133,7 @@ export default function CalendarPage({data}) {
           {currentEvent?.title}<br/>
           <a href={currentEvent?.url} target='_blank'>More Info</a>
       </Popover>
-    </Header>
+    </Header>*/
   );
 }
 
