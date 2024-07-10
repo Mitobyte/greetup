@@ -1,0 +1,15 @@
+.mainContainer{
+    display: grid;
+    grid-gap: var(--line-semiBold);
+}
+
+.title{
+    --text-size: var(--text-widget-1);
+    --kerning-nudge-amt: 7;
+    color: hsl(var(--blue-800), 1);
+}
+
+.dateText{
+    --text-size: var(--text-widget-2);
+    color: hsl(var(--blue-950), 1);
+}
