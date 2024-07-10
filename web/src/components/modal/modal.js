@@ -1,8 +1,17 @@
 import * as React from 'react';
 import * as styles from './modal.module.css';
 
-export const Modal = ({child, data})=>{
+export const Modal = ({children, toggle})=>{
     return(
-        <section></section>
+        <section className={styles.mainContainer}>
+            <article className={`srcryBox ${styles.contentContainer}`}>
+                <svg className={`srcryBox ${styles.closeButton}`} viewBox="0 0 20 20" onClick={()=> toggle(false)}>
+                    <use href="#close_button" />
+                </svg>
+                <artilce className={styles.projectionContainer}>
+                    {children}
+                </artilce>
+            </article>
+        </section>
     );
 }
