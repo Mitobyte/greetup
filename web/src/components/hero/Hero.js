@@ -14,7 +14,7 @@ export const Hero = ()=>{
                 </svg>
 
                 <p className={`srcryTxt ${styles.introText}`}>
-                    Milwaukee is home to a vibrant and thriving tech community. This website is dedicated to showcasing upcoming events so you can stay in the loop and get involved with whatever interests you. 
+                    Milwaukee is home to a vibrant and thriving tech community. This website is dedicated to showcasing upcoming events so you can stay informed and get involved. 
                 </p>
             </article>
         </header>
