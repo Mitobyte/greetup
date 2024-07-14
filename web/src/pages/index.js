@@ -64,10 +64,10 @@ export default function Home({data}) {
   );
 }
 
-export const query = graphql`{
+/*export const query = graphql`{
   file(relativePath: {eq: "logo.png"}) {
     childImageSharp {
       gatsbyImageData(width: 532, height: 214, placeholder: BLURRED, layout: FIXED)
     }
   }
-}`
+}`*/
