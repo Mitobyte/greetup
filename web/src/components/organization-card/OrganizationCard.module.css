@@ -52,14 +52,14 @@
 
 .eventCount{
     font-size: var(--text-article-1);
-    color: hsl(var(--yellow-600), 1);
+    color: hsl(var(--green-800), 1);
 }
 
 .visitButton{
     --text-size: var(--text-widget-3);
     --kerning-nudge-amt: 6;
     text-decoration: none;
-    background-color: hsl(var(--gray-500), 1);
+    background-color: hsl(var(--blue-950), 1);
     color: hsl(var(--gray-50), 1);
     border: none;
     width: max-content;
@@ -73,7 +73,7 @@
 
 .viewButton{
     --kerning-nudge-amt: 6;
-    background-color: hsl(var(--blue-950), 1);
+    background-color: hsl(var(--green-800), 1);
     color: hsl(var(--gray-50), 1);
     padding: var(--line-semiBold) var(--line-thick);
     border: none;
