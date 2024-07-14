@@ -2,6 +2,7 @@
     display: grid;
     grid-auto-flow: row;
     grid-gap: var(--tiny-1-4);
+    width: 100%; 
 }
 
 .listItem{
@@ -43,7 +44,7 @@
 .joinButton{
     text-decoration: none;
     --kerning-nudge-amt: 6;
-    background-color: hsl(var(--blue-950), 1);
+    background-color: hsl(var(--green-800), 1);
     color: hsl(var(--gray-50), 1);
     padding: var(--line-semiBold) var(--line-thick);
     margin: var(--xTiny-2-1) 0;
