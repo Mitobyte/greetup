@@ -80,7 +80,7 @@ export const DateComponent = ({start, end})=>{
     const endTime   = getTime(endDate.getHours(), endDate.getMinutes());
     
     return(
-        <section className={styles.mainContienr}>
+        <section className={styles.mainContainer}>
             <h6 className={`srcryTxt ${styles.title}`}>Date</h6>
             <p className={`srcryTxt ${styles.dateText}`}>
                 {weekDay} {month} {day}, {startDate.getFullYear()}<br />
