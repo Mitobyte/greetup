@@ -5,6 +5,8 @@ import JSONData from "../data/combined.json"
 import {Header} from "../components/Header";
 import {graphql} from "gatsby";
 
+//testing testing
+
 export default function Home({data}) {
   const organizations = JSONData.sort((a, b) => a.name.localeCompare(b.name));
 
