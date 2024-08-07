@@ -79,6 +79,19 @@ export default function CalendarPage({data}) {
     )
   }
 
+  //  checks whether or not two dates are the same
+  const compareDates = (dayA, dayB)=>{
+    const day01 = new Date(dayA);
+    const day02 = new Date(dayB);
+    const same = false;
+    
+    day01.getFullYear() === day02.getFullYear() &&
+    day01.getMonth()    === day02.getMonth()    &&
+    day01.getDay()      === day02.getDay()      ?
+    same = true : same = false;
+    return same;
+  }
+
   const open = Boolean(popoverAnchor);
   const id = open ? 'simple-popover' : undefined;
 
