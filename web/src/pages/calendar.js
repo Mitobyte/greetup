@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react"
+import * as styles from './calendar.module.css';
 import {graphql} from "gatsby";
 import Grid from '@mui/material/Grid';
 import Popover from "@mui/material/Popover";
@@ -10,6 +11,7 @@ import JSONData from "../data/combined.json";
 import {Header} from "../components/Header";
 import OrganizationFilter from "../components/OrganizationFilter";
 import { PageLayout } from "../components/page-layout/page-layout";
+import { StylesContext } from "@mui/styles";
 
 export default function CalendarPage({data}) {
   const [organizations, setOrganizations] = useState([]);
@@ -68,6 +70,7 @@ export default function CalendarPage({data}) {
   }
 
   const renderEventContent = (eventInfo) => {
+    console.log(eventInfo);
     return (
       <div>
         <b>{eventInfo.timeText}</b>
@@ -81,7 +84,32 @@ export default function CalendarPage({data}) {
 
   return (
     <PageLayout data={data}>
-      <p>calendar</p>
+
+      <section className={styles.pageContainer}>
+        <section className={`srcryBox ${styles.calPage} ${styles.calContainer}`}>
+          <FullCalendar
+            plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+            headerToolbar={{
+              start: 'dayGridMonth timeGridWeek timeGridDay',
+              center: 'prev title next',
+              end: ''
+            }}
+            handleWindowResize={true}
+            initialView='dayGridMonth'
+            eventColor='green'
+            eventDisplay='block'
+            selectable={true}
+            selectMirror={true}
+            dayMaxEvents={true}
+            weekends={true}
+            events={events}
+            eventClick={handleEventClick}
+            eventContent={renderEventContent}
+            eventMouseEnter={handleMouseEnter}
+          />
+        </section>
+      </section>
+
     </PageLayout>
     /*<Header data={data}>
       <Grid container>
@@ -137,10 +165,10 @@ export default function CalendarPage({data}) {
   );
 }
 
-export const query = graphql`{
+/*export const query = graphql`{
   file(relativePath: {eq: "logo.png"}) {
     childImageSharp {
       gatsbyImageData(width: 532, height: 214, placeholder: BLURRED, layout: FIXED)
     }
   }
-}`
+}`*/
