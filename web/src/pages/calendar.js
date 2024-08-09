@@ -19,6 +19,9 @@ export default function CalendarPage({data}) {
   const [popoverAnchor, setPopoverAnchor] = useState(undefined);
   const [currentEvent, setCurrentEvent] = useState(undefined);
 
+  //  For storing events after sorting by the day
+  const [sortedByDays, setSortedByDays] = useState([]);
+
   const getEvents = (inputOrganizations) => {
     return inputOrganizations.map((organization) => {
       return organization.events.map((event) => {
@@ -38,6 +41,7 @@ export default function CalendarPage({data}) {
 
   useEffect(() => {
     setOrganizations(JSONData.sort((a, b) => a.name.localeCompare(b.name)));
+    //sortEventsByDays(organizations);
   }, []);
 
   useEffect(() => {
@@ -70,7 +74,8 @@ export default function CalendarPage({data}) {
   }
 
   const renderEventContent = (eventInfo) => {
-    console.log(eventInfo);
+    //console.log(eventInfo);
+    //sortEventsByDays(organizations);
     return (
       <div>
         <b>{eventInfo.timeText}</b>
@@ -83,13 +88,41 @@ export default function CalendarPage({data}) {
   const compareDates = (dayA, dayB)=>{
     const day01 = new Date(dayA);
     const day02 = new Date(dayB);
-    const same = false;
+    let same = false;
     
     day01.getFullYear() === day02.getFullYear() &&
     day01.getMonth()    === day02.getMonth()    &&
-    day01.getDay()      === day02.getDay()      ?
+    day01.getDate()      === day02.getDate()      ?
     same = true : same = false;
     return same;
+  }
+
+  //  Sorts events into arrays for each day there's one or more events 
+  const sortEventsByDays = (companies)=>{
+    const sortedEvents = [];
+
+    companies.forEach(a=> {
+      a.events.forEach(b =>{
+        if(sortedEvents.length === 0){ sortedEvents.push([b]);  }
+        else{
+          let counter = 0;
+          let dayFound = false;
+          let index = 0;
+
+          while(counter <= sortedEvents.length - 1 && !dayFound){
+            const comparison = compareDates(sortedEvents[index][0].startDate, b.startDate);
+
+            if(comparison){ dayFound = true; }
+            else{ counter++; index++; }
+          }
+
+          if(dayFound){sortedEvents[index].push(b);}
+          else{ sortedEvents.push([b]); }
+        }
+      });
+    });
+    
+    setSortedByDays(sortedEvents);
   }
 
   const open = Boolean(popoverAnchor);
