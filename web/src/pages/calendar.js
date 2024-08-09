@@ -19,8 +19,12 @@ export default function CalendarPage({data}) {
   const [popoverAnchor, setPopoverAnchor] = useState(undefined);
   const [currentEvent, setCurrentEvent] = useState(undefined);
 
+
+
   //  For storing events after sorting by the day
   const [sortedByDays, setSortedByDays] = useState([]);
+
+
 
   const getEvents = (inputOrganizations) => {
     return inputOrganizations.map((organization) => {
@@ -41,12 +45,18 @@ export default function CalendarPage({data}) {
 
   useEffect(() => {
     setOrganizations(JSONData.sort((a, b) => a.name.localeCompare(b.name)));
-    //sortEventsByDays(organizations);
   }, []);
 
   useEffect(() => {
-    const tmpEvents = getEvents(organizations);
-    setEvents(tmpEvents);
+    
+    const tmpEvents = sortEventsByDays(organizations);
+
+    setEvents(createCalendarData(tmpEvents));
+
+
+    //const tmpEvents = getEvents(organizations);
+    //setEvents(tmpEvents);
+    //sortEventsByDays(organizations);
   }, [organizations]);
 
   const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
@@ -74,13 +84,13 @@ export default function CalendarPage({data}) {
   }
 
   const renderEventContent = (eventInfo) => {
-    //console.log(eventInfo);
-    //sortEventsByDays(organizations);
+    const events = eventInfo.event._def.extendedProps.events;
+
     return (
-      <div>
-        <b>{eventInfo.timeText}</b>
-        <i>{eventInfo.event.title}</i>
-      </div>
+      <article className={styles.eventCell}>
+        <h3 className={styles.eventCount}>{events}</h3>
+        <i className={styles.eventText}>event{events > 1 ? 's' : ''}</i>
+      </article>
     )
   }
 
@@ -122,7 +132,25 @@ export default function CalendarPage({data}) {
       });
     });
     
-    setSortedByDays(sortedEvents);
+    return sortedEvents;
+  }
+
+  //  Creates data to be passed into the calendar
+  const createCalendarData= (eventData)=>{
+    const calendarData = [];
+    let indexLocation = 0;
+
+    eventData.forEach(a=>{
+      calendarData.push({
+        date: a[0].startDate,
+        events: a.length,
+        index: indexLocation,
+        backgroundColor: 'hsl(var(--blue-50), 1)',
+        borderColor: 'hsl(var(--blue-50), 1)',
+      });
+      indexLocation++;
+    });
+    return calendarData;
   }
 
   const open = Boolean(popoverAnchor);

@@ -38,3 +38,25 @@
     --chaseStop-w: var(--large-2-4);
     /*background-color: hsl(var(--yellow-300), 1);*/
 }
+
+.eventCell{
+    display: grid;
+    justify-items: center;
+}
+
+.eventCount{
+    --text: var(--text-widget-1);
+    font-size: var(--text);
+    color: hsl(var(--green-600), 1);
+}
+
+.eventText{
+    --text: var(--text-caption-1);
+    font-size: var(--text);
+    color: hsl(var(--blue-950) ,1);
+}
+
+@media screen and (min-width: 800px){
+    .eventCount{--text: var(--text-article-1);}
+    .eventText{--text: var(--text-widget-1);}
+}
