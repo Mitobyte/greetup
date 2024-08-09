@@ -12,6 +12,8 @@ import {Header} from "../components/Header";
 import OrganizationFilter from "../components/OrganizationFilter";
 import { PageLayout } from "../components/page-layout/page-layout";
 import { StylesContext } from "@mui/styles";
+import { Modal } from "../components/modal/modal";
+import { EventList } from "../components/event-list/EventList";
 
 export default function CalendarPage({data}) {
   const [organizations, setOrganizations] = useState([]);
@@ -26,6 +28,9 @@ export default function CalendarPage({data}) {
 
   //  Stores list of events when user clicks on a date
   const [selectedEvents, setSelectedEvents] = useState([]);
+
+  //  Toggle modal on and off
+  const [modalToggle, setModalToggle] = useState(false);
 
 
 
@@ -80,7 +85,9 @@ export default function CalendarPage({data}) {
     const listIndex = clickInfo.event._def.extendedProps.index;
 
     setSelectedEvents(sortedByDays[listIndex]);
-    console.log(selectedEvents);
+    setModalToggle(true);
+    toggleScrolling('stop');
+    
     /*const {event} = clickInfo;
     if (event.url !== '') {
       window.open(event.url);
@@ -181,6 +188,12 @@ export default function CalendarPage({data}) {
     return calendarData;
   }
 
+  //  Disables and enables website scrolling when modal open and closes
+  const toggleScrolling = (status)=>{
+    if(status === 'stop'){ document.body.style.overflow = 'hidden';}
+    if(status === 'start'){ document.body.style.overflow = 'scroll';}
+  }
+
 
 
   const open = Boolean(popoverAnchor);
@@ -188,6 +201,13 @@ export default function CalendarPage({data}) {
 
   return (
     <PageLayout data={data}>
+
+      {
+        modalToggle === true &&
+        <Modal toggle={(value) => {setModalToggle(value); toggleScrolling('start')}}>
+          <EventList data={selectedEvents} />
+        </Modal>
+      }
 
       <section className={styles.pageContainer}>
         <section className={`srcryBox ${styles.calPage} ${styles.calContainer}`}>
