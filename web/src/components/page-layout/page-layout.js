@@ -8,12 +8,15 @@ export const PageLayout = ({data, children})=>{
     return(
         <section>
             <SvgSymbols />
+
             <article className="navBarContainer">
                 <NavBar />
             </article>
-            <main>
+
+            <main className="main">
                 {children}
             </main>
+
             <Footer />
         </section>
     );
