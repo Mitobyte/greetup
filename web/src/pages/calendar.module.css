@@ -3,7 +3,7 @@
     --fc-small-font-size: var(--text-caption-1);
     --fc-page-bg-color: hsl(var(--gray-100), 1);
     --fc-neutral-bg-color: hsl(var(--gray-200),1);
-    --fc-neutral-text-color: hsl(var(--gray-500));
+    --fc-neutral-text-color: hsl(var(--blue-500));
     --fc-border-color: hsl(var(--gray-200), 1);
   
     --fc-button-text-color: hsl(var(--gray-100), 1);
@@ -13,10 +13,11 @@
     --fc-button-hover-border-color: hsl(var(--gray-900), 1);
     --fc-button-active-bg-color: hsl(var(--blue-800), 1);
     --fc-button-active-border-color: hsl(var(--gray-900), 1);
+
+    --fc-today-bg-color: hsl(var(--yellow-400), .11);
 }
 
 .pageContainer{
-    /*background-color: green;*/
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -35,8 +36,7 @@
     --crushGap-w: var(--micro-2-4);
     --baseSize-w: var(--loMed-2-5);
     --edgeChase-w: var(--small-1-4);
-    --chaseStop-w: var(--large-2-4);
-    /*background-color: hsl(var(--yellow-300), 1);*/
+    --chaseStop-w: var(--large-1-4);
 }
 
 .eventCell{
