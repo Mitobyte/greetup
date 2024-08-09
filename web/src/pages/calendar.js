@@ -24,6 +24,9 @@ export default function CalendarPage({data}) {
   //  For storing events after sorting by the day
   const [sortedByDays, setSortedByDays] = useState([]);
 
+  //  Stores list of events when user clicks on a date
+  const [selectedEvents, setSelectedEvents] = useState([]);
+
 
 
   const getEvents = (inputOrganizations) => {
@@ -43,14 +46,19 @@ export default function CalendarPage({data}) {
     }).flat();
   }
 
+
+
   useEffect(() => {
     setOrganizations(JSONData.sort((a, b) => a.name.localeCompare(b.name)));
   }, []);
+
+
 
   useEffect(() => {
     
     const tmpEvents = sortEventsByDays(organizations);
 
+    setSortedByDays(tmpEvents);
     setEvents(createCalendarData(tmpEvents));
 
 
@@ -59,29 +67,43 @@ export default function CalendarPage({data}) {
     //sortEventsByDays(organizations);
   }, [organizations]);
 
+
+
   const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
     const tmpEvents = getEvents(selectedOrganizations);
     setEvents(tmpEvents);
   }
 
+
+
   const handleEventClick = (clickInfo) => {
-    const {event} = clickInfo;
+    const listIndex = clickInfo.event._def.extendedProps.index;
+
+    setSelectedEvents(sortedByDays[listIndex]);
+    console.log(selectedEvents);
+    /*const {event} = clickInfo;
     if (event.url !== '') {
       window.open(event.url);
     }
 
-    clickInfo.jsEvent.preventDefault();
+    clickInfo.jsEvent.preventDefault();*/
   }
+
+
 
   const handleMouseEnter = (eventInfo) => {
     setPopoverAnchor(eventInfo.el);
     setCurrentEvent(eventInfo.event);
   }
 
+
+
   const handleMouseLeave = (eventInfo) => {
     setPopoverAnchor(undefined);
     setCurrentEvent(undefined);
   }
+
+
 
   const renderEventContent = (eventInfo) => {
     const events = eventInfo.event._def.extendedProps.events;
@@ -93,6 +115,8 @@ export default function CalendarPage({data}) {
       </article>
     )
   }
+
+
 
   //  checks whether or not two dates are the same
   const compareDates = (dayA, dayB)=>{
@@ -106,6 +130,8 @@ export default function CalendarPage({data}) {
     same = true : same = false;
     return same;
   }
+
+
 
   //  Sorts events into arrays for each day there's one or more events 
   const sortEventsByDays = (companies)=>{
@@ -135,6 +161,8 @@ export default function CalendarPage({data}) {
     return sortedEvents;
   }
 
+
+
   //  Creates data to be passed into the calendar
   const createCalendarData= (eventData)=>{
     const calendarData = [];
@@ -152,6 +180,8 @@ export default function CalendarPage({data}) {
     });
     return calendarData;
   }
+
+
 
   const open = Boolean(popoverAnchor);
   const id = open ? 'simple-popover' : undefined;
@@ -179,7 +209,6 @@ export default function CalendarPage({data}) {
             events={events}
             eventClick={handleEventClick}
             eventContent={renderEventContent}
-            eventMouseEnter={handleMouseEnter}
           />
         </section>
       </section>
