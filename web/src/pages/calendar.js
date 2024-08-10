@@ -208,12 +208,12 @@ export default function CalendarPage({data}) {
   const filterGroups = (groups) =>{
     const filteredGroups = [];
 
-    if(groups[0] === 'all'){ filteredGroups = companies; }
+    if(groups[0] === 'all'){ filteredGroups = organizations; }
     else{
       groups.forEach(a=>{
-        const groupSearch = companies.findIndex(b=>{ a === b.name});
+        const groupSearch = organizations.findIndex(b=>{ return a === b.name});
 
-        filteredGroups.push(companies[groupSearch]);
+        filteredGroups.push(organizations[groupSearch]);
       });
     }
 
@@ -234,7 +234,10 @@ export default function CalendarPage({data}) {
           <EventList data={selectedEvents} />
         </Modal>
       }
-      <GroupFilter />
+      <GroupFilter
+        nameList={() => createGroupList(organizations)}
+        resultList={(groups) => filterGroups(groups)}
+      />
 
       <section className={styles.pageContainer}>
         <section className={`srcryBox ${styles.calPage} ${styles.calContainer}`}>
