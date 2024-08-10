@@ -204,6 +204,22 @@ export default function CalendarPage({data}) {
     return names;
   }
 
+  //  Filters list of companies selected by user
+  const filterGroups = (groups) =>{
+    const filteredGroups = [];
+
+    if(groups[0] === 'all'){ filteredGroups = companies; }
+    else{
+      groups.forEach(a=>{
+        const groupSearch = companies.findIndex(b=>{ a === b.name});
+
+        filteredGroups.push(companies[groupSearch]);
+      });
+    }
+
+    console.log(filteredGroups);
+  }
+
 
 
   const open = Boolean(popoverAnchor);
