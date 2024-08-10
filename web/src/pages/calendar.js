@@ -195,6 +195,15 @@ export default function CalendarPage({data}) {
     if(status === 'start'){ document.body.style.overflow = 'scroll';}
   }
 
+  //  Creates a list of company names for group filter
+  const createGroupList = (groups) =>{
+    const names = [];
+
+    groups.forEach(a=>{ names.push(a.name); });
+
+    return names;
+  }
+
 
 
   const open = Boolean(popoverAnchor);
