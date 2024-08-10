@@ -14,6 +14,7 @@ import { PageLayout } from "../components/page-layout/page-layout";
 import { StylesContext } from "@mui/styles";
 import { Modal } from "../components/modal/modal";
 import { EventList } from "../components/event-list/EventList";
+import { GroupFilter } from "../components/group-filter/GroupFilter";
 
 export default function CalendarPage({data}) {
   const [organizations, setOrganizations] = useState([]);
@@ -208,6 +209,7 @@ export default function CalendarPage({data}) {
           <EventList data={selectedEvents} />
         </Modal>
       }
+      <GroupFilter />
 
       <section className={styles.pageContainer}>
         <section className={`srcryBox ${styles.calPage} ${styles.calContainer}`}>
