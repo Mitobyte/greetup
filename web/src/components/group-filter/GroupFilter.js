@@ -19,10 +19,20 @@ export const GroupFilter = ({nameList, resultList}) =>{
         setSelectedNames([...selectedNames, name]);
     }
 
+    const removeFromSelection = (name)=>{
+        if(name !== 'all'){
+            if(selectedNames.length === 1){setSelectedNames(['all']);}
+            else{
+                setSelectedNames([...selectedNames.filter(a=> a !== name)]);
+            }
+        }
+    }
+
     return(
         <article className={styles.mainContainer}>
             <BreadCrumbs
                 crumbs={selectedNames}
+                removeGroup={(value)=> removeFromSelection(value)}
             />
             <p className={styles.nameContainer}>
                 <NameButton

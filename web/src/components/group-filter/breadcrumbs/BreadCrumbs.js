@@ -4,7 +4,7 @@ import { Crumb } from './crumb/Crumb';
 
 export const BreadCrumbs = ({crumbs, removeGroup}) => {
     return(
-        <p>
+        <p className={styles.mainContainer}>
             {
                 crumbs.map((item, index)=>
                     <Crumb
