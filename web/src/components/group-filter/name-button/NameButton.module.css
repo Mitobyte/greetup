@@ -1,10 +1,14 @@
 .nameButton{
+    --active-color: hsl(var(--blue-700), 1);
+    --inactive-color: hsl(var(--gray-700), 1);
+    --active-background: hsl(var(--blue-50), 1);
+    --inactive-background: hsl(var(--gray-100), .66);
     display: inline-grid;
     grid-template-columns: auto var(--micro-2-2);
     grid-gap: var(--line-bold);
-    background-color: hsl(var(--blue-50), 1);
+    background-color: var(--inactive-background);
     font-size: var(--text-widget-2);
-    color: hsl(var(--gray-700), 1);
+    color: var(--inactive-color);
     margin: var(--line-semiThick);
     padding: var(--line-bold);
     --baseSize-h: var(--xTiny-1-6);
