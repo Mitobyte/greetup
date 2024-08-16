@@ -1,6 +1,6 @@
 .crumbContainer{
     display: inline-grid;
-    align-items: center;
+    place-items: center;
     grid-template-columns: auto var(--micro-2-3);
     width: max-content;
     grid-gap: var(--line-thick);
@@ -8,13 +8,23 @@
     background-color: hsl(var(--blue-800), 1);
     color: hsl(var(--blue-50), 1);
     margin: var(--line-thick);
-    padding: var(--line-narrow);
+    padding: var(--micro-1-2);
     white-space: break-spaces;
+    --baseSize-h: var(--xTiny-1-4);
+    --squishGrowth-h-start: 1000px;
+    --squishGrowth-h-speed: 3;
+    --squishGrowth-h-max: var(--xTiny-2-4);
 }
 
 .closeButton{
-    --stroke: var(--line-fine);
+    --stroke: var(--line-bold);
     --stroke-color: hsl(var(--blue-50), 1);
     cursor: pointer;
     place-self: center;
+}
+
+@media screen and (min-width: 1000px){
+    .closeButton{
+        --stroke: var(--line-narrow);
+    }
 }
