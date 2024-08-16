@@ -1,0 +1,12 @@
+.mainContainer{
+    background-color: hsl(var(--gray-100), .77);
+    display: grid;
+    padding-bottom: var(--xTiny-2-4);
+}
+
+.nameContainer{
+    background-color: hsl(var(--gray-50), 1);
+    justify-self: center;
+    width: 88%;
+    text-align: center;
+}
