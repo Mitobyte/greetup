@@ -7,7 +7,7 @@
     grid-template-columns: auto var(--micro-2-2);
     grid-gap: var(--line-bold);
     background-color: var(--inactive-background);
-    font-size: var(--text-widget-2);
+    font-size: var(--text-caption-1);
     color: var(--inactive-color);
     margin: var(--line-semiThick);
     padding: var(--line-bold);
@@ -17,6 +17,8 @@
     --squishGrowth-h-max: var(--xTiny-2-4);
     width: max-content;
     align-items: center;
+    word-break: break-all;
+    cursor: pointer;
 }
 
 .indicator{
@@ -28,4 +30,12 @@
     height: var(--micro-1-3);
     border-radius: 50%;
     background-color: var(--inactive);
+}
+
+
+
+@media screen and (min-width: 500px){
+    .nameButton{
+        font-size: var(--text-widget-3);
+    }
 }
