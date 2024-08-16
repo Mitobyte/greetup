@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as styles from './GroupFilter.module.css';
 import { NameButton } from './name-button/NameButton';
+import { BreadCrumbs } from './breadcrumbs/BreadCrumbs';
 
 export const GroupFilter = ({nameList, resultList}) =>{
 
@@ -20,11 +21,9 @@ export const GroupFilter = ({nameList, resultList}) =>{
 
     return(
         <article className={styles.mainContainer}>
-            <p>
-                {
-                    selectedNames.map((name)=> <span>{name}</span>)
-                }
-            </p>
+            <BreadCrumbs
+                crumbs={selectedNames}
+            />
             <p className={styles.nameContainer}>
                 <NameButton
                     name={'all'}
