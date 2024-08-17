@@ -1,0 +1,7 @@
+.nameContainer{
+    background-color: hsl(var(--gray-50), 1);
+    justify-self: center;
+    width: 88%;
+    text-align: center;
+    word-wrap: break-word;
+}

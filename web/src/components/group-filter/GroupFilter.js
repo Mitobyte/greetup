@@ -1,7 +1,8 @@
 import * as React from 'react';
 import * as styles from './GroupFilter.module.css';
-import { NameButton } from './name-button/NameButton';
+import { NameButton } from './name-container/name-button/NameButton';
 import { BreadCrumbs } from './breadcrumbs/BreadCrumbs';
+import { NameContainer } from './name-container/NameContainer';
 
 export const GroupFilter = ({nameList, resultList}) =>{
 
@@ -34,23 +35,12 @@ export const GroupFilter = ({nameList, resultList}) =>{
                 crumbs={selectedNames}
                 removeGroup={(value)=> removeFromSelection(value)}
             />
-            <p className={styles.nameContainer}>
-                <NameButton
-                    name={'all'}
-                    active={selectedNames.indexOf('all') > -1 ? true : false}
-                    selected={(a)=> handleSelection(a)}
-                />
-                {
-                    filteredNames.map((name, index)=>
-                        <NameButton
-                            key={`company_name_btn_${index}`}
-                            name={name}
-                            active={selectedNames.indexOf(name) > -1 ? true : false}
-                            selected={(a)=> handleSelection(a)}
-                        />
-                    )
-                }
-            </p>
+            <NameContainer
+                names={filteredNames}
+                selected={selectedNames}
+                updateList={(name)=> handleSelection(name)}
+            />
+            
         </article>
     );
 }
