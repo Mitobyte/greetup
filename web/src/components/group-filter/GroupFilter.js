@@ -3,6 +3,7 @@ import * as styles from './GroupFilter.module.css';
 import { NameButton } from './name-container/name-button/NameButton';
 import { BreadCrumbs } from './breadcrumbs/BreadCrumbs';
 import { NameContainer } from './name-container/NameContainer';
+import { SearchBar } from './search-bar/SearchBar';
 
 export const GroupFilter = ({nameList, resultList}) =>{
 
@@ -31,6 +32,8 @@ export const GroupFilter = ({nameList, resultList}) =>{
 
     return(
         <article className={styles.mainContainer}>
+            <SearchBar />
+
             <BreadCrumbs
                 crumbs={selectedNames}
                 removeGroup={(value)=> removeFromSelection(value)}
