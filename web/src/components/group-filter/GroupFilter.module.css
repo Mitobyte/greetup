@@ -2,4 +2,5 @@
     background-color: hsl(var(--gray-100), .77);
     display: grid;
     padding-bottom: var(--xTiny-2-4);
+    width: 100%;
 }

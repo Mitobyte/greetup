@@ -16,8 +16,8 @@ export const GroupFilter = ({nameList, resultList}) =>{
 
         name === 'all' ? setSelectedNames(['all']) :
         selectedNames.indexOf('all') > -1 ? setSelectedNames([name]) :
-        selectedNames.indexOf(name) > -1 && selectedNames.length === 1 ? setSelectedNames(['all']) :
-        selectedNames.indexOf(name) > -1 ? setSelectedNames([...selectedNames.filter(a=> a !== name)]) :
+        selectedNames.indexOf(name)  > -1 && selectedNames.length === 1 ? setSelectedNames(['all']) :
+        selectedNames.indexOf(name)  > -1 ? setSelectedNames([...selectedNames.filter(a=> a !== name)]) :
         setSelectedNames([...selectedNames, name]);
     }
 
@@ -30,9 +30,23 @@ export const GroupFilter = ({nameList, resultList}) =>{
         }
     }
 
+    const handleUserInput = (input)=>{
+        const groups = nameList.filter(a=> a.toLowerCase().startsWith(input.toLowerCase()));
+
+        setFilteredNames(groups);
+        resultList(groups);
+    }
+
+    const handleSearch = (input) =>{
+        setFilteredNames(nameList.filter(a=> a === input));
+    }
+
     return(
         <article className={styles.mainContainer}>
-            <SearchBar />
+            <SearchBar
+                userInput={handleUserInput}
+                searchText={handleSearch}
+            />
 
             <BreadCrumbs
                 crumbs={selectedNames}
