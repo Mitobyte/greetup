@@ -24,6 +24,7 @@
     "@mui/material": "^5.2.5",
     "@mui/styles": "^5.2.5",
     "dayjs": "^1.11.10",
+    "framer-motion": "^11.3.28",
     "gatsby": "^5.12.11",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-css": "^2.1.0",
