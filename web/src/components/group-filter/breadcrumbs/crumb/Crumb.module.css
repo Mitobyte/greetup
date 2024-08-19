@@ -2,25 +2,26 @@
     display: inline-grid;
     place-items: center;
     grid-template-columns: auto var(--micro-2-3);
-    width: max-content;
+    width: auto;
+    max-width: 98%;
     grid-gap: var(--line-thick);
     font-size: var(--text-caption-1);
-    background-color: hsl(var(--blue-800), 1);
-    color: hsl(var(--blue-50), 1);
-    margin: var(--line-thick);
-    padding: var(--micro-1-2);
+    background-color: hsl(var(--blue-900), 1);
+    color: hsl(var(--gray-50), 1);
+    margin: var(--line-semiBold);
+    padding: 0 var(--micro-1-2);
     white-space: break-spaces;
-    --baseSize-h: var(--xTiny-1-4);
+    --baseSize-h: var(--micro-2-5);
     --squishGrowth-h-start: 1000px;
-    --squishGrowth-h-speed: 3;
+    --squishGrowth-h-speed: 1;
     --squishGrowth-h-max: var(--xTiny-2-4);
 }
 
 .closeButton{
-    --stroke: var(--line-bold);
-    --stroke-color: hsl(var(--blue-50), 1);
-    cursor: pointer;
-    place-self: center;
+   --stroke: var(--line-fine);
+   --stroke-color: hsl(var(--blue-50), 1);
+   cursor: pointer;
+   place-self: center;
 }
 
 @media screen and (min-width: 1000px){
