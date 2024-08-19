@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as styles from './GroupFilter.module.css';
+import {AnimatePresence, motion} from 'framer-motion';
 import { NameButton } from './name-container/name-button/NameButton';
 import { BreadCrumbs } from './breadcrumbs/BreadCrumbs';
 import { NameContainer } from './name-container/NameContainer';
@@ -9,6 +10,7 @@ export const GroupFilter = ({nameList, resultList}) =>{
 
     const [filteredNames, setFilteredNames] = React.useState([]);
     const [selectedNames, setSelectedNames] = React.useState(['all']);
+    const [filterToggle, setFilterToggle] = React.useState(false);
 
     React.useEffect(()=>{ setFilteredNames(nameList)}, [nameList]);
     
@@ -41,22 +43,71 @@ export const GroupFilter = ({nameList, resultList}) =>{
         setFilteredNames(nameList.filter(a=> a === input));
     }
 
+    const handleFilterToggle= (state) =>{
+        if(state){
+            document.body.style.overflow = 'hidden';
+            setFilterToggle(true);
+        }
+        else{
+            document.body.style.overflow = 'scroll';
+            setFilterToggle(false);
+        }
+    }
+
     return(
         <article className={styles.mainContainer}>
-            <SearchBar
-                userInput={handleUserInput}
-                searchText={handleSearch}
-            />
+            <button
+                type="button"
+                className={`srcryTxt ${styles.filterButton}`}
+                onClick={()=> handleFilterToggle(!filterToggle)}
+            >
+                filter events
+            </button>
 
-            <BreadCrumbs
-                crumbs={selectedNames}
-                removeGroup={(value)=> removeFromSelection(value)}
-            />
-            <NameContainer
-                names={filteredNames}
-                selected={selectedNames}
-                updateList={(name)=> handleSelection(name)}
-            />
+            <AnimatePresence>
+                {
+                    filterToggle &&(
+                        <motion.article
+                            className={styles.searchContainer}
+                            initial={{transform: 'translateY(-100vh)'}}
+                            animate={{transform: 'translateY(0)'}}
+                            exit={{transform: 'translateY(-100vh)'}}
+                        >
+                            <svg
+                                className={styles.closeButton}
+                                viewBox="0 0 20 20"
+                                onClick={()=>handleFilterToggle(false)}
+                            >
+                                <use href="#close_button" />
+                            </svg>
+
+                            <article className={styles.breadcrumbs}>
+                                <BreadCrumbs
+                                    crumbs={selectedNames}
+                                    removeGroup={(value)=> removeFromSelection(value)}
+                                />
+                            </article>
+
+                            <article className={styles.searchBar}>
+                                <SearchBar
+                                    userInput={handleUserInput}
+                                    searchText={handleSearch}
+                                />
+                            </article>
+
+                            <article className={styles.nameContainer}>
+                                <NameContainer
+                                    names={filteredNames}
+                                    selectedGroups={selectedNames}
+                                    filteredGroups={filteredNames}
+                                    updateList={(name)=> handleSelection(name)}
+                                />
+                            </article>
+
+                        </motion.article>
+                )}
+
+            </AnimatePresence>
             
         </article>
     );
