@@ -1,6 +1,6 @@
 .navBar{
     display: grid;
-    grid-template-columns: var(--xTiny-2-3) 1fr auto var(--xTiny-2-2);
+    grid-template-columns: var(--xTiny-2-9) 1fr auto var(--xTiny-2-2);
     background-color: hsl(var(--gray-100), .88);
     backdrop-filter: blur(var(--line-fine));
     color: hsl(var(--yellow-100), 1);
