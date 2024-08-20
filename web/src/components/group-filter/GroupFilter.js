@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as styles from './GroupFilter.module.css';
 import {AnimatePresence, motion} from 'framer-motion';
-import { NameButton } from './name-container/name-button/NameButton';
 import { BreadCrumbs } from './breadcrumbs/BreadCrumbs';
 import { NameContainer } from './name-container/NameContainer';
 import { SearchBar } from './search-bar/SearchBar';
@@ -33,6 +32,7 @@ export const GroupFilter = ({nameList, resultList}) =>{
     }
 
     const handleUserInput = (input)=>{
+        
         const groups = nameList.filter(a=> a.toLowerCase().startsWith(input.toLowerCase()));
 
         setFilteredNames(groups);
