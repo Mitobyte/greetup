@@ -2,15 +2,24 @@ import * as React from 'react';
 import * as styles from './SearchBar.module.css';
 
 export const SearchBar = ({userInput, searchText})=>{
-    const [searchForText, setSearchForText] = React.useState('');
+    const [userText, setUserText] = React.useState('');
+
+    const detectEnterKey = (event)=>{
+        
+        if(event.key === 'Enter'){
+            handleSearch(userText);
+        }
+    }
 
     const handleKeyStrokes = (value)=>{
-        setSearchForText(value);
+
+        setUserText(value);
         userInput(value);
+
     }
 
     const handleSearch = ()=>{
-        searchText(searchForText);
+        searchText(userText);
     }
 
     return(
@@ -21,6 +30,7 @@ export const SearchBar = ({userInput, searchText})=>{
                     type="search"
                     className={styles.searchBar}
                     placeholder="search for groups"
+                    onKeyUp={(event)=> detectEnterKey(event)}
                     onChange={(event)=> handleKeyStrokes(event.target.value)}
                 />
                 <button
