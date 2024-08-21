@@ -49,6 +49,11 @@ body{
     margin: 0;
 }
 
-.fc-event-main{
-    width: 100%;
+.fc-daygrid-event{
+    white-space: normal;
 }
+
+/*.fc-h-event .fc-event-main{
+    width: 130px;
+    background-color: red;
+}*/

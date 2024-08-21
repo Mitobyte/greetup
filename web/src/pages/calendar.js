@@ -122,7 +122,9 @@ export default function CalendarPage({data}) {
           {eventInfo.event.title}
         </p>
         <p>
-          {eventInfo.event.start.toLocaleTimeString('en-US')} - {eventInfo.event.end.toLocaleTimeString('en-US')}
+          <b>
+            {eventInfo.event.start.toLocaleTimeString('en-US')} - {eventInfo.event.end.toLocaleTimeString('en-US')}
+          </b>
         </p>
 
       </article>

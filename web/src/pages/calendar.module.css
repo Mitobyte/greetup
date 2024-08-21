@@ -63,7 +63,7 @@
     width: 100%;
     font-size: var(--text-caption-1);
     color: hsl(var(--blue-50) ,1);
-    word-wrap: break-word;
+    word-wrap: break-all;
 }
 
 /*@media screen and (min-width: 800px){
