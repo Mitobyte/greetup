@@ -6,14 +6,18 @@ import { NameContainer } from './name-container/NameContainer';
 import { SearchBar } from './search-bar/SearchBar';
 
 export const GroupFilter = ({nameList, resultList}) =>{
+    // nameList   : list of all organization names for matching search results
+    // resultList : passes list of selected names to parent for filtering organization data for calendar
 
     const [filteredNames, setFilteredNames] = React.useState([]);
     const [selectedNames, setSelectedNames] = React.useState(['all']);
-    const [filterToggle, setFilterToggle] = React.useState(false);
+    const [filterToggle,  setFilterToggle ] = React.useState(false);
 
-    React.useEffect(()=>{ setFilteredNames(nameList)}, [nameList]);
+    React.useEffect(() => setFilteredNames(nameList), [nameList]);
+
+    React.useEffect(() => resultList(selectedNames),  [selectedNames]);
     
-    const handleSelection = (name)=>{
+    const handleSelection = (name) => {
 
         name === 'all' ? setSelectedNames(['all']) :
         selectedNames.indexOf('all') > -1 ? setSelectedNames([name]) :
@@ -22,28 +26,25 @@ export const GroupFilter = ({nameList, resultList}) =>{
         setSelectedNames([...selectedNames, name]);
     }
 
-    const removeFromSelection = (name)=>{
+    const removeFromSelection = (name) => {
         if(name !== 'all'){
-            if(selectedNames.length === 1){setSelectedNames(['all']);}
-            else{
-                setSelectedNames([...selectedNames.filter(a=> a !== name)]);
-            }
+            if(selectedNames.length === 1) { setSelectedNames(['all']); }
+            else{ setSelectedNames([...selectedNames.filter(a=> a !== name)]); }
         }
     }
 
-    const handleUserInput = (input)=>{
+    const handleUserInput = (input) => {
         
         const groups = nameList.filter(a=> a.toLowerCase().startsWith(input.toLowerCase()));
 
         setFilteredNames(groups);
-        resultList(groups);
     }
 
-    const handleSearch = (input) =>{
+    const handleSearch = (input) => {
         setFilteredNames(nameList.filter(a=> a === input));
     }
 
-    const handleFilterToggle= (state) =>{
+    const handleFilterToggle = (state) => {
         if(state){
             document.body.style.overflow = 'hidden';
             setFilterToggle(true);

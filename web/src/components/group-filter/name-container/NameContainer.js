@@ -3,10 +3,15 @@ import * as styles from './NameContainer.module.css';
 import { NameButton } from './name-button/NameButton';
 
 export const NameContainer = ({names, selectedGroups, filteredGroups, updateList}) =>{
+    // names          : list of group names to iterate into buttons
+    // selectedGroups : list of groups currently selected by the user
+    // filteredGroups : list of groups filtered by search bar to narrow down matches
+    // updateList     : passes selected group name to parent component
+
     return(
         <article className={styles.mainContainer}>
 
-        <p className={styles.nameContainer}>
+            <p className={styles.nameContainer}>
                 <NameButton
                     name={'all'}
                     active={selectedGroups.indexOf('all') > -1 ? true : false}
@@ -23,7 +28,7 @@ export const NameContainer = ({names, selectedGroups, filteredGroups, updateList
                     )
                     :
                     <span className={styles.noResultText}>(no results)</span>
-                    
+                        
                 }
             </p>
         </article>

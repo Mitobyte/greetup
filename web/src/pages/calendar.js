@@ -23,6 +23,8 @@ export default function CalendarPage({data}) {
   const [currentEvent, setCurrentEvent] = useState(undefined);
 
 
+  //  For organizations filtered by user
+  const [filteredGroups, setFilteredGroups] = useState([]);
 
   //  For storing events after sorting by the day
   const [sortedByDays, setSortedByDays] = useState([]);
@@ -46,7 +48,7 @@ export default function CalendarPage({data}) {
           allDay: false,
           url,
           resource: organization.name,
-          color: "purple",
+          //color: "purple",
         }
       })
     }).flat();
@@ -55,23 +57,22 @@ export default function CalendarPage({data}) {
 
 
   useEffect(() => {
-    setOrganizations(JSONData.sort((a, b) => a.name.localeCompare(b.name)));
-  }, []);
+    const organizationData = JSONData.sort((a,b)=> a.name.localeCompare(b.name));
+
+    setOrganizations(organizationData);
+    setFilteredGroups(organizationData);
+
+  }, [organizations]);
 
 
 
   useEffect(() => {
+    const groups = filteredGroups;
+    const tmpEvents = getEvents(groups);
+
+    setEvents(tmpEvents);
     
-    const tmpEvents = sortEventsByDays(organizations);
-
-    setSortedByDays(tmpEvents);
-    setEvents(createCalendarData(tmpEvents));
-
-
-    //const tmpEvents = getEvents(organizations);
-    //setEvents(tmpEvents);
-    //sortEventsByDays(organizations);
-  }, [organizations]);
+  }, [filteredGroups]);
 
 
 
@@ -114,14 +115,26 @@ export default function CalendarPage({data}) {
 
 
   const renderEventContent = (eventInfo) => {
-    const events = eventInfo.event._def.extendedProps.events;
+    //console.log(eventInfo.event.start.toLocaleTimeString('en-US'));
+    return(
+      <article className={styles.eventListing}>
+        <p className={styles.eventText}>
+          {eventInfo.event.title}
+        </p>
+        <p>
+          {eventInfo.event.start.toLocaleTimeString('en-US')} - {eventInfo.event.end.toLocaleTimeString('en-US')}
+        </p>
+
+      </article>
+    );
+    /*const events = eventInfo.event._def.extendedProps.events;
 
     return (
       <article className={styles.eventCell}>
         <h3 className={styles.eventCount}>{events}</h3>
         <i className={styles.eventText}>event{events > 1 ? 's' : ''}</i>
       </article>
-    )
+    )*/
   }
 
 
@@ -201,23 +214,27 @@ export default function CalendarPage({data}) {
 
     groups.forEach(a=>{ names.push(a.name); });
 
+    //console.log(names);
     return names;
   }
 
   //  Filters list of companies selected by user
   const filterGroups = (groups) =>{
-    const filteredGroups = [];
+    let selectedGroups = [];
+    console.log(groups);
 
-    if(groups[0] === 'all'){ filteredGroups = organizations; }
+    if(groups[0] === 'all'){ selectedGroups = organizations; }
     else{
       groups.forEach(a=>{
         const groupSearch = organizations.findIndex(b=>{ return a === b.name});
 
-        filteredGroups.push(organizations[groupSearch]);
+        selectedGroups.push(organizations[groupSearch]);
       });
     }
-
-    console.log(filteredGroups);
+    
+    setFilteredGroups(selectedGroups);
+    //setEvents(getEvents(selectedGroups));
+    //console.log(selectedGroups);
   }
 
 
@@ -234,12 +251,12 @@ export default function CalendarPage({data}) {
           <EventList data={selectedEvents} />
         </Modal>
       }
-      <GroupFilter
-        nameList={() => createGroupList(organizations)}
-        resultList={(groups) => filterGroups(groups)}
-      />
 
       <section className={styles.pageContainer}>
+        <GroupFilter
+          nameList={createGroupList(organizations)}
+          resultList={filterGroups}
+        />
         <section className={`srcryBox ${styles.calPage} ${styles.calContainer}`}>
           <FullCalendar
             plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}

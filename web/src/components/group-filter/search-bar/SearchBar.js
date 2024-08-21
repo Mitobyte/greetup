@@ -2,25 +2,24 @@ import * as React from 'react';
 import * as styles from './SearchBar.module.css';
 
 export const SearchBar = ({userInput, searchText})=>{
+    // userInput  : passes search text up to parent for narrowing down matches
+    // searchText : passes current search text to parent to find exact match
+
     const [userText, setUserText] = React.useState('');
 
     const detectEnterKey = (event)=>{
         
-        if(event.key === 'Enter'){
-            handleSearch(userText);
-        }
+        if(event.key === 'Enter'){ handleSearch(); }
     }
 
-    const handleKeyStrokes = (value)=>{
+    const handleKeyStrokes = (value) => {
 
         setUserText(value);
         userInput(value);
 
     }
 
-    const handleSearch = ()=>{
-        searchText(userText);
-    }
+    const handleSearch = () => { searchText(userText); }
 
     return(
         <article className={styles.mainContainer}>
