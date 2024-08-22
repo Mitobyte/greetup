@@ -8,9 +8,9 @@ export const Modal = ({children, toggle})=>{
                 <svg className={`srcryBox ${styles.closeButton}`} viewBox="0 0 20 20" onClick={()=> toggle(false)}>
                     <use href="#close_button" />
                 </svg>
-                <artilce className={styles.projectionContainer}>
+                <article className={styles.projectionContainer}>
                     {children}
-                </artilce>
+                </article>
             </article>
         </section>
     );
