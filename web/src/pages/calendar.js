@@ -15,6 +15,7 @@ import { StylesContext } from "@mui/styles";
 import { Modal } from "../components/modal/modal";
 import { EventList } from "../components/event-list/EventList";
 import { GroupFilter } from "../components/group-filter/GroupFilter";
+import { getTime } from "../utils/date-helpers";
 
 export default function CalendarPage({data}) {
   const [organizations, setOrganizations] = useState([]);
@@ -36,26 +37,24 @@ export default function CalendarPage({data}) {
   const [modalToggle, setModalToggle] = useState(false);
 
 
-
   const getEvents = (inputOrganizations) => {
     return inputOrganizations.map((organization) => {
       return organization.events.map((event) => {
         const url = event.url || event.location?.url || '';
         return {
           title: event.name,
-          start: Date.parse(event.startDate),
-          end: Date.parse(event.endDate),
+          start: new Date(event.startDate),
+          end: new Date(event.endDate),
           allDay: false,
           url,
-          resource: organization.name,
-          //color: "purple",
+          resource: organization.name
         }
       })
     }).flat();
   }
 
 
-
+  //  Sets initial organization data
   useEffect(() => {
     const organizationData = JSONData.sort((a,b)=> a.name.localeCompare(b.name));
 
@@ -63,9 +62,9 @@ export default function CalendarPage({data}) {
     setFilteredGroups(organizationData);
 
   }, [organizations]);
+  
 
-
-
+  //  Updates UI when user filters groups
   useEffect(() => {
     const groups = filteredGroups;
     const tmpEvents = getEvents(groups);
@@ -115,15 +114,16 @@ export default function CalendarPage({data}) {
 
 
   const renderEventContent = (eventInfo) => {
-    //console.log(eventInfo.event.start.toLocaleTimeString('en-US'));
+    
     return(
       <article className={styles.eventListing}>
         <p className={styles.eventText}>
-          {eventInfo.event.title}
+          {eventInfo.event._def.extendedProps.resource}
         </p>
-        <p>
+        <p className={styles.eventText}>
           <b>
-            {eventInfo.event.start.toLocaleTimeString('en-US')} - {eventInfo.event.end.toLocaleTimeString('en-US')}
+            {getTime(eventInfo.event.start.getHours(), eventInfo.event.start.getMinutes())} - 
+            {getTime(eventInfo.event.end.getHours(), eventInfo.event.end.getMinutes())}
           </b>
         </p>
 

@@ -19,18 +19,11 @@
 
 .pageContainer{
     width: 100%;
-    /*min-height: 100vh;*/
     display: grid;
     justify-items: center;
     grid-gap: var(--xTiny-1-4);
     padding-bottom: var(--xTiny-2-6);
 }
-
-.demoTxt{
-    --text-size: var(--text-title-3);
-    color: red;
-}
-
 
 .calPage.calContainer{
     display: grid;
@@ -56,17 +49,13 @@
     display: grid;
     grid-gap: var(--line-semiBold);
     width: 100%;
-    /*max-width: 22ch;*/
+    height: 100%;
     background-color: hsl(var(--blue-700), 1);
 }
 .eventText{
-    width: 100%;
+    width: 98%;
     font-size: var(--text-caption-1);
     color: hsl(var(--blue-50) ,1);
     word-wrap: break-all;
+    place-self: center;
 }
-
-/*@media screen and (min-width: 800px){
-    .eventCount{--text: var(--text-article-1);}
-    .eventText{--text: var(--text-widget-1);}
-}*/
