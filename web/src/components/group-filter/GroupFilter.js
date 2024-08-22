@@ -46,11 +46,11 @@ export const GroupFilter = ({nameList, resultList}) =>{
 
     const handleFilterToggle = (state) => {
         if(state){
-            document.body.style.overflow = 'hidden';
+            document.body.style.overflowY = 'hidden';
             setFilterToggle(true);
         }
         else{
-            document.body.style.overflow = 'scroll';
+            document.body.style.overflowY = 'scroll';
             setFilterToggle(false);
         }
     }
