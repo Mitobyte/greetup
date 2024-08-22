@@ -9,7 +9,7 @@ export const EventList = ({data, key}) =>{
             {
                 data.map((item, index)=>{
                     return(
-                        <li className={styles.listItem}>
+                        <li className={styles.listItem} key={`event_${index}`}>
                             <h3 className={`srcryTxt ${styles.eventName}`}>{item.name}</h3>
                             <Location data={item.location} />
                             <DateComponent start={item.startDate} end={item.endDate} />
