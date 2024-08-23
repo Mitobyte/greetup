@@ -17,94 +17,121 @@ import { EventList } from "../components/event-list/EventList";
 import { GroupFilter } from "../components/group-filter/GroupFilter";
 import { getTime } from "../utils/date-helpers";
 
+
+
 export default function CalendarPage({data}) {
-  const [organizations, setOrganizations] = useState([]);
-  const [events, setEvents] = useState([]);
-  const [popoverAnchor, setPopoverAnchor] = useState(undefined);
-  const [currentEvent, setCurrentEvent] = useState(undefined);
+
+    //  Root data for all organizations --->
+  const [ organizations, setOrganizations ]   = useState([]);
+
+    //  Event data that gets passed
+    //  into the calendar --->
+  const [ events, setEvents ]                 = useState([]);  
+  
+    //  Organizations filtered by
+    //  user --->
+  const [ filteredGroups, setFilteredGroups ] = useState([]);
+  
+    //  Stores events sorted by day --->
+  const [ sortedByDays, setSortedByDays ]     = useState([]);
+  
+    //  Stores events of a particular
+    //  day when user clicks a
+    //  date on the calendar --->
+  const [ selectedEvents, setSelectedEvents ] = useState([]);
+  
+    //  Toggle modal on and off --->
+  const [ modalToggle, setModalToggle ]       = useState(false);
+  
 
 
-  //  For organizations filtered by user
-  const [filteredGroups, setFilteredGroups] = useState([]);
+  const [ popoverAnchor, setPopoverAnchor ]   = useState(undefined);
+  const [ currentEvent, setCurrentEvent ]     = useState(undefined);
 
-  //  For storing events after sorting by the day
-  const [sortedByDays, setSortedByDays] = useState([]);
-
-  //  Stores list of events when user clicks on a date
-  const [selectedEvents, setSelectedEvents] = useState([]);
-
-  //  Toggle modal on and off
-  const [modalToggle, setModalToggle] = useState(false);
+  const open = Boolean(popoverAnchor);
+  const id = open ? 'simple-popover' : undefined;
 
 
+
+
+
+
+
+    //  Sets root organization data --->
+  useEffect( () => {
+    const organizationData = JSONData.sort( (a, b) => a.name.localeCompare( b.name ) );
+
+    setOrganizations( organizationData );
+    setFilteredGroups( organizationData );
+    sortEventsByDays( organizationData );
+
+  }, [ organizations ]);
+
+
+
+    //  Updates UI when user filters groups --->
+  useEffect( () => {
+    const groups    = filteredGroups;
+    const tmpEvents = getEvents( groups );
+
+    setEvents( tmpEvents );
+    
+  }, [ filteredGroups ]);
+
+
+
+
+
+
+
+    //  Creates event data for calendar --->
   const getEvents = (inputOrganizations) => {
-    return inputOrganizations.map((organization) => {
-      return organization.events.map((event) => {
+    
+    return inputOrganizations.map( (organization) => {
+      
+      return organization.events.map( (event) => {
         const url = event.url || event.location?.url || '';
+
         return {
-          title: event.name,
-          start: new Date(event.startDate),
-          end: new Date(event.endDate),
-          allDay: false,
+          title    : event.name,
+          start    : new Date(event.startDate),
+          end      : new Date(event.endDate),
+          allDay   : false,
           url,
-          resource: organization.name
+          resource : organization.name,
+          day      : event.startDate
         }
-      })
-    }).flat();
+
+      })}).flat();
   }
 
 
-  //  Sets initial organization data
-  useEffect(() => {
-    const organizationData = JSONData.sort((a,b)=> a.name.localeCompare(b.name));
 
-    setOrganizations(organizationData);
-    setFilteredGroups(organizationData);
-
-  }, [organizations]);
-  
-
-  //  Updates UI when user filters groups
-  useEffect(() => {
-    const groups = filteredGroups;
-    const tmpEvents = getEvents(groups);
-
-    setEvents(tmpEvents);
-    
-  }, [filteredGroups]);
-
-
-
-  const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
+const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
     const tmpEvents = getEvents(selectedOrganizations);
     setEvents(tmpEvents);
   }
 
 
 
+    //  Updates selectedEvents state and opens modal
+    //  when user clicks a date on the calendar --->
   const handleEventClick = (clickInfo) => {
-    const listIndex = clickInfo.event._def.extendedProps.index;
 
-    setSelectedEvents(sortedByDays[listIndex]);
-    setModalToggle(true);
-    toggleScrolling('stop');
-    
-    /*const {event} = clickInfo;
-    if (event.url !== '') {
-      window.open(event.url);
-    }
+    const date   = new Date( clickInfo.event._def.extendedProps.day );
+    const groups = sortedByDays.findIndex( a => compareDates(new Date(a[0].startDate), new Date(date)) );
 
-    clickInfo.jsEvent.preventDefault();*/
+    clickInfo.jsEvent.preventDefault();
+    setSelectedEvents( sortedByDays[groups] );
+    setModalToggle( true );
+    toggleScrolling( 'stop' );
+
   }
-
-
 
   const handleMouseEnter = (eventInfo) => {
     setPopoverAnchor(eventInfo.el);
     setCurrentEvent(eventInfo.event);
   }
-
-
 
   const handleMouseLeave = (eventInfo) => {
     setPopoverAnchor(undefined);
@@ -113,81 +140,92 @@ export default function CalendarPage({data}) {
 
 
 
+    //  Used by calendar to render markup for event data --->
   const renderEventContent = (eventInfo) => {
     
     return(
-      <article className={styles.eventListing}>
-        <p className={styles.eventText}>
-          {eventInfo.event._def.extendedProps.resource}
+      <article className={ styles.eventListing }>
+
+        <p className={ styles.eventText }>
+          { eventInfo.event._def.extendedProps.resource }
         </p>
-        <p className={styles.eventText}>
+
+        <p className={ styles.eventText }>
           <b>
-            {getTime(eventInfo.event.start.getHours(), eventInfo.event.start.getMinutes())} - 
-            {getTime(eventInfo.event.end.getHours(), eventInfo.event.end.getMinutes())}
+            {
+              getTime( eventInfo.event.start.getHours(), eventInfo.event.start.getMinutes() )
+            } - {
+              getTime( eventInfo.event.end.getHours(), eventInfo.event.end.getMinutes() )
+            }
           </b>
         </p>
 
       </article>
     );
-    /*const events = eventInfo.event._def.extendedProps.events;
-
-    return (
-      <article className={styles.eventCell}>
-        <h3 className={styles.eventCount}>{events}</h3>
-        <i className={styles.eventText}>event{events > 1 ? 's' : ''}</i>
-      </article>
-    )*/
   }
 
 
 
-  //  checks whether or not two dates are the same
-  const compareDates = (dayA, dayB)=>{
-    const day01 = new Date(dayA);
-    const day02 = new Date(dayB);
-    let same = false;
+    //  Checks whether or not two dates are the same --->
+  const compareDates = (dayA, dayB) => {
+    
+    const day01    = new Date( dayA );
+    const day02    = new Date( dayB );
+    let   sameDay  = false;
     
     day01.getFullYear() === day02.getFullYear() &&
     day01.getMonth()    === day02.getMonth()    &&
-    day01.getDate()      === day02.getDate()      ?
-    same = true : same = false;
-    return same;
+    day01.getDate()     === day02.getDate()      ?
+
+    sameDay = true : sameDay = false;
+
+
+    return sameDay;
   }
 
+   
+  
+    //  Sorts events by day and saves to sortedByDays state ---> 
+  const sortEventsByDays = (companies) => {
 
-
-  //  Sorts events into arrays for each day there's one or more events 
-  const sortEventsByDays = (companies)=>{
     const sortedEvents = [];
 
-    companies.forEach(a=> {
-      a.events.forEach(b =>{
-        if(sortedEvents.length === 0){ sortedEvents.push([b]);  }
+
+    companies.forEach( a => {
+
+      a.events.forEach( b => {
+
+        if( sortedEvents.length === 0 ){ sortedEvents.push( [b] ); }
         else{
-          let counter = 0;
-          let dayFound = false;
-          let index = 0;
 
-          while(counter <= sortedEvents.length - 1 && !dayFound){
-            const comparison = compareDates(sortedEvents[index][0].startDate, b.startDate);
+          let counter  = 0,
+              dayFound = false,
+              index    = 0;
 
-            if(comparison){ dayFound = true; }
+
+          while( counter <= sortedEvents.length - 1 && !dayFound ){
+
+            const comparison = compareDates( sortedEvents[ index ][ 0 ].startDate, b.startDate );
+
+            if( comparison ){ dayFound = true; }
             else{ counter++; index++; }
+
           }
 
-          if(dayFound){sortedEvents[index].push(b);}
-          else{ sortedEvents.push([b]); }
+          if( dayFound ){ sortedEvents[ index ].push(b); }
+          else{ sortedEvents.push( [b] ); }
         }
+
       });
     });
     
-    return sortedEvents;
+    setSortedByDays( sortedEvents );
   }
 
 
 
   //  Creates data to be passed into the calendar
-  const createCalendarData= (eventData)=>{
+  /*const createCalendarData= (eventData)=>{
     const calendarData = [];
     let indexLocation = 0;
 
@@ -202,82 +240,96 @@ export default function CalendarPage({data}) {
       indexLocation++;
     });
     return calendarData;
+  }*/
+
+
+
+    //  Disables and enables scrolling on <body> when modal open and closes --->
+  const toggleScrolling = (status) => {
+
+    if( status === 'stop'  ){ document.body.style.overflow = 'hidden'; }
+    if( status === 'start' ){ document.body.style.overflow = 'scroll'; }
+
   }
 
-  //  Disables and enables website scrolling when modal open and closes
-  const toggleScrolling = (status)=>{
-    if(status === 'stop'){ document.body.style.overflow = 'hidden';}
-    if(status === 'start'){ document.body.style.overflow = 'scroll';}
-  }
 
-  //  Creates a list of company names for group filter
-  const createGroupList = (groups) =>{
+
+    //  Creates a list of all company names for group filter --->
+  const createGroupList = (groups) => {
+
     const names = [];
 
-    groups.forEach(a=>{ names.push(a.name); });
-
-    //console.log(names);
+    groups.forEach( a => names.push( a.name ) );
+    
     return names;
+
   }
 
-  //  Filters list of companies selected by user
-  const filterGroups = (groups) =>{
+
+
+    //  Gets data for organizations filtered by user then
+    //  updates filteredGroups state --->
+  const filterGroups = (groups) => {
+
     let selectedGroups = [];
-    console.log(groups);
 
-    if(groups[0] === 'all'){ selectedGroups = organizations; }
+    if( groups[0] === 'all' ){ selectedGroups = organizations; }
     else{
-      groups.forEach(a=>{
-        const groupSearch = organizations.findIndex(b=>{ return a === b.name});
 
-        selectedGroups.push(organizations[groupSearch]);
+      groups.forEach( a => {
+        const groupSearch = organizations.findIndex( b => a === b.name );
+
+        selectedGroups.push( organizations[ groupSearch ] );
       });
     }
     
-    setFilteredGroups(selectedGroups);
-    //setEvents(getEvents(selectedGroups));
-    //console.log(selectedGroups);
+    setFilteredGroups( selectedGroups );
+    sortEventsByDays( selectedGroups );
   }
 
 
 
-  const open = Boolean(popoverAnchor);
-  const id = open ? 'simple-popover' : undefined;
+  
 
   return (
     <PageLayout data={data}>
 
       {
-        modalToggle === true &&
-        <Modal toggle={(value) => {setModalToggle(value); toggleScrolling('start')}}>
-          <EventList data={selectedEvents} />
+        modalToggle &&
+        <Modal toggle={ (value) => { setModalToggle( value ); toggleScrolling( 'start' ) } }>
+
+          <EventList data={ selectedEvents } />
+
         </Modal>
       }
 
-      <section className={styles.pageContainer}>
+      <section className={ styles.pageContainer }>
+
         <GroupFilter
-          nameList={createGroupList(organizations)}
-          resultList={filterGroups}
+          nameList={ createGroupList( organizations ) }
+          resultList={ filterGroups }
         />
-        <section className={`srcryBox ${styles.calPage} ${styles.calContainer}`}>
+
+        <section className={ `srcryBox ${styles.calPage} ${styles.calContainer}` }>
+
           <FullCalendar
-            plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+            plugins={ [dayGridPlugin, timeGridPlugin, interactionPlugin] }
             headerToolbar={{
-              start: 'dayGridMonth timeGridWeek timeGridDay',
-              center: 'prev title next',
-              end: ''
+              start  : 'dayGridMonth timeGridWeek timeGridDay',
+              center : 'prev title next',
+              end    : ''
             }}
-            handleWindowResize={true}
+            handleWindowResize={ true }
             initialView='dayGridMonth'
             eventColor='green'
             eventDisplay='block'
-            selectable={true}
-            selectMirror={true}
-            dayMaxEvents={true}
-            weekends={true}
-            events={events}
-            eventClick={handleEventClick}
-            eventContent={renderEventContent}
+            selectable={ true }
+            selectMirror={ true }
+            dayMaxEvents={ true }
+            weekends={ true }
+            events={ events }
+            eventClick={ handleEventClick }
+            eventContent={ renderEventContent }
           />
         </section>
       </section>
