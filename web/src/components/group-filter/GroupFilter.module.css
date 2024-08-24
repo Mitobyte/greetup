@@ -1,58 +1,26 @@
 .mainContainer{
-    /*background-color: hsl(var(--gray-50), 1);*/
-    display: grid;
-    /*padding-bottom: var(--line-bold);*/
-    width: 100%;
-}
-
-.filterButton{
-    padding: var(--line-semiBold) var(--line-semiThick);
-    justify-self: center;
-    --text-size: var(--text-widget-2);
-    --kerning-nudge-amt: 9;
-    margin: var(--xTiny-1-4);
-    color: hsl(var(--blue-50), 1);
-    background-color: hsl(var(--green-900), 1);
-    border: none;
-    cursor: pointer;
-    transition: 200ms ease-in-out;
-}
-
-.filterButton:hover{
-    background-color: hsl(var(--green-700), 1);
-}
-
-.searchContainer{
-    display: grid;
-    grid-template-columns: var(--micro-2-5) 1fr var(--micro-2-3) var(--micro-2-5);
-    grid-template-rows: var(--micro-2-5) var(--micro-2-3) repeat(2, auto) 1fr var(--micro-2-5);
-    background-color: hsl(var(--gray-200), 1);
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    z-index: 555;
-    width: 100%;
+    display               : grid;
+    width                 : 100%;
+    grid-template-columns : var( --micro-2-5 ) 1fr var( --micro-2-3 ) var( --micro-2-5 );
+    grid-template-rows    : var( --micro-2-5 ) var( --micro-2-3 ) repeat( 2, auto ) 1fr var( --micro-2-5 );
+    background-color      : hsl( var( --gray-200 ), 1 );
 }
 
 .closeButton{
-    grid-area: 2/3/3/4;
-    --stroke: var(--line-fine);
-    --stroke-color: hsl(var(--blue-950), 1);
-    cursor: pointer;
-    place-self: center;
+    grid-area      : 2/3/3/4;
+    --stroke       : var( --line-fine );
+    --stroke-color : hsl( var( --blue-950 ), 1 );
+    cursor         : pointer;
+    place-self     : center;
 }
 
 .breadcrumbs{
-    grid-area: 3/2/4/4;
-    display: grid;
-    place-items: center;
+    grid-area   : 3/2/4/4;
+    display     : grid;
+    place-items : center;
 
 }
 
-.searchBar{
-    grid-area: 4/2/5/4;
-}
+.searchBar{ grid-area : 4/2/5/4; }
 
-.nameContainer{
-    grid-area: 5/2/6/4;
-}
+.nameContainer{ grid-area : 5/2/6/4; }

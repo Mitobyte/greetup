@@ -16,37 +16,41 @@ import { Modal } from "../components/modal/modal";
 import { EventList } from "../components/event-list/EventList";
 import { GroupFilter } from "../components/group-filter/GroupFilter";
 import { getTime } from "../utils/date-helpers";
+import { AnimatePresence, motion } from "framer-motion";
 
 
 
 export default function CalendarPage({data}) {
 
     //  Root data for all organizations --->
-  const [ organizations, setOrganizations ]   = useState([]);
+  const [ organizations, setOrganizations ]   = useState( [] );
 
     //  Event data that gets passed
     //  into the calendar --->
-  const [ events, setEvents ]                 = useState([]);  
+  const [ events, setEvents ]                 = useState( [] );  
   
     //  Organizations filtered by
     //  user --->
-  const [ filteredGroups, setFilteredGroups ] = useState([]);
+  const [ filteredGroups, setFilteredGroups ] = useState( [] );
   
     //  Stores events sorted by day --->
-  const [ sortedByDays, setSortedByDays ]     = useState([]);
+  const [ sortedByDays, setSortedByDays ]     = useState( [] );
   
     //  Stores events of a particular
     //  day when user clicks a
     //  date on the calendar --->
-  const [ selectedEvents, setSelectedEvents ] = useState([]);
+  const [ selectedEvents, setSelectedEvents ] = useState( [] );
   
     //  Toggle modal on and off --->
-  const [ modalToggle, setModalToggle ]       = useState(false);
+  const [ modalToggle, setModalToggle ]       = useState( false );
+
+    //  Toggles event filter on and off --->
+  const [filterToggle,  setFilterToggle ] = React.useState(false);
   
 
 
-  const [ popoverAnchor, setPopoverAnchor ]   = useState(undefined);
-  const [ currentEvent, setCurrentEvent ]     = useState(undefined);
+  const [ popoverAnchor, setPopoverAnchor ]   = useState( undefined );
+  const [ currentEvent, setCurrentEvent ]     = useState( undefined );
 
   const open = Boolean(popoverAnchor);
   const id = open ? 'simple-popover' : undefined;
@@ -119,7 +123,7 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
   const handleEventClick = (clickInfo) => {
 
     const date   = new Date( clickInfo.event._def.extendedProps.day );
-    const groups = sortedByDays.findIndex( a => compareDates(new Date(a[0].startDate), new Date(date)) );
+    const groups = sortedByDays.findIndex( a => compareDates( new Date( a[0].startDate ), new Date( date ) ) );
 
     clickInfo.jsEvent.preventDefault();
     setSelectedEvents( sortedByDays[groups] );
@@ -289,6 +293,20 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
 
 
 
+    //  Toggles filterToggle state when user clicks filter button --->
+  const handleFilterToggle = (state) => {
+    if(state){
+        toggleScrolling('stop');
+        setFilterToggle(true);
+    }
+    else{
+        toggleScrolling('start');
+        setFilterToggle(false);
+    }
+}
+
+
+
   
 
   return (
@@ -305,12 +323,49 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
 
       <section className={ styles.pageContainer }>
 
-        <GroupFilter
-          nameList={ createGroupList( organizations ) }
-          resultList={ filterGroups }
-        />
 
-        <section className={ `srcryBox ${styles.calPage} ${styles.calContainer}` }>
+
+        <AnimatePresence>
+
+          { filterToggle &&
+            <motion.article
+              className={ styles.filterContainer }
+              initial={{ transform: 'translateY(-100vh)' }}
+              animate={{ transform: 'translateY(0)' }}
+              exit={{ transform: 'translateY(-100vh)' }}
+            >
+              <GroupFilter
+                nameList={ createGroupList( organizations ) }
+                toggle={ (value) => handleFilterToggle( value ) }
+                resultList={ filterGroups }
+                />
+              
+            </motion.article>
+          }
+
+        </AnimatePresence>
+
+        <article className={ styles.buttonContainer }>
+  
+          <button
+            type="button"
+            className={ `srcryBox srcryTxt ${ styles.calPage } ${ styles.calendarButton } ${ styles.filterButton }` }
+            onClick={ () => handleFilterToggle( !filterToggle ) }
+          >
+            filter events
+          </button>
+
+          <a
+            className={ `srcryBox srcryTxt ${ styles.calPage } ${ styles.calendarButton } ${ styles.downloadButton }` }
+            href="/mke_tech_events.ics"
+            download="calendar.ics"
+          >
+            download ics file
+          </a>
+  
+        </article>
+
+        <section className={ `srcryBox ${ styles.calPage } ${ styles.calContainer }` }>
 
           <FullCalendar
             plugins={ [dayGridPlugin, timeGridPlugin, interactionPlugin] }

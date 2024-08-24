@@ -1,61 +1,144 @@
 
 :root{
-    --fc-small-font-size: var(--text-caption-1);
-    --fc-page-bg-color: hsl(var(--gray-100), 1);
-    --fc-neutral-bg-color: hsl(var(--gray-200),1);
-    --fc-neutral-text-color: hsl(var(--blue-500));
-    --fc-border-color: hsl(var(--gray-200), 1);
+    --fc-small-font-size    : var( --text-caption-1 );
+    --fc-page-bg-color      : hsl( var( --gray-100 ), 1 );
+    --fc-neutral-bg-color   : hsl( var( --gray-200 ), 1 );
+    --fc-neutral-text-color : hsl( var( --blue-500 ), 1 );
+    --fc-border-color       : hsl( var( --gray-200 ), 1 );
   
-    --fc-button-text-color: hsl(var(--gray-100), 1);
-    --fc-button-bg-color: hsl(var(--blue-950), 1);
-    --fc-button-border-color: hsl(var(--gray-900), 1);
-    --fc-button-hover-bg-color: hsl(var(--blue-800), 1);
-    --fc-button-hover-border-color: hsl(var(--gray-900), 1);
-    --fc-button-active-bg-color: hsl(var(--blue-800), 1);
-    --fc-button-active-border-color: hsl(var(--gray-900), 1);
+    --fc-button-text-color          : hsl( var( --gray-100 ), 1 );
+    --fc-button-bg-color            : hsl( var( --blue-950 ), 1 );
+    --fc-button-border-color        : hsl( var( --gray-900 ), 1 );
+    --fc-button-hover-bg-color      : hsl( var( --blue-800 ), 1 );
+    --fc-button-hover-border-color  : hsl( var( --gray-900 ), 1 );
+    --fc-button-active-bg-color     : hsl( var( --blue-800 ), 1 );
+    --fc-button-active-border-color : hsl( var( --gray-900 ), 1 );
 
-    --fc-today-bg-color: hsl(var(--yellow-400), .11);
+    --fc-today-bg-color : hsl( var( --yellow-400 ), .11 );
 }
 
 .pageContainer{
-    width: 100%;
-    display: grid;
-    justify-items: center;
-    grid-gap: var(--xTiny-1-4);
-    padding-bottom: var(--xTiny-2-6);
+    width          : 100%;
+    display        : grid;
+    justify-items  : center;
+    grid-auto-rows : auto;
+    grid-gap       : var( --xTiny-2-6 );
+    padding-bottom : var( --xTiny-2-6 );
 }
+
+
+
+.buttonContainer{
+    display               : grid;
+    width                 : 100%;
+    place-self            : center;
+    grid-template-columns : repeat( 2, auto );
+}
+
+
+
+.calPage.calendarButton{
+    --baseSize-h           : var( --xTiny-1-8 );
+    --squishGrowth-h-start : 1000px;
+    --squishGrowth-h-speed : 3;
+    --squishGrowth-h-max   : var( --xTiny-2-4 );
+    --text-size            : var( --text-widget-2 );
+    --kerning-nudge-amt    : 9;
+    padding                : 0 var( --line-thick );
+    margin                 : var( --micro-1-4 );
+    background-color       : var( --btn-bg-color );
+    color                  : var( --btn-color );
+    border                 : none;
+    cursor                 : pointer;
+    transition             : 200ms ease-in-out;
+}
+
+.calendarButton:hover{
+    background-color : var( --btn-bg-color-hover );
+    color            : var( --btn-color-hover );
+}
+
+
+
+.filterButton{
+    --btn-bg-color       : hsl( var( --blue-600 ), 1 );
+    --btn-bg-color-hover : hsl( var( --blue-300 ), 1 );
+    --btn-color          : hsl( var( --blue-50  ), 1 );
+    --btn-color-hover    : hsl( var( --blue-950 ), 1 );
+    grid-area            : 1/1/2/2;    
+    justify-self         : left;
+}
+
+
+
+.downloadButton{
+    display              : grid;
+    place-items          : center;
+    --btn-bg-color       : hsl( var( --green-700 ), 1 );
+    --btn-color          : hsl( var( --green-50  ), 1 );
+    --btn-bg-color-hover : hsl( var( --green-300 ), 1 );
+    --btn-color-hover    : hsl( var( --green-950 ), 1 );
+    grid-area            : 1/2/2/3;
+    justify-self         : right;
+    text-decoration      : none;
+}
+
+
 
 .calPage.calContainer{
-    display: grid;
-    justify-items: center;
-    --crushGap-w: var(--micro-2-4);
-    --baseSize-w: var(--loMed-2-5);
-    --edgeChase-w: var(--small-1-4);
-    --chaseStop-w: var(--large-1-4);
+    display       : grid;
+    justify-items : center;
+    --crushGap-w  : var( --micro-2-4 );
+    --baseSize-w  : var( --loMed-2-5 );
+    --edgeChase-w : var( --small-1-4 );
+    --chaseStop-w : var( --large-1-4 );
 }
+
+
 
 .eventCell{
-    display: grid;
-    justify-items: center;
+    display       : grid;
+    justify-items : center;
 }
+
+
 
 .eventCount{
-    --text: var(--text-widget-1);
-    font-size: var(--text);
-    color: hsl(var(--green-600), 1);
+    --text    : var( --text-widget-1 );
+    font-size : var( --text );
+    color     : hsl( var( --green-600 ), 1 );
 }
 
+
+
 .eventListing{
-    display: grid;
-    grid-gap: var(--line-semiBold);
-    width: 100%;
-    height: 100%;
-    background-color: hsl(var(--blue-700), 1);
+    display          : grid;
+    grid-gap         : var( --line-semiBold );
+    width            : 100%;
+    height           : 100%;
+    background-color : hsl( var( --blue-700 ), 1 );
 }
+
+
+
 .eventText{
-    width: 98%;
-    font-size: var(--text-caption-1);
-    color: hsl(var(--blue-50) ,1);
-    word-wrap: break-all;
-    place-self: center;
+    width      : 98%;
+    font-size  : var( --text-caption-1 );
+    color      : hsl( var( --blue-50 ), 1 );
+    word-wrap  : break-all;
+    place-self : center;
+}
+
+
+
+.filterContainer{
+    display          : grid;
+    justify-items    : center;
+    align-items      : top;
+    background-color : hsl( var( --gray-200 ), 1 );
+    position         : fixed;
+    top              : 0;
+    height           : 100vh;
+    z-index          : 555;
+    width            : 100%;
 }
