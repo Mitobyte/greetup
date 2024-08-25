@@ -385,6 +385,11 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
             events={ events }
             eventClick={ handleEventClick }
             eventContent={ renderEventContent }
+            width="100%"
+            height="100%"
+            contentHeight="auto"
+            expandRows="true"
+            aspectRatio="unset"
           />
         </section>
       </section>
