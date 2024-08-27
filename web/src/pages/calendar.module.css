@@ -119,14 +119,20 @@
     height           : 100%;
     padding          : var(--line-bold) 0;
     background-color : hsl( var( --blue-700 ), 1 );
+    color            : hsl( var( --blue-50  ), 1 );
+    transition       : 300ms ease-in-out;
+}
+
+.eventListing:hover{
+    background-color : hsl( var( --blue-200 ), 1 );
+    color            : hsl( var( --blue-950 ), 1 );
 }
 
 
 
 .eventText{
-    width      : calc(100% - calc(var(--line-bold) * 2));
+    width      : calc( 100% - calc( var( --line-bold ) * 2 ) );
     font-size  : var( --text-caption-1 );
-    color      : hsl( var( --blue-50 ), 1 );
     word-wrap  : break-all;
     word-break : break-all;
     place-self : center;
@@ -145,4 +151,12 @@
     z-index          : 555;
     transform-style  : preserve-3d;
     width            : 100%;
+}
+
+
+
+@media screen and (min-width : 850px){
+
+    .eventText{ word-break : normal; }
+    
 }
