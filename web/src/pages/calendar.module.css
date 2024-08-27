@@ -89,10 +89,10 @@
 .calPage.calContainer{
     display       : grid;
     justify-items : center;
-    --crushGap-w  : var( --micro-2-4 );
-    --baseSize-w  : var( --loMed-2-5 );
+    --crushGap-w  : var( --line-bold );
+    --baseSize-w  : var( --large-1-5 );
     --edgeChase-w : var( --small-1-4 );
-    --chaseStop-w : var( --large-1-4 );
+    --chaseStop-w : var( --large-2-4 );
 }
 
 
@@ -117,16 +117,18 @@
     grid-gap         : var( --line-semiBold );
     width            : 100%;
     height           : 100%;
+    padding          : var(--line-bold) 0;
     background-color : hsl( var( --blue-700 ), 1 );
 }
 
 
 
 .eventText{
-    width      : 98%;
+    width      : calc(100% - calc(var(--line-bold) * 2));
     font-size  : var( --text-caption-1 );
     color      : hsl( var( --blue-50 ), 1 );
     word-wrap  : break-all;
+    word-break : break-all;
     place-self : center;
 }
 
