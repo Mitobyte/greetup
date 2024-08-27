@@ -327,12 +327,38 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
 
         <AnimatePresence>
 
-          { filterToggle &&
+          { filterToggle && (
             <motion.article
+              key="groupFilter"
               className={ styles.filterContainer }
-              initial={{ transform: 'translateY(-100vh)' }}
-              animate={{ transform: 'translateY(0)' }}
-              exit={{ transform: 'translateY(-100vh)' }}
+              initial={{ transform: 'perspective(100px) translateZ(-10000px) rotateX(70deg)' }}
+              animate={{
+                transform: [
+                  'perspective(100px) translateZ(-10000px) rotateX(70deg)',
+                  'perspective(100px) translateZ(-8334px)  rotateX(70deg)',
+                  'perspective(100px) translateZ(-6668px)  rotateX(70deg)',
+                  'perspective(100px) translateZ(-5002px)  rotateX(70deg)',
+                  'perspective(100px) translateZ(-3336px)  rotateX(70deg)',
+                  'perspective(100px) translateZ(-1670px)  rotateX(70deg)',
+                  'perspective(100px) translateZ(0)        rotateX(0)'
+                  
+                ]
+
+              }}
+              exit={{
+                transform: [
+                  'perspective(100px) translateZ(0)        rotateX(0)',
+                  'perspective(100px) translateZ(-1670px)  rotateX(-70deg)',
+                  'perspective(100px) translateZ(-3336px)  rotateX(-70deg)',
+                  'perspective(100px) translateZ(-5002px)  rotateX(-70deg)',
+                  'perspective(100px) translateZ(-6668px)  rotateX(-70deg)',
+                  'perspective(100px) translateZ(-8334px)  rotateX(-70deg)',
+                  'perspective(100px) translateZ(-10000px) rotateX(-70deg)'
+
+                ]
+
+              }}
+              transition={{ duration: 0.3 }}
             >
               <GroupFilter
                 nameList={ createGroupList( organizations ) }
@@ -341,7 +367,7 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
                 />
               
             </motion.article>
-          }
+          )}
 
         </AnimatePresence>
 
