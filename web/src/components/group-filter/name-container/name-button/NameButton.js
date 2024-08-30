@@ -8,30 +8,31 @@ export const NameButton = ({name, selected, active})=>{
 
     return(
         <span
-            className={`srcryBox ${styles.nameButton}`}
-            onClick={()=> selected(name)}
-            style={active?
+            className={ `srcryBox ${ styles.nameButton }` }
+            onClick={ () => selected( name ) }
+            style={ active ?
                     {
-                        backgroundColor : 'var(--active-background)',
-                        color : 'var(--active-color)'
+                        backgroundColor : 'var( --active-background )',
+                        color           : 'var( --active-color )'
                     }
                     :
                     {
-                        backgroundColor : 'var(--inactive-background)',
-                        color : 'var(--inactive-color)'
+                        backgroundColor : 'var( --inactive-background )',
+                        color           : 'var( --inactive-color )'
                     }
                 }
         >
-            {name}
+            { name }
+
             <div
-                className={styles.indicator}
-                style={active? 
+                className={ styles.indicator }
+                style={ active ? 
                     {
-                        backgroundColor : 'var(--active)'
+                        backgroundColor : 'var( --active )'
                     }
                     :
                     {
-                        backgroundColor : 'var(--inactive)'
+                        backgroundColor : 'var( --inactive )'
                     }
                 }
             ></div>
