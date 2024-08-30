@@ -97,27 +97,12 @@
 
 
 
-.eventCell{
-    display       : grid;
-    justify-items : center;
-}
-
-
-
-.eventCount{
-    --text    : var( --text-widget-1 );
-    font-size : var( --text );
-    color     : hsl( var( --green-600 ), 1 );
-}
-
-
-
 .eventListing{
     display          : grid;
     grid-gap         : var( --line-semiBold );
     width            : 100%;
     height           : 100%;
-    padding          : var(--line-bold) 0;
+    padding          : var( --line-bold ) 0;
     background-color : hsl( var( --blue-700 ), 1 );
     color            : hsl( var( --blue-50  ), 1 );
     transition       : 300ms ease-in-out;
@@ -158,5 +143,5 @@
 @media screen and (min-width : 850px){
 
     .eventText{ word-break : normal; }
-    
+
 }

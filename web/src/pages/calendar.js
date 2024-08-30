@@ -32,6 +32,10 @@ export default function CalendarPage({data}) {
     //  Organizations filtered by
     //  user --->
   const [ filteredGroups, setFilteredGroups ] = useState( [] );
+
+    //  List of organization names
+    //  selected by user --->
+  const [ filteredNames, setFilteredNames ]   = useState( [] );
   
     //  Stores events sorted by day --->
   const [ sortedByDays, setSortedByDays ]     = useState( [] );
@@ -45,7 +49,7 @@ export default function CalendarPage({data}) {
   const [ modalToggle, setModalToggle ]       = useState( false );
 
     //  Toggles event filter on and off --->
-  const [filterToggle,  setFilterToggle ] = React.useState(false);
+  const [filterToggle, setFilterToggle ]      = useState( false );
   
 
 
@@ -65,9 +69,9 @@ export default function CalendarPage({data}) {
   useEffect( () => {
     const organizationData = JSONData.sort( (a, b) => a.name.localeCompare( b.name ) );
 
-    setOrganizations( organizationData );
+    setOrganizations(  organizationData );
     setFilteredGroups( organizationData );
-    sortEventsByDays( organizationData );
+    sortEventsByDays(  organizationData );
 
   }, [ organizations ]);
 
@@ -287,6 +291,7 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
       });
     }
     
+    setFilteredNames( groups );
     setFilteredGroups( selectedGroups );
     sortEventsByDays( selectedGroups );
   }
@@ -314,6 +319,7 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
 
       {
         modalToggle &&
+
         <Modal toggle={ (value) => { setModalToggle( value ); toggleScrolling( 'start' ) } }>
 
           <EventList data={ selectedEvents } />
@@ -362,9 +368,10 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
             >
               <GroupFilter
                 nameList={ createGroupList( organizations ) }
+                selected={ filteredNames }
                 toggle={ (value) => handleFilterToggle( value ) }
                 resultList={ filterGroups }
-                />
+              />
               
             </motion.article>
           )}

@@ -5,12 +5,12 @@ import { BreadCrumbs } from './breadcrumbs/BreadCrumbs';
 import { NameContainer } from './name-container/NameContainer';
 import { SearchBar } from './search-bar/SearchBar';
 
-export const GroupFilter = ({nameList, toggle, resultList}) =>{
+export const GroupFilter = ({nameList, selected, toggle, resultList}) =>{
     // nameList   : list of all organization names for matching search results
     // resultList : passes list of selected names to parent for filtering organization data for calendar
 
     const [filteredNames, setFilteredNames] = React.useState([]);
-    const [selectedNames, setSelectedNames] = React.useState(['all']);
+    const [selectedNames, setSelectedNames] = React.useState(selected.length ? [...selected] : ['all']);
 
     React.useEffect(() => setFilteredNames(nameList), [nameList]);
 
