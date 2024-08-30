@@ -1,63 +1,64 @@
 .mainContainer{
-    display: grid;
-    grid-auto-flow: row;
-    grid-gap: var(--tiny-1-4);
-    width: 100%; 
+    display        : grid;
+    grid-auto-flow : row;
+    grid-gap       : var( --tiny-1-4 );
+    width          : 100%; 
 }
 
 .listItem{
-    display: grid;
-    list-style: none;
-    grid-gap: var(--xTiny-1-2);
-    background-color: hsl(var(--gray-100), .77);
-    padding: var(--xTiny-1-2);
-    width: 92%;
-    place-self: center;
+    display          : grid;
+    list-style       : none;
+    grid-gap         : var( --xTiny-1-2 );
+    background-color : hsl( var( --gray-100 ), .77 );
+    padding          : var( --xTiny-1-2 );
+    width            : 92%;
+    place-self       : center;
 }
 
 .eventName{
-    --text-size: var(--text-subtitle-1);
-    --kerning-nudge-amt: 4;
-    --leading-nudge-amt: -22;
-    place-self: center;
-    text-align: center;
-    color: hsl(var(--blue-950), 1);
+    --text-size         : var( --text-subtitle-1 );
+    --kerning-nudge-amt : 4;
+    --leading-nudge-amt : -22;
+    place-self          : center;
+    text-align          : center;
+    color               : hsl( var( --blue-950 ), 1 );
 }
 
 .descriptionContainer{
-    display: grid;
-    grid-gap: var(--line-semiBold);
+    display  : grid;
+    grid-gap : var( --line-semiBold );
 }
 
 .descriptionTitle{
-    --text-size: var(--text-widget-1);
-    --kerning-nudge-amt: 7;
-    color: hsl(var(--blue-800), 1);
+    --text-size         : var( --text-widget-1 );
+    --kerning-nudge-amt : 7;
+    color               : hsl( var( --blue-800 ), 1 );
 }
 
 .descriptionText{
-    --text-size: var(--text-widget-1);
-    --kerning-nudge-amt: 7;
-    color: hsl(var(--blue-950), 1);
+    --text-size         : var( --text-widget-1 );
+    --kerning-nudge-amt : 7;
+    color               : hsl( var( --blue-950 ), 1 );
 }
 
 .joinButton{
-    text-decoration: none;
-    --kerning-nudge-amt: 6;
-    background-color: hsl(var(--green-800), 1);
-    color: hsl(var(--gray-50), 1);
-    padding: var(--line-semiBold) var(--line-thick);
-    margin: var(--xTiny-2-1) 0;
-    border: none;
-    place-self: center;
-    height: min-content;
-    cursor: pointer;
-    transform: scale(1);
-    transition: 100ms ease-in-out;
+    text-decoration     : none;
+    --kerning-nudge-amt : 6;
+    background-color    : hsl( var( --green-800 ), 1 );
+    color               : hsl( var( --gray-50 ), 1 );
+    padding             : var( --line-semiBold ) var( --line-thick );
+    margin              : var( --xTiny-2-1 ) 0;
+    border              : none;
+    place-self          : center;
+    height              : min-content;
+    cursor              : pointer;
+    transform           : scale( 1 );
+    transition          : 300ms ease-in-out;
 }
 
 .joinButton:hover{
-    transform: scale(1.05);
-    background-color: hsl(var(--yellow-600),1);
-    box-shadow: hsl(var(--gray-400), 1) 0 var(--line-narrow) var(--line-fine);
+    transform        : scale( 1.05 );
+    background-color : hsl( var( --green-300 ), 1 );
+    color            : hsl( var( --green-950 ), 1 );
+    box-shadow       : hsl( var( --gray-400 ), 1 ) 0 var( --line-narrow ) var( --line-fine );
 }
