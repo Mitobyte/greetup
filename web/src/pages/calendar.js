@@ -17,6 +17,7 @@ import { EventList } from "../components/event-list/EventList";
 import { GroupFilter } from "../components/group-filter/GroupFilter";
 import { getTime } from "../utils/date-helpers";
 import { AnimatePresence, motion } from "framer-motion";
+import { modalAnimation } from "../utils/shared-animations";
 
 
 
@@ -317,15 +318,28 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
   return (
     <PageLayout data={data}>
 
-      {
-        modalToggle &&
+      <AnimatePresence>
+        {
+          modalToggle && (
 
-        <Modal toggle={ (value) => { setModalToggle( value ); toggleScrolling( 'start' ) } }>
+            <motion.div
+              key="calendarModal"
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              variants={modalAnimation}
+              transition={{ duration : 0.3 }}
+            >
+              <Modal toggle={ (value) => { setModalToggle( value ); toggleScrolling( 'start' ) } }>
 
-          <EventList data={ selectedEvents } />
+                <EventList data={ selectedEvents } />
 
-        </Modal>
-      }
+              </Modal>
+            </motion.div>
+
+        )}
+      </AnimatePresence>
+
 
       <section className={ styles.pageContainer }>
 

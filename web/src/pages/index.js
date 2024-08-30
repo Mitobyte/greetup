@@ -10,26 +10,44 @@ import { Hero } from "../components/hero/Hero";
 import { OrganizationCard } from "../components/organization-card/OrganizationCard";
 import { Modal } from "../components/modal/modal";
 import { EventList } from "../components/event-list/EventList";
+import { AnimatePresence, motion } from "framer-motion";
+import { modalAnimation } from "../utils/shared-animations";
 
 export default function Home({data}) {
   const organizations = JSONData.sort((a, b) => a.name.localeCompare(b.name));
   const [modalToggle, setModalToggle] = React.useState(false);
   const [selectedEvents, setSelectedEvents] = React.useState([]);
-  const toggleScrolling = (status)=>{
-    if(status === 'stop'){ document.body.style.overflow = 'hidden';}
-    if(status === 'start'){ document.body.style.overflow = 'scroll';}
+
+
+
+  
+  const toggleScrolling = (status) => {
+    if(status === 'stop'){ document.body.style.overflow = 'hidden'; }
+    if(status === 'start'){ document.body.style.overflow = 'scroll'; }
   }
 
   console.log(organizations);
 
   return (
     <PageLayout data={data}>
-      {
-        modalToggle === true &&
-        <Modal toggle={(value) => {setModalToggle(value); toggleScrolling('start')}}>
-          <EventList data={selectedEvents} />
-        </Modal>
-      }
+      <AnimatePresence>
+        {modalToggle && (
+
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            transition={{ duration : 0.3 }}
+            variants={ modalAnimation }
+          >
+
+            <Modal toggle={ (value) => { setModalToggle( value ); toggleScrolling( 'start' ) } }>
+              <EventList data={ selectedEvents } />
+            </Modal>
+
+          </motion.div>
+        )}
+      </AnimatePresence>
       <section className={styles.page}>
         <Hero />
         <section className={styles.contentContainer}>
