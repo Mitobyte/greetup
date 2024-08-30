@@ -256,8 +256,8 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
     //  Disables and enables scrolling on <body> when modal open and closes --->
   const toggleScrolling = (status) => {
 
-    if( status === 'stop'  ){ document.body.style.overflow = 'hidden'; }
-    if( status === 'start' ){ document.body.style.overflow = 'scroll'; }
+    if( status === 'stop'  ){ document.body.style.overflowY = 'hidden'; }
+    if( status === 'start' ){ document.body.style.overflowY = 'scroll'; }
 
   }
 
