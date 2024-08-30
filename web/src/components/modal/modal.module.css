@@ -1,43 +1,43 @@
 .mainContainer{
-    position: fixed;
-    top:0;
-    left: 0;
-    display: grid;
-    z-index: 333;
-    width: 100%;
-    height: 100vh;
-    background-color: hsl(var(--gray-950), .66);
-    backdrop-filter: blur(var(--line-narrow));
+    position         : fixed;
+    top              : 0;
+    left             : 0;
+    display          : grid;
+    z-index          : 333;
+    width            : 100%;
+    height           : 100vh;
+    background-color : hsl( var( --gray-950 ), .66 );
+    backdrop-filter  : blur( var( --line-narrow ) );
 }
 
 .contentContainer{
-    place-self: center;
-    display:grid;
-    --crushGap-w: var(--xTiny-2-4);
-    --baseSize-w: var(--hiMed-1-5);
-    height: 86vh;
-    padding-bottom: 4vh;
-    background-color: hsl(var(--gray-50), 1);
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 1fr auto;
+    place-self            : center;
+    display               : grid;
+    --crushGap-w          : var( --xTiny-2-4 );
+    --baseSize-w          : var( --hiMed-1-5 );
+    height                : 86vh;
+    padding-bottom        : 4vh;
+    background-color      : hsl( var( --gray-50 ), 1 );
+    grid-template-rows    : auto 1fr;
+    grid-template-columns : 1fr auto;
 }
 
 .closeButton{
-    grid-area: 1/2/2/3;
-    margin: var(--micro-1-4);
-    --baseSize-h: var(--micro-2-2);
-    --squishGrowth-h-start: 1200px;
-    --squishGrowth-h-speed: 2;
-    --squishGrowth-h-max: var(--xTiny-1-4);
-    place-self: center;
-    --stroke: var(--line-fine);
-    --stroke-color: hsl(var(--gray-950), 1);
-    cursor: pointer;
+    grid-area              : 1/2/2/3;
+    margin                 : var( --micro-1-4 );
+    --baseSize-h           : var( --micro-2-2 );
+    --squishGrowth-h-start : 1200px;
+    --squishGrowth-h-speed : 2;
+    --squishGrowth-h-max   : var( --xTiny-1-4 );
+    place-self             : center;
+    --stroke               : var( --line-fine );
+    --stroke-color         : hsl( var( --gray-950 ), 1 );
+    cursor                 : pointer;
 }
 
 .projectionContainer{
-    grid-area: 2/1/3/3;
-    display: grid;
-    place-items: center;
-    overflow-y: scroll;
+    grid-area   : 2/1/3/3;
+    display     : grid;
+    place-items : center;
+    overflow-y  : scroll;
 }
