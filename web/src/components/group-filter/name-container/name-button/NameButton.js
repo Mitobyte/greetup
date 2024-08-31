@@ -1,12 +1,21 @@
-import * as React from 'react';
+import * as React  from 'react';
 import * as styles from './NameButton.module.css';
 
-export const NameButton = ({name, selected, active})=>{
+
+
+
+
+
+
+export const NameButton = ( { name, selected, active } ) => {
     // name     : group name to display to user
     // selected : lets parent component know when user selects this group
     // active   : boolean for toggling active and inactive states
 
+
+
     return(
+
         <span
             className={ `srcryBox ${ styles.nameButton }` }
             onClick={ () => selected( name ) }
@@ -37,5 +46,6 @@ export const NameButton = ({name, selected, active})=>{
                 }
             ></div>
         </span>
+        
     );
 }
