@@ -1,64 +1,64 @@
-import React, {useEffect, useState} from "react"
-import * as styles from './calendar.module.css';
-import {graphql} from "gatsby";
-import Grid from '@mui/material/Grid';
-import Popover from "@mui/material/Popover";
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'
-import timeGridPlugin from '@fullcalendar/timegrid'
-import interactionPlugin from '@fullcalendar/interaction'
-import JSONData from "../data/combined.json";
-import {Header} from "../components/Header";
-import OrganizationFilter from "../components/OrganizationFilter";
-import { PageLayout } from "../components/page-layout/page-layout";
-import { StylesContext } from "@mui/styles";
-import { Modal } from "../components/modal/modal";
-import { EventList } from "../components/event-list/EventList";
-import { GroupFilter } from "../components/group-filter/GroupFilter";
-import { getTime } from "../utils/date-helpers";
-import { AnimatePresence, motion } from "framer-motion";
-import { modalAnimation } from "../utils/shared-animations";
+import React, { useEffect, useState } from "react"
+import * as styles                    from './calendar.module.css';
+import FullCalendar                   from '@fullcalendar/react'
+import dayGridPlugin                  from '@fullcalendar/daygrid'
+import timeGridPlugin                 from '@fullcalendar/timegrid'
+import interactionPlugin              from '@fullcalendar/interaction'
+import JSONData                       from "../data/combined.json";
+import { PageLayout }                 from "../components/page-layout/page-layout";
+import { Modal }                      from "../components/modal/modal";
+import { EventList }                  from "../components/event-list/EventList";
+import { GroupFilter }                from "../components/group-filter/GroupFilter";
+import { getTime }                    from "../utils/date-helpers";
+import { AnimatePresence, motion }    from "framer-motion";
+import { modalAnimation }             from "../utils/shared-animations";
 
 
 
-export default function CalendarPage({data}) {
+export default function CalendarPage() {
 
     //  Root data for all organizations --->
   const [ organizations, setOrganizations ]   = useState( [] );
 
+
+
     //  Event data that gets passed
     //  into the calendar --->
-  const [ events, setEvents ]                 = useState( [] );  
+  const [ events, setEvents ]                 = useState( [] );
+
+
   
     //  Organizations filtered by
     //  user --->
   const [ filteredGroups, setFilteredGroups ] = useState( [] );
 
+
+
     //  List of organization names
     //  selected by user --->
   const [ filteredNames, setFilteredNames ]   = useState( [] );
+
+
   
     //  Stores events sorted by day --->
   const [ sortedByDays, setSortedByDays ]     = useState( [] );
+
+
   
     //  Stores events of a particular
     //  day when user clicks a
     //  date on the calendar --->
   const [ selectedEvents, setSelectedEvents ] = useState( [] );
+
+
   
     //  Toggle modal on and off --->
   const [ modalToggle, setModalToggle ]       = useState( false );
 
+
+
     //  Toggles event filter on and off --->
   const [filterToggle, setFilterToggle ]      = useState( false );
-  
-
-
-  const [ popoverAnchor, setPopoverAnchor ]   = useState( undefined );
-  const [ currentEvent, setCurrentEvent ]     = useState( undefined );
-
-  const open = Boolean(popoverAnchor);
-  const id = open ? 'simple-popover' : undefined;
 
 
 
@@ -103,8 +103,8 @@ export default function CalendarPage({data}) {
 
         return {
           title    : event.name,
-          start    : new Date(event.startDate),
-          end      : new Date(event.endDate),
+          start    : new Date( event.startDate ),
+          end      : new Date( event.endDate ),
           allDay   : false,
           url,
           resource : organization.name,
@@ -116,41 +116,24 @@ export default function CalendarPage({data}) {
 
 
 
-const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
-    const tmpEvents = getEvents(selectedOrganizations);
-    setEvents(tmpEvents);
-  }
-
-
-
     //  Updates selectedEvents state and opens modal
     //  when user clicks a date on the calendar --->
-  const handleEventClick = (clickInfo) => {
+  const handleEventClick = ( clickInfo ) => {
 
     const date   = new Date( clickInfo.event._def.extendedProps.day );
     const groups = sortedByDays.findIndex( a => compareDates( new Date( a[0].startDate ), new Date( date ) ) );
 
     clickInfo.jsEvent.preventDefault();
-    setSelectedEvents( sortedByDays[groups] );
+    setSelectedEvents( sortedByDays[ groups ] );
     setModalToggle( true );
     toggleScrolling( 'stop' );
 
   }
 
-  const handleMouseEnter = (eventInfo) => {
-    setPopoverAnchor(eventInfo.el);
-    setCurrentEvent(eventInfo.event);
-  }
-
-  const handleMouseLeave = (eventInfo) => {
-    setPopoverAnchor(undefined);
-    setCurrentEvent(undefined);
-  }
-
 
 
     //  Used by calendar to render markup for event data --->
-  const renderEventContent = (eventInfo) => {
+  const renderEventContent = ( eventInfo ) => {
     
     return(
       <article className={ styles.eventListing }>
@@ -190,6 +173,7 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
 
 
     return sameDay;
+
   }
 
    
@@ -204,7 +188,7 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
 
       a.events.forEach( b => {
 
-        if( sortedEvents.length === 0 ){ sortedEvents.push( [b] ); }
+        if( sortedEvents.length === 0 ){ sortedEvents.push( [ b ] ); }
         else{
 
           let counter  = 0,
@@ -221,8 +205,8 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
 
           }
 
-          if( dayFound ){ sortedEvents[ index ].push(b); }
-          else{ sortedEvents.push( [b] ); }
+          if( dayFound ){ sortedEvents[ index ].push( b ); }
+          else{ sortedEvents.push( [ b ] ); }
         }
 
       });
@@ -230,26 +214,6 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
     
     setSortedByDays( sortedEvents );
   }
-
-
-
-  //  Creates data to be passed into the calendar
-  /*const createCalendarData= (eventData)=>{
-    const calendarData = [];
-    let indexLocation = 0;
-
-    eventData.forEach(a=>{
-      calendarData.push({
-        date: a[0].startDate,
-        events: a.length,
-        index: indexLocation,
-        backgroundColor: 'hsl(var(--blue-50), 1)',
-        borderColor: 'hsl(var(--blue-50), 1)',
-      });
-      indexLocation++;
-    });
-    return calendarData;
-  }*/
 
 
 
@@ -264,7 +228,7 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
 
 
     //  Creates a list of all company names for group filter --->
-  const createGroupList = (groups) => {
+  const createGroupList = ( groups ) => {
 
     const names = [];
 
@@ -278,7 +242,7 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
 
     //  Gets data for organizations filtered by user then
     //  updates filteredGroups state --->
-  const filterGroups = (groups) => {
+  const filterGroups = ( groups ) => {
 
     let selectedGroups = [];
 
@@ -300,14 +264,14 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
 
 
     //  Toggles filterToggle state when user clicks filter button --->
-  const handleFilterToggle = (state) => {
-    if(state){
-        toggleScrolling('stop');
-        setFilterToggle(true);
+  const handleFilterToggle = ( state ) => {
+    if( state ){
+        toggleScrolling( 'stop' );
+        setFilterToggle( true );
     }
     else{
-        toggleScrolling('start');
-        setFilterToggle(false);
+        toggleScrolling( 'start' );
+        setFilterToggle( false );
     }
 }
 
@@ -315,8 +279,11 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
 
   
 
-  return (
-    <PageLayout data={data}>
+ 
+
+return (
+
+    <PageLayout>
 
       <AnimatePresence>
         {
@@ -383,7 +350,7 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
               <GroupFilter
                 nameList={ createGroupList( organizations ) }
                 selected={ filteredNames }
-                toggle={ (value) => handleFilterToggle( value ) }
+                toggle={ ( value ) => handleFilterToggle( value ) }
                 resultList={ filterGroups }
               />
               
@@ -415,7 +382,7 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
         <section className={ `srcryBox ${ styles.calPage } ${ styles.calContainer }` }>
 
           <FullCalendar
-            plugins={ [dayGridPlugin, timeGridPlugin, interactionPlugin] }
+            plugins={ [ dayGridPlugin, timeGridPlugin, interactionPlugin ] }
             headerToolbar={{
               start  : 'dayGridMonth timeGridWeek timeGridDay',
               center : 'prev title next',
@@ -442,64 +409,5 @@ const handleSelectedOrganizationsChanged = (selectedOrganizations) => {
       </section>
 
     </PageLayout>
-    /*<Header data={data}>
-      <Grid container>
-        <Grid item xs={12}>
-         <a href='/mke_tech_events.ics' download='calendar.ics'>Download ics file</a>
-        </Grid>
-
-        <Grid item xs={4}>
-          <OrganizationFilter
-            organizations={organizations}
-            selectedOrganizationsChanged={handleSelectedOrganizationsChanged}
-          />
-        </Grid>
-
-        <Grid item xs={8}>
-          <FullCalendar
-            plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-            headerToolbar={{
-              left: 'prev,next today',
-              center: 'title',
-              right: 'dayGridMonth,timeGridWeek,timeGridDay'
-            }}
-            initialView='dayGridMonth'
-            eventColor='green'
-            eventDisplay='block'
-            selectable={true}
-            selectMirror={true}
-            dayMaxEvents={true}
-            weekends={true}
-            events={events}
-            eventClick={handleEventClick}
-            eventContent={renderEventContent}
-            eventMouseEnter={handleMouseEnter}
-          />
-        </Grid>
-      </Grid>
-
-      <Popover
-        id={id}
-        open={open}
-        anchorEl={popoverAnchor}
-        onClose={handleMouseLeave}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
-        }}
-      >
-          <b>{currentEvent?.extendedProps.resource}</b><br/>
-          {currentEvent?.title}<br/>
-          <a href={currentEvent?.url} target='_blank'>More Info</a>
-      </Popover>
-    </Header>*/
   );
 }
-
-/*export const query = graphql`{
-  file(relativePath: {eq: "logo.png"}) {
-    childImageSharp {
-      gatsbyImageData(width: 532, height: 214, placeholder: BLURRED, layout: FIXED)
-    }
-  }
-}`*/

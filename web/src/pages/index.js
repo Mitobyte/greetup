@@ -15,7 +15,7 @@ import { modalAnimation }          from "../utils/shared-animations";
 
 
 
-export default function Home( { data } ) {
+export default function Home() {
 
     //  Root data for all organizations --->
   const [ organizations, setOrganizations ]   = React.useState( [] );
@@ -74,7 +74,8 @@ export default function Home( { data } ) {
 
 
       <AnimatePresence>
-        { modalToggle && (
+        {
+          modalToggle && (
 
           <motion.div
             initial="hidden"
@@ -85,7 +86,9 @@ export default function Home( { data } ) {
           >
 
             <Modal toggle={ ( value ) => { toggleScrolling( value ) } }>
+
               <EventList data={ selectedEvents } />
+
             </Modal>
 
           </motion.div>

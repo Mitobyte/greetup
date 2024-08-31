@@ -140,7 +140,7 @@
 
 
 
-@media screen and (min-width : 850px){
+@media screen and ( min-width : 850px ){
 
     .eventText{ word-break : normal; }
 
