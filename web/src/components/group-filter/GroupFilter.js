@@ -9,38 +9,70 @@ export const GroupFilter = ({nameList, selected, toggle, resultList}) =>{
     // nameList   : list of all organization names for matching search results
     // resultList : passes list of selected names to parent for filtering organization data for calendar
 
-    const [filteredNames, setFilteredNames] = React.useState([]);
-    const [selectedNames, setSelectedNames] = React.useState(selected.length ? [...selected] : ['all']);
 
-    React.useEffect(() => setFilteredNames(nameList), [nameList]);
 
-    React.useEffect(() => resultList(selectedNames),  [selectedNames]);
-    
-    const handleSelection = (name) => {
+      //  List of organization names narrowed down by user input
+      //  in search bar --->
+    const [ filteredNames, setFilteredNames ] = React.useState( [] );
 
-        name === 'all' ? setSelectedNames(['all']) :
-        selectedNames.indexOf('all') > -1 ? setSelectedNames([name]) :
-        selectedNames.indexOf(name)  > -1 && selectedNames.length === 1 ? setSelectedNames(['all']) :
-        selectedNames.indexOf(name)  > -1 ? setSelectedNames([...selectedNames.filter(a=> a !== name)]) :
-        setSelectedNames([...selectedNames, name]);
+      //  List of organization names selected by the user --->
+    const [ selectedNames, setSelectedNames ] = React.useState( selected.length ? [ ...selected ] : [ 'all' ] );
+
+
+
+
+
+      //  Sets default list of organizations to filteredNames state --->
+    React.useEffect( () => setFilteredNames( nameList) , [ nameList ] );
+
+      //  Sends list of selected organizations up to parent component
+      //  as user makes new selections --->
+    React.useEffect( () => resultList( selectedNames ),  [ selectedNames ] );
+
+
+
+
+
+      //  Adds otganization name to list of selected names --->
+    const handleSelection = ( name ) => {
+
+        name === 'all' ?
+        setSelectedNames( [ 'all' ] ) :
+        selectedNames.indexOf( 'all' ) > -1 ? setSelectedNames( [ name ] ) :
+        selectedNames.indexOf( name )  > -1 && selectedNames.length === 1 ? setSelectedNames( [ 'all' ] ) :
+        selectedNames.indexOf( name )  > -1 ? setSelectedNames( [ ...selectedNames.filter( a => a !== name ) ] ) :
+        setSelectedNames( [ ...selectedNames, name ] );
     }
 
-    const removeFromSelection = (name) => {
-        if(name !== 'all'){
-            if(selectedNames.length === 1) { setSelectedNames(['all']); }
-            else{ setSelectedNames([...selectedNames.filter(a=> a !== name)]); }
+    
+    
+      //  Removes a organization name from list of selectedNames --->
+    const removeFromSelection = ( name ) => {
+
+        if( name !== 'all' ){
+            if( selectedNames.length === 1 ) { setSelectedNames( [ 'all' ] ); }
+            else{ setSelectedNames( [ ...selectedNames.filter( a => a !== name ) ] ); }
         }
     }
 
-    const handleUserInput = (input) => {
-        
-        const groups = nameList.filter(a=> a.toLowerCase().startsWith(input.toLowerCase()));
 
-        setFilteredNames(groups);
+
+      //  Updates filtered organization names are user types --->
+    const handleUserInput = ( input ) => {
+        
+        const groups = nameList.filter( a => a.toLowerCase().startsWith( input.toLowerCase() ) );
+
+        setFilteredNames( groups );
     }
 
-    const handleSearch = (input) => {
-        setFilteredNames(nameList.filter(a=> a === input));
+
+    
+    //  Filters names when user clicks search or presses
+    //  enter key --->
+    const handleSearch = ( input ) => {
+
+        setFilteredNames( nameList.filter( a => a === input ) );
+
     }
 
     
@@ -67,7 +99,7 @@ export const GroupFilter = ({nameList, selected, toggle, resultList}) =>{
 
                 <BreadCrumbs
                     crumbs={ selectedNames }
-                    removeGroup={ (value) => removeFromSelection( value ) }
+                    removeGroup={ ( value ) => removeFromSelection( value ) }
                 />
 
             </article>
@@ -91,7 +123,7 @@ export const GroupFilter = ({nameList, selected, toggle, resultList}) =>{
                     names={ filteredNames }
                     selectedGroups={ selectedNames }
                     filteredGroups={ filteredNames }
-                    updateList={ (name) => handleSelection( name ) }
+                    updateList={ ( name ) => handleSelection( name ) }
                 />
 
             </article>
