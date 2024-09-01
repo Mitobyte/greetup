@@ -13,7 +13,7 @@ export const NavBar = () => {
     return(
 
 
-        <nav className={ `srcryBox ${ styles.navBar }` }>
+        <nav className={ `srcryBox ${styles.navComponent} ${ styles.navBar }` }>
 
             <svg className={ styles.icon } viewBox="0 0 195.899414 181.036621" >
 
