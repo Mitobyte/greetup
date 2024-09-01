@@ -5,6 +5,10 @@ import { DateComponent } from './date/DateComponent';
 
 
 
+
+
+
+
 export const EventList = ( { data } ) => {
 
     return(
@@ -46,6 +50,6 @@ export const EventList = ( { data } ) => {
 
 
         </ul>
-        
+
     );
 }

@@ -1,5 +1,11 @@
-import * as React from 'react';
+import * as React  from 'react';
 import * as styles from './OrganizationCard.module.css';
+
+
+
+
+
+
 
 export const OrganizationCard = ( { data, selection } ) => {
 

@@ -4,6 +4,12 @@ import { SvgSymbols } from '../svg_symbols/SvgSymbols';
 import { NavBar }     from '../navbar/NavBar';
 import { Footer }     from '../footer/Footer';
 
+
+
+
+
+
+
 export const PageLayout = ( { children } ) => {
 
     return(

@@ -1,9 +1,14 @@
-import * as React from 'react';
-import * as styles from './GroupFilter.module.css';
-import {AnimatePresence, motion} from 'framer-motion';
-import { BreadCrumbs } from './breadcrumbs/BreadCrumbs';
+import * as React        from 'react';
+import * as styles       from './GroupFilter.module.css';
+import { BreadCrumbs }   from './breadcrumbs/BreadCrumbs';
 import { NameContainer } from './name-container/NameContainer';
-import { SearchBar } from './search-bar/SearchBar';
+import { SearchBar }     from './search-bar/SearchBar';
+
+
+
+
+
+
 
 export const GroupFilter = ({nameList, selected, toggle, resultList}) =>{
     // nameList   : list of all organization names for matching search results

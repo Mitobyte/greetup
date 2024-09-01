@@ -1,5 +1,11 @@
-import * as React from 'react';
+import * as React  from 'react';
 import * as styles from './modal.module.css';
+
+
+
+
+
+
 
 export const Modal = ( { children, toggle } ) => {
 
@@ -14,8 +20,12 @@ export const Modal = ( { children, toggle } ) => {
                     viewBox="0 0 20 20"
                     onClick={ () => toggle( false ) }
                 >
+
                     <use href="#close_button" />
+
                 </svg>
+
+                
 
                 <article className={ styles.projectionContainer }>
                     { children }
