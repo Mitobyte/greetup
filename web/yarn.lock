@@ -5040,6 +5040,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-runtime@npm:^6.26.0":
+  version: 6.26.0
+  resolution: "babel-runtime@npm:6.26.0"
+  dependencies:
+    core-js: "npm:^2.4.0"
+    regenerator-runtime: "npm:^0.11.0"
+  checksum: 10c0/caa752004936b1463765ed3199c52f6a55d0613b9bed108743d6f13ca532b821d4ea9decc4be1b583193164462b1e3e7eefdfa36b15c72e7daac58dd72c1772f
+  languageName: node
+  linkType: hard
+
 "balanced-match@npm:^1.0.0":
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
@@ -6229,6 +6239,13 @@ __metadata:
   version: 3.35.1
   resolution: "core-js-pure@npm:3.35.1"
   checksum: 10c0/1e3154d47be12ba82dd927b0af87fac4c6011d36772bc03e3690b1e70d9fc16f31af058f5cff647e82f8500bf08c58e1261e63dcc797faea568ebc6fc50331a7
+  languageName: node
+  linkType: hard
+
+"core-js@npm:^2.4.0":
+  version: 2.6.12
+  resolution: "core-js@npm:2.6.12"
+  checksum: 10c0/00128efe427789120a06b819adc94cc72b96955acb331cb71d09287baf9bd37bebd191d91f1ee4939c893a050307ead4faea08876f09115112612b6a05684b63
   languageName: node
   linkType: hard
 
@@ -8805,6 +8822,7 @@ __metadata:
     gatsby: "npm:^5.12.11"
     gatsby-image: "npm:^3.11.0"
     gatsby-plugin-css: "npm:^2.1.0"
+    gatsby-plugin-html-attributes: "npm:^1.0.5"
     gatsby-plugin-image: "npm:^3.13.0"
     gatsby-plugin-manifest: "npm:^5.13.1"
     gatsby-plugin-material-ui: "npm:^4.1.0"
@@ -8870,6 +8888,15 @@ __metadata:
   peerDependencies:
     gatsby: ^2.8.2
   checksum: 10c0/bbc62a3ee453b46b6ed59953525a21cf308437192f393e67c8ac87617b7eac7fda9a5c7736d5dedaa8f86f481b90d580be379938e32397f4caadfacdd6ba59a6
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-html-attributes@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "gatsby-plugin-html-attributes@npm:1.0.5"
+  dependencies:
+    babel-runtime: "npm:^6.26.0"
+  checksum: 10c0/ac2204d98d823408d69421c35af31810739e0b471226d9796ffb0e9be3c731d5f4a42b87209d2413a9c036e24b743340a47f79da8a04a9095334814dc0c9ed55
   languageName: node
   linkType: hard
 
@@ -14344,6 +14371,13 @@ __metadata:
   version: 1.4.2
   resolution: "regenerate@npm:1.4.2"
   checksum: 10c0/f73c9eba5d398c818edc71d1c6979eaa05af7a808682749dd079f8df2a6d91a9b913db216c2c9b03e0a8ba2bba8701244a93f45211afbff691c32c7b275db1b8
+  languageName: node
+  linkType: hard
+
+"regenerator-runtime@npm:^0.11.0":
+  version: 0.11.1
+  resolution: "regenerator-runtime@npm:0.11.1"
+  checksum: 10c0/69cfa839efcf2d627fe358bf302ab8b24e5f182cb69f13e66f0612d3640d7838aad1e55662135e3ef2c1cc4322315b757626094fab13a48f9a64ab4bdeb8795b
   languageName: node
   linkType: hard
 

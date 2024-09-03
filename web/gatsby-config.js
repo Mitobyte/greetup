@@ -24,6 +24,12 @@ module.exports = {
         "icon": 'src/images/favicon.svg'
       }
     },
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options:{
+        lang: 'en'
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
