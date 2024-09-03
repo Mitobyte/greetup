@@ -15,6 +15,27 @@ import { modalAnimation }          from "../utils/shared-animations";
 
 
 
+export const Head = () => {
+  
+  return(
+    <>
+      <title>
+        Milwaukee Tech Meetups
+      </title>
+      <meta
+        name="description"
+        content="A list of Milwaukee based Tech Organizations and any upcoming events they may be having"
+      />
+    </>
+  );
+}
+
+
+
+
+
+
+
 export default function Home() {
 
     //  Root data for all organizations --->

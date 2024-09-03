@@ -15,6 +15,31 @@ import { modalAnimation }             from "../utils/shared-animations";
 
 
 
+
+
+
+
+export const Head = () => {
+  
+  return(
+    <>
+      <title>
+        Milwaukee Tech Meetups
+      </title>
+      <meta
+        name="description"
+        content="A calendar showcaseing upcoming tech events in the greater Milwaukee area"
+      />
+    </>
+  );
+}
+
+
+
+
+
+
+
 export default function CalendarPage() {
 
     //  Root data for all organizations --->
