@@ -36,6 +36,7 @@ export const EventList = ( { data } ) => {
                                 className={ `srcryTxt ${ styles.joinButton }` }
                                 href={ item.url }
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 Join Event
                             </a>
