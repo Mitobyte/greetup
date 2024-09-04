@@ -20,7 +20,7 @@ export const NameContainer = ( { names, selectedGroups, filteredGroups, updateLi
 
 
 
-            <p className={ styles.nameContainer }>
+            <div className={ styles.nameContainer }>
 
                 <NameButton
                     name={ 'all' }
@@ -50,7 +50,7 @@ export const NameContainer = ( { names, selectedGroups, filteredGroups, updateLi
                         
                 }
 
-            </p>
+            </div>
 
 
 
