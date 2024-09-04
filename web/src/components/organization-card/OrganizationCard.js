@@ -50,6 +50,7 @@ export const OrganizationCard = ( { data, selection } ) => {
             <a
                 className={ `srcryTxt ${ styles.buttonCore } ${ styles.visitButton }` }
                 target="_blank"
+                rel="noreferrer"
                 href={ data.url }
             >
                 learn more
