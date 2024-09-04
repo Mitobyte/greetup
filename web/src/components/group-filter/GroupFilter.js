@@ -32,7 +32,7 @@ export const GroupFilter = ({nameList, selected, toggle, resultList}) =>{
 
       //  Sends list of selected organizations up to parent component
       //  as user makes new selections --->
-    React.useEffect( () => resultList( selectedNames ),  [ selectedNames ] );
+    React.useEffect( () => resultList( selectedNames ),  [ selectedNames, resultList ] );
 
 
 
