@@ -1,5 +1,6 @@
-export function getWeekDay(day){
-    switch(day){
+export function getWeekDay( day ){
+
+    switch( day ){
         case 0 : return 'Sunday';    break;
         case 1 : return 'Monday';    break;
         case 2 : return 'Teusday';   break;
@@ -8,12 +9,18 @@ export function getWeekDay(day){
         case 5 : return 'Friday';    break;
         case 6 : return 'Saturday';  break;
 
-        default : console.log('error determining day of the week');
+        default : console.log( 'error determining day of the week' );
     }
+
 }
 
-export function getMonth(month){
-    switch(month){
+
+
+
+
+export function getMonth( month ){
+
+    switch( month ){
         case 0  : return 'January';   break;
         case 1  : return 'February';  break;
         case 2  : return 'March';     break;
@@ -27,31 +34,49 @@ export function getMonth(month){
         case 10 : return 'November';  break;
         case 11 : return 'December';  break;
 
-        default : console.log('error determining month');
+        default : console.log( 'error determining month' );
     }
+
 }
 
-export function  getDay(day){
-    if(day === 1 || day === 21 || day === 31){ return `${day}st`; }
-    else if(day === 2 || day === 22){ return `${day}nd`; }
-    else if(day === 3 || day === 23){ return `${day}rd`; }
-    else{ return `${day}th`; }
+
+
+
+
+export function  getDay( day ){
+
+    if( day === 1 || day === 21 || day === 31 ){ return `${ day }st`; }
+
+    else if( day === 2 || day === 22 ){ return `${ day }nd`; }
+
+    else if( day === 3 || day === 23 ){ return `${ day }rd`; }
+
+    else{ return `${ day }th`; }
+
 }
 
-export function getTime(hours, minutes){
+
+
+
+
+export function getTime( hours, minutes ){
+
     let hour = 0,
         minuteString = '',
         period = '';
 
-    if(hours >= 0 && hours <= 11){
-        if(hours === 0){ hour = 12; }
+    if( hours >= 0 && hours <= 11 ){
+
+        if( hours === 0 ){ hour = 12; }
         else{ hour = hours; }
         
         period = 'am';
     }
+
     else{
+
         period = 'pm';
-        switch(hours){
+        switch( hours ){
             case 12 : hour = 12; break;
             case 13 : hour = 1;  break;
             case 14 : hour = 2;  break;
@@ -66,13 +91,16 @@ export function getTime(hours, minutes){
             case 23 : hour = 11; break;
             case 0  : hour = 12; break;
 
-            default : console.log('error determining hour');
+            default : console.log( 'error determining hour' );
 
         }
     }
-    if(minutes > 0){
-        if(minutes < 10){ minuteString = `0${minutes}`; }
-        else{ minuteString = `${minutes}`; }
+
+    if( minutes > 0 ){
+        if( minutes < 10 ){ minuteString = `0${ minutes }`; }
+        else{ minuteString = `${ minutes }`; }
     }
-    return`${hour}${minuteString.length > 0 ? `:${minuteString}` : ''}${period}`;
+
+
+    return`${ hour }${ minuteString.length > 0 ? `:${ minuteString }` : ''}${ period }`;
 }
