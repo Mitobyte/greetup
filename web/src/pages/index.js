@@ -24,7 +24,7 @@ export const Head = () => {
       </title>
       <meta
         name="description"
-        content="A list of Milwaukee based Tech Organizations and any upcoming events they may be having"
+        content="A list of Milwaukee based Tech Organizations and their upcoming events."
       />
     </>
   );

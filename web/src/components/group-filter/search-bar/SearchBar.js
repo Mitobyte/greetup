@@ -8,8 +8,8 @@ import * as styles from './SearchBar.module.css';
 
 
 export const SearchBar = ( { userInput, searchText } ) => {
-    // userInput  : passes search text up to parent for narrowing down matches
-    // searchText : passes current search text to parent to find exact match
+    // userInput  : passes search text up to parent for narrowing down matches.
+    // searchText : passes current search text to parent to find exact match.
 
 
 

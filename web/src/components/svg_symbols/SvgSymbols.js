@@ -1,12 +1,25 @@
 import * as React from 'react';
 
+
+
+
+
+
+
 export const SvgSymbols = ()=>{
+
+
+
+
     return(
+
+
         <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             style={{display: 'none'}}
         >
+
             <defs>
                 <symbol id="m_icon">
                     {/* viewBox="0 0 195.899414 181.036621" */}
@@ -126,6 +139,7 @@ export const SvgSymbols = ()=>{
                         y2="18.506657"
                     />
                 </symbol>
+
             </defs>
 
         </svg>

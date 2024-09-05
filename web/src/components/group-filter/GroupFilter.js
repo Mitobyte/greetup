@@ -10,9 +10,12 @@ import { SearchBar }     from './search-bar/SearchBar';
 
 
 
-export const GroupFilter = ({nameList, selected, toggle, resultList}) =>{
-    // nameList   : list of all organization names for matching search results
-    // resultList : passes list of selected names to parent for filtering organization data for calendar
+export const GroupFilter = ({nameList, selected, toggle, resultList}) => {
+    // selected   : list of organization names selected by user.
+    // nameList   : list of all organization names for matching search results.
+    // toggle     : passes boolean value up to parent to close group filter.
+    // resultList : passes list of selected names to parent for
+    //              filtering organization data for calendar.
 
 
 

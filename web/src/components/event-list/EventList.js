@@ -10,6 +10,9 @@ import { DateComponent } from './date/DateComponent';
 
 
 export const EventList = ( { data } ) => {
+    //  data : a list of events.
+
+    
 
     return(
         

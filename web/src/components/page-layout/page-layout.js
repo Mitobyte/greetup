@@ -11,6 +11,9 @@ import { Footer }     from '../footer/Footer';
 
 
 export const PageLayout = ( { children } ) => {
+    // children : component to render in markup.
+
+    
 
     return(
 

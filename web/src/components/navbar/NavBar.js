@@ -10,6 +10,8 @@ import {Link}      from 'gatsby';
 
 export const NavBar = () => {
 
+    
+
     return(
 
 

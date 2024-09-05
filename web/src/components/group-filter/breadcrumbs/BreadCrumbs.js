@@ -10,6 +10,11 @@ import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
 
 
 export const BreadCrumbs = ( { crumbs, removeGroup } ) => {
+    //  crumbs      : list of selected organizations to itereate into crumb component.
+    //  removeGroup : passes an organization name up to parent to delete from list
+    //                of selected organizations.
+
+
     
     return(
 

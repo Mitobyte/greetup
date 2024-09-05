@@ -8,6 +8,10 @@ import * as styles from './OrganizationCard.module.css';
 
 
 export const OrganizationCard = ( { data, selection } ) => {
+    //  data      : Organization data.
+    //  selection : passes event data to parent for modal.
+
+
 
     return(
         <article className={ styles.mainContainer }>

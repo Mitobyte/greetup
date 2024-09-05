@@ -28,7 +28,7 @@ export const Head = () => {
       </title>
       <meta
         name="description"
-        content="A calendar showcaseing upcoming tech events in the greater Milwaukee area"
+        content="A calendar showcaseing upcoming tech events in the greater Milwaukee area."
       />
     </>
   );

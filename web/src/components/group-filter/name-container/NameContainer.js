@@ -9,10 +9,12 @@ import { NameButton } from './name-button/NameButton';
 
 
 export const NameContainer = ( { names, selectedGroups, filteredGroups, updateList } ) => {
-    // names          : list of group names to iterate into buttons
-    // selectedGroups : list of groups currently selected by the user
-    // filteredGroups : list of groups filtered by search bar to narrow down matches
-    // updateList     : passes selected group name to parent component
+    // names          : list of group names to iterate into buttons.
+    // selectedGroups : list of groups currently selected by the user.
+    // filteredGroups : list of groups filtered by search bar to narrow down matches.
+    // updateList     : passes selected group name to parent component.
+
+    
 
     return(
 

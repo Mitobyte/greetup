@@ -8,6 +8,9 @@ import * as styles from './Location.module.css';
 
 
 export const Location = ( { data } ) => {
+    // data : information about the location of an event.
+
+    
 
     return(
 

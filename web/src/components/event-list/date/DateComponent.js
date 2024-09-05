@@ -9,6 +9,10 @@ import * as DateHelpers from '../../../utils/date-helpers';
 
 
 export const DateComponent = ( { start, end } ) => {
+    //  start : the day an event begins.
+    //  end   : the day an event ends.
+
+    
 
       //  Date the event starts --->
     const startDate = new Date( start );

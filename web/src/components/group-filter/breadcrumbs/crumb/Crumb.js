@@ -8,7 +8,11 @@ import * as styles from './Crumb.module.css';
 
 
 export const Crumb = ( { crumb, deleteCrumb } ) => {
+    //  crumb       : the name to be displayed.
+    //  deleteCrumb : passes name up to parent to remove from list of selected organizations.
 
+    
+    
     return(
 
         <span className={ `srcryBox ${ styles.crumbContainer }` }>

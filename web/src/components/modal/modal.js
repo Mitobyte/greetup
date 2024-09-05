@@ -8,6 +8,10 @@ import * as styles from './modal.module.css';
 
 
 export const Modal = ( { children, toggle } ) => {
+    //  children : component to display inside markup.
+    //  toggle   : passes boolean value up to parent to close modal.
+
+    
 
     return(
         <section className={ styles.mainContainer }>
@@ -25,7 +29,7 @@ export const Modal = ( { children, toggle } ) => {
 
                 </svg>
 
-                
+
 
                 <article className={ styles.projectionContainer }>
                     { children }
