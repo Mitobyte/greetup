@@ -14,9 +14,67 @@ export const Hero = () => {
         <header className={ styles.mainContainer }>
 
 
-            <div className={ styles.backgroundPhoto }></div>
+            <picture className={ styles.backgroundPhoto }>
+
+                <source
+                    srcSet="images/skyline-400w-800h.webp"
+                    media="(min-width: 1px) and (orientation: portrait)"
+                    width="100%"
+                    height="100%"
+                    alt=""
+                />
+                <source
+                    srcSet="images/skyline-500w-1000h.webp"
+                    media="(min-width: 400px) and (orientation: portrait)"
+                    width="100%"
+                    height="100%"
+                    alt=""
+                />
+                <source
+                    srcSet="images/skyline-800w-16000h.webp"
+                    media="(min-width: 700px) and (orientation: portrait)"
+                    width="100%"
+                    height="100%"
+                    alt=""
+                />
+                <source
+                    srcSet="images/skyline-1000w-500h.webp"
+                    media="(min-width: 900px) and (orientation: landscape)"
+                    width="100%"
+                    height="100%"
+                    alt=""
+                />
+                <source
+                    srcSet="images/skyline-1200w-2400h.webp"
+                    media="(min-width: 1000px) and (orientation: portrait)"
+                    width="100%"
+                    height="100%"
+                    alt=""
+                />
+                <source
+                    srcSet="images/skyline-1600w-800h.webp"
+                    media="(min-width: 1200px) and (orientation: landscape)"
+                    width="100%"
+                    height="100%"
+                    alt=""
+                />
+                <source
+                    srcSet="images/skyline-2400w-1200h.webp"
+                    media="(min-width: 1800px) and (orientation: landscape)"
+                    width="100%"
+                    height="100%"
+                    alt=""
+                />
+                
+                <img src='images/skyline.jpg' width="100%" height="100%" alt="" />
+
+            </picture>
+
+
             <div className={ styles.backgroundFilter }></div>
             <div className={ styles.backgroundGradient }></div>
+
+
 
             <article className={ styles.contentContainer }>
 
