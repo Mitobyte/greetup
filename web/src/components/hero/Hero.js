@@ -9,68 +9,72 @@ import * as styles from './Hero.module.css';
 
 export const Hero = () => {
 
-    
+
 
     return(
 
         <header className={ styles.mainContainer }>
 
+            <div className={styles.photoContainer}>
 
-            <picture className={ styles.backgroundPhoto }>
+                <picture className={ styles.backgroundPhoto }>
 
-                <source
-                    srcSet="images/skyline-400w-800h.webp"
-                    media="(min-width: 1px) and (orientation: portrait)"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                />
-                <source
-                    srcSet="images/skyline-500w-1000h.webp"
-                    media="(min-width: 400px) and (orientation: portrait)"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                />
-                <source
-                    srcSet="images/skyline-800w-16000h.webp"
-                    media="(min-width: 700px) and (orientation: portrait)"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                />
-                <source
-                    srcSet="images/skyline-1000w-500h.webp"
-                    media="(min-width: 900px) and (orientation: landscape)"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                />
-                <source
-                    srcSet="images/skyline-1200w-2400h.webp"
-                    media="(min-width: 1000px) and (orientation: portrait)"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                />
-                <source
-                    srcSet="images/skyline-1600w-800h.webp"
-                    media="(min-width: 1200px) and (orientation: landscape)"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                />
-                <source
-                    srcSet="images/skyline-2400w-1200h.webp"
-                    media="(min-width: 1800px) and (orientation: landscape)"
-                    width="100%"
-                    height="100%"
-                    alt=""
-                />
-                
-                <img src='images/skyline.jpg' width="100%" height="100%" alt="" />
+                    <source
+                        srcSet="images/skyline-400w-800h.webp"
+                        media="(min-width: 1px) and (orientation: portrait)"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                    />
+                    <source
+                        srcSet="images/skyline-500w-1000h.webp"
+                        media="(min-width: 400px) and (orientation: portrait)"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                    />
+                    <source
+                        srcSet="images/skyline-800w-16000h.webp"
+                        media="(min-width: 700px) and (orientation: portrait)"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                    />
+                    <source
+                        srcSet="images/skyline-1000w-500h.webp"
+                        media="(min-width: 900px) and (orientation: landscape)"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                    />
+                    <source
+                        srcSet="images/skyline-1200w-2400h.webp"
+                        media="(min-width: 1000px) and (orientation: portrait)"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                    />
+                    <source
+                        srcSet="images/skyline-1600w-800h.webp"
+                        media="(min-width: 1200px) and (orientation: landscape)"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                    />
+                    <source
+                        srcSet="images/skyline-2400w-1200h.webp"
+                        media="(min-width: 1800px) and (orientation: landscape)"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                    />
+                    
+                    <img src='images/skyline.jpg' width="100%" height="100%" alt="" />
 
-            </picture>
+                </picture>
+
+            </div>
+
 
 
             <div className={ styles.backgroundFilter }></div>
