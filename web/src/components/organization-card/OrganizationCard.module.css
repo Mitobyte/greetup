@@ -28,7 +28,7 @@
 .noEventText{
     --text-size         : var( --text-widget-1 );
     --kerning-nudge-amt : 5;
-    color               : hsl( var( --gray-700 ), 1 );
+    color               : hsl( var( --gray-800 ), 1 );
     place-self          : center;
     max-width           : 92%;
 }
