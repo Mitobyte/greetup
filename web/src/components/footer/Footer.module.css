@@ -1,0 +1,5 @@
+footer{
+    display: grid;
+    background-color: hsl(var(--gray-900), 1);
+    height: 30vh;
+}
