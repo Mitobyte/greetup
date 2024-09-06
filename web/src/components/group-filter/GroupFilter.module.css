@@ -1,0 +1,26 @@
+.mainContainer{
+    display               : grid;
+    width                 : 100%;
+    grid-template-columns : var( --micro-2-5 ) 1fr var( --micro-2-3 ) var( --micro-2-5 );
+    grid-template-rows    : var( --micro-2-5 ) var( --micro-2-3 ) repeat( 2, auto ) 1fr var( --micro-2-5 );
+    background-color      : hsl( var( --gray-200 ), 1 );
+}
+
+.closeButton{
+    grid-area      : 2/3/3/4;
+    --stroke       : var( --line-fine );
+    --stroke-color : hsl( var( --blue-950 ), 1 );
+    cursor         : pointer;
+    place-self     : center;
+}
+
+.breadcrumbs{
+    grid-area   : 3/2/4/4;
+    display     : grid;
+    place-items : center;
+
+}
+
+.searchBar{ grid-area : 4/2/5/4; }
+
+.nameContainer{ grid-area : 5/2/6/4; }

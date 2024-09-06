@@ -1,0 +1,9 @@
+.mainContainer{
+    text-align   : left;
+    justify-self : center;
+    word-wrap    : break-all;
+}
+
+.crumbAnimationContainer{
+    display : inline-grid;
+}
