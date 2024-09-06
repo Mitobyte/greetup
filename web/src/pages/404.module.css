@@ -1,0 +1,30 @@
+.mainContainer{
+    display: grid;
+    box-sizing:border-box;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+    background-color: hsl(var(--gray-100), 1);
+}
+
+.messageContainer{
+    display: grid;
+    justify-items: center;
+    grid-auto-rows: auto;
+    gap: var(--xTiny-1-4);
+}
+
+.title{
+    font-size: var(--text-jumbotron-3);
+    color: hsl( var( --blue-800), 1 );
+}
+
+.errorText{
+    font-size: var(--text-widget-2);
+    color: hsl( var( --blue-800), 1);
+}
+
+.text{
+    font-size: var(--text-article-1);
+    color: hsl( var( --blue-950), 1 );
+}
