@@ -29,9 +29,7 @@ module.exports = {
       options:{
         lang: 'en'
       }
-    },
-    `@emotion/react`,
-    `@emotion/styled`
-  ],
+    }
+  ]
 };
 
