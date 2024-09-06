@@ -30,9 +30,6 @@ module.exports = {
         lang: 'en'
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
     `@emotion/react`,
     `@emotion/styled`
   ],
