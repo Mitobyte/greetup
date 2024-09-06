@@ -62,7 +62,7 @@
 
 
 .filterButton{
-    --btn-bg-color       : hsl( var( --blue-600 ), 1 );
+    --btn-bg-color       : hsl( var( --blue-700 ), 1 );
     --btn-bg-color-hover : hsl( var( --blue-300 ), 1 );
     --btn-color          : hsl( var( --blue-50  ), 1 );
     --btn-color-hover    : hsl( var( --blue-950 ), 1 );

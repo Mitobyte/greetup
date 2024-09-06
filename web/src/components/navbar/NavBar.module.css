@@ -37,7 +37,7 @@
 
 .link{
     text-decoration : none;
-    color           : hsl( var( --gray-600 ), 1 );
+    color           : hsl( var( --gray-800 ), 1 );
     scale           : 1;
     transition      : 100ms ease-in-out;
 }
@@ -47,5 +47,5 @@
 }
 
 .active{
-    color : hsl( var( --blue-600 ), 1 );
+    color : hsl( var( --blue-800 ), 1 );
 }
