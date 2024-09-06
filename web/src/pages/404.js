@@ -1,4 +1,5 @@
-import * as React from 'react';
+import * as React     from 'react';
+import * as styles    from './404.module.css';
 import { PageLayout } from '../components/page-layout/page-layout';
 
 
