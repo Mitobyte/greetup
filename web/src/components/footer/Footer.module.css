@@ -1,5 +1,15 @@
 footer{
-    display: grid;
-    background-color: hsl(var(--gray-900), 1);
-    height: 30vh;
+    display          : grid;
+    background-color : hsl( var( --gray-900 ), 1 );
+    height           : 30vh;
+}
+
+.copyright{
+    --text-size         : var( --text-widget-2 );
+    --kerning-nudge-amt : 6;
+    font-weight         : 200;
+    justify-self        : center;
+    align-self          : flex-end;
+    color               : hsl( var( --gray-50 ), 1 );
+    padding-bottom      : var( --line-narrow );
 }
