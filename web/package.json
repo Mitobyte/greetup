@@ -43,5 +43,6 @@
   },
   "bugs": {
     "url": "https://github.com/mitobyte/greetup/issues"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }

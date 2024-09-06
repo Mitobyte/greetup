@@ -5,3 +5,4 @@ web/public/**/*
 dist
 node_modules
 /data-generator/data/
+.history
