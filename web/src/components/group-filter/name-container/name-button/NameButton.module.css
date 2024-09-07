@@ -22,8 +22,6 @@
     cursor                 : pointer;
 }
 
-.nameButton:active{ scale: 0.9; }
-
 .indicator{
     --inactive       : hsl( var( --green-900 ), 1 );
     --active         : hsl( var( --green-500 ), 1 );
