@@ -66,11 +66,8 @@ export const GroupFilter = ({nameList, selected, toggle, resultList}) => {
     const handleUserInput = ( input ) => {
         
         const groups = nameList.filter( a => a.toLowerCase().startsWith( input.toLowerCase() ) );
-        //console.log(input, groups);
 
         setFilteredNames( groups );
-
-        console.log(filteredNames);
     }
 
 
