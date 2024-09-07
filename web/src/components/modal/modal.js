@@ -11,7 +11,7 @@ export const Modal = ( { children, toggle } ) => {
     //  children : component to display inside markup.
     //  toggle   : passes boolean value up to parent to close modal.
 
-    
+
 
     return(
         <section className={ styles.mainContainer }>
@@ -25,7 +25,10 @@ export const Modal = ( { children, toggle } ) => {
                     onClick={ () => toggle( false ) }
                 >
 
-                    <use href="#close_button" />
+                    <use href="#close_button"
+                        width="100%"
+                        height="100%"
+                    />
 
                 </svg>
 

@@ -94,7 +94,10 @@ export const GroupFilter = ({nameList, selected, toggle, resultList}) => {
                 onClick={ () => toggle( false ) }
             >
 
-                <use href="#close_button" />
+                <use href="#close_button"
+                    width="100%"
+                    height="100%"
+                />
 
             </svg>
 
