@@ -6,6 +6,6 @@ dist
 node_modules
 /data-generator/data/
 .history
-.yarnrc.yml
-yarn.lock
-.yarn/install-stage.gz
+web/.yarnrc.yml
+web/yarn.lock
+web/.yarn/install-stage.gz
