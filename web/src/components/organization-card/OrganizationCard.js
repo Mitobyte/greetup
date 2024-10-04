@@ -14,6 +14,7 @@ export const OrganizationCard = ( { data, selection } ) => {
 
 
     return(
+        
         <article className={ styles.mainContainer }>
 
 
