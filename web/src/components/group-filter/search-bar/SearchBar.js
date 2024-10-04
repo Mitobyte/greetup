@@ -52,7 +52,7 @@ export const SearchBar = ( { userInput, searchText } ) => {
         <article className={styles.mainContainer}>
 
 
-            <label for="searchBar" className={`srcryBox ${styles.searchLabel}`}>
+            <label htmlFor="searchBar" className={`srcryBox ${styles.searchLabel}`}>
 
                 <input
                     id="searchBar"
