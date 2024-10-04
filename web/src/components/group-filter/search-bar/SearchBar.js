@@ -23,7 +23,7 @@ export const SearchBar = ( { userInput, searchText } ) => {
       //  Triggers a search when user pushes enter key --->
     const detectEnterKey = (event)=>{
         
-        if(event.key === 'Enter'){ handleSearch(); }
+        if( event.keyCode === 13 ){ handleSearch(); }
 
     }
 
