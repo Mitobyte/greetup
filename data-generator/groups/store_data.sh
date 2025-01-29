@@ -13,7 +13,7 @@ while IFS= read -r line; do
 	# Split the line by comma and assign to two variables
   IFS=',' read -r type name url <<< "$line"
 
-  echo $type
+  echo "Processing: $type -> $name"
 
   mkdir -p "$DATA_DIR/$name"
   response=$(curl -s $url)
