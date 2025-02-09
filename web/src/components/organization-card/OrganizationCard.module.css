@@ -1,96 +1,98 @@
-.mainContainer{
-    display            : grid;
-    width              : 100%;
-    grid-template-rows : var( --small-1-3 ) minmax( var( --xTiny-2-8 ), var( --tiny-1-3 ) ) auto auto;
-    grid-gap           : var( --xTiny-1-3 );
-    background-color   : hsl( var( --gray-300 ), .66 );
-    padding            : var( --xTiny-1-4 ) 0;
-    box-shadow         : hsl( var( --gray-400 ), 1 ) 0 var( --line-fine ) var( --line-narrow );
+.mainContainer {
+  display: grid;
+  width: 100%;
+  grid-template-rows: var(--small-1-3) minmax(
+      var(--xTiny-2-8),
+      var(--tiny-1-3)
+    ) auto auto;
+  grid-gap: var(--xTiny-1-3);
+  background-color: hsl(var(--gray-300), 0.66);
+  padding: var(--xTiny-1-4) 0;
+  box-shadow: hsl(var(--gray-400), 1) 0 var(--line-fine) var(--line-narrow);
 }
 
-.companyLogo{
-    grid-area  : 1/1/2/2;
-    place-self : center;
-    max-width  : 92%;
-    max-height : 100%;
+.companyLogo {
+  grid-area: 1/1/2/2;
+  place-self: center;
+  max-width: 92%;
+  max-height: 100%;
 }
 
-.companyName{
-    max-width           : 92%;
-    text-align          : center;
-    justify-self        : center;
-    align-self          : flex-start;
-    --kerning-nudge-amt : 4;
-    --leading-nudge-amt : 16;
-    color               : hsl( var( --blue-950 ), 1 );
+.companyName {
+  max-width: 92%;
+  text-align: center;
+  justify-self: center;
+  align-self: flex-start;
+  --kerning-nudge-amt: 4;
+  --leading-nudge-amt: 16;
+  color: hsl(var(--blue-950), 1);
 }
 
-.noEventText{
-    --text-size         : var( --text-widget-1 );
-    --kerning-nudge-amt : 5;
-    color               : hsl( var( --gray-700 ), 1 );
-    place-self          : center;
-    max-width           : 92%;
+.noEventText {
+  --text-size: var(--text-widget-1);
+  --kerning-nudge-amt: 5;
+  color: hsl(var(--gray-700), 1);
+  place-self: center;
+  max-width: 92%;
 }
 
-.eventContainer{
-    display            : grid;
-    place-self         : center;
-    grid-template-rows : auto auto;
-    grid-gap           : var( --micro-2-3 );
-    height             : min-content;
+.eventContainer {
+  display: grid;
+  place-self: center;
+  grid-template-rows: auto auto;
+  grid-gap: var(--micro-2-3);
+  height: min-content;
 }
 
-.eventText{
-    justify-self        : center;
-    color               : hsl( var( --blue-900 ), 1 );
-    text-align          : center;
-    --text-size         : var( --text-widget-4 );
-    --kerning-nudge-amt : 5;
-    font-weight         : 600;
+.eventText {
+  justify-self: center;
+  color: hsl(var(--blue-900), 1);
+  text-align: center;
+  --text-size: var(--text-widget-4);
+  --kerning-nudge-amt: 5;
+  font-weight: 600;
 }
 
-.eventCount{
-    font-size : var( --text-article-1 );
-    color     : hsl( var( --green-800 ), 1 );
+.eventCount {
+  font-size: var(--text-article-1);
+  color: hsl(var(--green-800), 1);
 }
 
-.buttonCore{
-    --kerning-nudge-amt : 6;
-    background-color    : var( --bg-color );
-    color               : var( --text-color );
-    padding             : var( --line-semiBold ) var( --line-thick );
-    width               : max-content;
-    height              : min-content;
-    cursor              : pointer;
-    justify-self        : center;
-    border              : none;
-    transform           : scale( 1 );
-    transition          : 300ms ease-in-out;
-
+.buttonCore {
+  --kerning-nudge-amt: 6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: var(--line-semiBold) var(--line-thick);
+  width: max-content;
+  height: min-content;
+  cursor: pointer;
+  justify-self: center;
+  border: none;
+  transform: scale(1);
+  transition: 300ms ease-in-out;
 }
 
-.buttonCore:hover{
-    transform        : scale( 1.05 );
-    background-color : var( --bg-color-hover );
-    color            : var( --text-color-hover );
-    box-shadow       : hsl( var( --gray-400 ), 1 ) 0 var( --line-narrow ) var( --line-fine );
+.buttonCore:hover {
+  transform: scale(1.05);
+  background-color: var(--bg-color-hover);
+  color: var(--text-color-hover);
+  box-shadow: hsl(var(--gray-400), 1) 0 var(--line-narrow) var(--line-fine);
 }
 
-.visitButton{
-    --bg-color         : hsl( var( --blue-950 ), 1 );
-    --text-color       : hsl( var( --blue-50  ), 1 );
-    --bg-color-hover   : hsl( var( --blue-300 ), 1 );
-    --text-color-hover : hsl( var( --blue-950 ), 1 );
-    --text-size        : var( --text-widget-3 );
-    text-decoration    : none;
-    align-self         : flex-end;
+.visitButton {
+  --bg-color: hsl(var(--blue-950), 1);
+  --text-color: hsl(var(--blue-50), 1);
+  --bg-color-hover: hsl(var(--blue-300), 1);
+  --text-color-hover: hsl(var(--blue-950), 1);
+  --text-size: var(--text-widget-3);
+  text-decoration: none;
+  align-self: flex-end;
 }
 
-.viewButton{
-    --bg-color         : hsl( var( --green-800 ), 1 );
-    --text-color       : hsl( var( --green-50  ), 1 );
-    --bg-color-hover   : hsl( var( --green-300 ), 1 );
-    --text-color-hover : hsl( var( --green-950 ), 1 );
-    align-self         : flex-start;
+.viewButton {
+  --bg-color: hsl(var(--green-800), 1);
+  --text-color: hsl(var(--green-50), 1);
+  --bg-color-hover: hsl(var(--green-300), 1);
+  --text-color-hover: hsl(var(--green-950), 1);
+  align-self: flex-start;
 }

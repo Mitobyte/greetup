@@ -1,97 +1,101 @@
-.mainContainer{
-    display    : grid;
-    min-height : 92vh;
-    /*max-height : 110vh;*/
-    width      : 100%;
+.mainContainer {
+  display: grid;
+  min-height: 92vh;
+  /*max-height : 110vh;*/
+  width: 100%;
 }
 
-.photoContainer{
+.photoContainer {
+  grid-area: 1/1/2/2;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  /*overflow: hidden;*/
+}
+
+.backgroundPhoto {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.backgroundFilter {
+  grid-area: 1/1/2/2;
+  display: block;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(var(--blue-950), 0.33);
+}
+
+.backgroundGradient {
+  grid-area: 1/1/2/2;
+  display: block;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    hsl(var(--gray-50), 0) 0%,
+    hsl(var(--gray-950), 0.77) 70%
+  );
+  mix-blend-mode: multiply;
+}
+
+.contentContainer {
+  grid-area: 1/1/2/2;
+  grid-gap: var(--xTiny-2-3);
+  display: grid;
+  z-index: 5;
+  padding-bottom: var(--tiny-1-4);
+}
+
+.logo {
+  place-self: center;
+  width: 92%;
+  margin-top: var(--tiny-2-4);
+  height: var(--small-1-3);
+}
+
+.introText {
+  width: 92%;
+  justify-self: center;
+  --text-size: var(--text-subtitle-2);
+  --kerning-nudge-amt: 7;
+  color: hsl(var(--yellow-50), 1);
+  max-width: 55ch;
+}
+
+@media screen and (orientation: portrait) {
+  .contentContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .logo {
     grid-area: 1/1/2/2;
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 100%;
-    /*overflow: hidden;*/
+  }
+
+  .introText {
+    grid-area: 2/1/3/2;
+  }
 }
 
-.backgroundPhoto{
-    display             : block;
-    background-size     : cover;
-    background-position : center;
-    width: 100%;
-    height: 100%;
-}
+@media screen and (orientation: landscape) and (min-width: 800px) and (min-height: 600px) {
+  .contentContainer {
+    grid-template-columns: 1fr var(--small-1-4) 1fr;
+    grid-template-rows: var(--loMed-1-7) 1fr;
+  }
 
-.backgroundFilter{
-    grid-area        : 1/1/2/2;
-    display          : block;
-    z-index          : 3;
-    width            : 100%;
-    height           : 100%;
-    background-color : hsl( var( --blue-950 ), .33 );
-}
+  .logo {
+    grid-area: 1/1/2/3;
+  }
 
-.backgroundGradient{
-    grid-area      : 1/1/2/2;
-    display        : block;
-    z-index        : 4;
-    width          : 100%;
-    height         : 100%;
-    background     : radial-gradient( circle, hsl( var( --gray-50 ), 0 ) 0%, hsl( var( --gray-950 ), .77 ) 70% );
-    mix-blend-mode : multiply;
-}
-
-.contentContainer{
-    grid-area      : 1/1/2/2;
-    grid-gap       : var( --xTiny-2-3 );
-    display        : grid;
-    z-index        : 5;
-    padding-bottom : var( --tiny-1-4 );
-}
-
-.logo{
-    place-self : center;
-    width      : 92%;
-    margin-top : var( --tiny-2-4 );
-    height     : var( --small-1-3 );
-}
-
-.introText{
-    width               : 92%;
-    justify-self        : center;
-    --text-size         : var( --text-subtitle-2 );
-    --kerning-nudge-amt : 7;
-    color               : hsl( var( --yellow-50 ), 1 );
-    max-width           : 55ch;
-}
-
-
-
-@media screen and ( orientation : portrait ){
-
-    .contentContainer{
-        grid-template-columns : 1fr;
-        grid-template-rows    : 1fr 1fr;
-    }
-
-    .logo{ grid-area : 1/1/2/2; }
-
-    .introText{ grid-area : 2/1/3/2; }
-}
-
-
-
-@media screen and (orientation : landscape) and (min-width : 800px) and (min-height : 600px){
-
-    .contentContainer{
-        grid-template-columns : 1fr var( --small-1-4 ) 1fr;
-        grid-template-rows    : var( --loMed-1-7 ) 1fr;
-    }
-
-    .logo{ grid-area : 1/1/2/3; }
-
-    .introText{
-        grid-area  : 2/2/2/4;
-        align-self : flex-end;
-    }
+  .introText {
+    grid-area: 2/2/2/4;
+    align-self: flex-end;
+  }
 }

@@ -1,24 +1,24 @@
-.mainContainer{
-    place-self : center;
-    width      : 100%;
-    display    : grid;
+.mainContainer {
+  place-self: center;
+  width: 100%;
+  display: grid;
 }
 
-.nameContainer{
-    background-color : hsl( var( --gray-50 ), 1 );
-    justify-self     : center;
-    width            : 88%;
-    text-align       : center;
-    word-wrap        : break-word;
-    min-height       : 40vh;
-    max-height       : 60vh;
-    padding          : var( --xTiny-2-3 ) 0;
-    overflow-y       : scroll;
+.nameContainer {
+  background-color: hsl(var(--gray-50), 1);
+  justify-self: center;
+  width: 88%;
+  text-align: center;
+  word-wrap: break-word;
+  min-height: 40vh;
+  max-height: 60vh;
+  padding: var(--xTiny-2-3) 0;
+  overflow-y: scroll;
 }
 
-.noResultText{
-    display    : block;
-    margin-top : var( --tiny-1-3 );
-    font-size  : var( --text-article-1 );
-    color      : hsl( var( --gray-500 ), 1 );
+.noResultText {
+  display: block;
+  margin-top: var(--tiny-1-3);
+  font-size: var(--text-article-1);
+  color: hsl(var(--gray-500), 1);
 }

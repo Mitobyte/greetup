@@ -1,36 +1,38 @@
-.nameButton{
-    --active-color         : hsl( var( --blue-700 ),   1 );
-    --inactive-color       : hsl( var( --gray-700 ),   1 );
-    --active-background    : hsl( var( --blue-50 ),    1 );
-    --inactive-background  : hsl( var( --gray-100 ), .66 );
-    display                : inline-grid;
-    grid-template-columns  : auto var( --micro-2-2 );
-    grid-gap               : var( --line-bold );
-    background-color       : var( --inactive-background );
-    font-size              : var( --text-widget-3 );
-    color                  : var( --inactive-color );
-    margin                 : var( --line-semiThick );
-    padding                : var( --line-semiThick );
-    --baseSize-h           : var( --xTiny-1-6 );
-    --squishGrowth-h-start : 1000px;
-    --squishGrowth-h-speed : 1;
-    --squishGrowth-h-max   : var( --xTiny-2-8 );
-    width                  : auto;
-    max-width              : 98%;
-    align-items            : center;
-    word-wrap              : break-word;
-    cursor                 : pointer;
+.nameButton {
+  --active-color: hsl(var(--blue-700), 1);
+  --inactive-color: hsl(var(--gray-700), 1);
+  --active-background: hsl(var(--blue-50), 1);
+  --inactive-background: hsl(var(--gray-100), 0.66);
+  display: inline-grid;
+  grid-template-columns: auto var(--micro-2-2);
+  grid-gap: var(--line-bold);
+  background-color: var(--inactive-background);
+  font-size: var(--text-widget-3);
+  color: var(--inactive-color);
+  margin: var(--line-semiThick);
+  padding: var(--line-semiThick);
+  --baseSize-h: var(--xTiny-1-6);
+  --squishGrowth-h-start: 1000px;
+  --squishGrowth-h-speed: 1;
+  --squishGrowth-h-max: var(--xTiny-2-8);
+  width: auto;
+  max-width: 98%;
+  align-items: center;
+  word-wrap: break-word;
+  cursor: pointer;
 }
 
-.nameButton:active{ scale: 0.9; }
+.nameButton:active {
+  scale: 0.9;
+}
 
-.indicator{
-    --inactive       : hsl( var( --green-900 ), 1 );
-    --active         : hsl( var( --green-500 ), 1 );
-    display          : block;
-    place-self       : center;
-    width            : var( --micro-1-3 );
-    height           : var( --micro-1-3 );
-    border-radius    : 50%;
-    background-color : var( --inactive );
+.indicator {
+  --inactive: hsl(var(--green-900), 1);
+  --active: hsl(var(--green-500), 1);
+  display: block;
+  place-self: center;
+  width: var(--micro-1-3);
+  height: var(--micro-1-3);
+  border-radius: 50%;
+  background-color: var(--inactive);
 }

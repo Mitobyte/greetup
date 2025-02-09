@@ -1,147 +1,128 @@
+:root {
+  --fc-small-font-size: var(--text-caption-1);
+  --fc-page-bg-color: hsl(var(--gray-100), 1);
+  --fc-neutral-bg-color: hsl(var(--gray-200), 1);
+  --fc-neutral-text-color: hsl(var(--blue-500), 1);
+  --fc-border-color: hsl(var(--gray-200), 1);
 
-:root{
-    --fc-small-font-size    : var( --text-caption-1 );
-    --fc-page-bg-color      : hsl( var( --gray-100 ), 1 );
-    --fc-neutral-bg-color   : hsl( var( --gray-200 ), 1 );
-    --fc-neutral-text-color : hsl( var( --blue-500 ), 1 );
-    --fc-border-color       : hsl( var( --gray-200 ), 1 );
-  
-    --fc-button-text-color          : hsl( var( --gray-100 ), 1 );
-    --fc-button-bg-color            : hsl( var( --blue-950 ), 1 );
-    --fc-button-border-color        : hsl( var( --gray-900 ), 1 );
-    --fc-button-hover-bg-color      : hsl( var( --blue-800 ), 1 );
-    --fc-button-hover-border-color  : hsl( var( --gray-900 ), 1 );
-    --fc-button-active-bg-color     : hsl( var( --blue-800 ), 1 );
-    --fc-button-active-border-color : hsl( var( --gray-900 ), 1 );
+  --fc-button-text-color: hsl(var(--gray-100), 1);
+  --fc-button-bg-color: hsl(var(--blue-950), 1);
+  --fc-button-border-color: hsl(var(--gray-900), 1);
+  --fc-button-hover-bg-color: hsl(var(--blue-800), 1);
+  --fc-button-hover-border-color: hsl(var(--gray-900), 1);
+  --fc-button-active-bg-color: hsl(var(--blue-800), 1);
+  --fc-button-active-border-color: hsl(var(--gray-900), 1);
 
-    --fc-today-bg-color : hsl( var( --yellow-400 ), .11 );
+  --fc-today-bg-color: hsl(var(--yellow-400), 0.11);
 }
 
-.pageContainer{
-    width              : 100%;
-    height             : 100%;
-    display            : grid;
-    justify-items      : center;
-    grid-template-rows : max-content auto;
-    grid-gap           : var( --xTiny-2-6 );
-    padding-bottom     : var( --xTiny-2-6 );
+.pageContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: max-content auto;
+  grid-gap: var(--xTiny-2-6);
+  padding-bottom: var(--xTiny-2-6);
 }
 
-
-
-.buttonContainer{
-    display               : grid;
-    width                 : 100%;
-    place-self            : center;
-    grid-template-columns : repeat( 2, auto );
+.buttonContainer {
+  display: grid;
+  width: 100%;
+  place-self: center;
+  grid-template-columns: repeat(2, auto);
 }
 
-
-
-.calPage.calendarButton{
-    --baseSize-h           : var( --xTiny-1-8 );
-    --squishGrowth-h-start : 1000px;
-    --squishGrowth-h-speed : 3;
-    --squishGrowth-h-max   : var( --xTiny-2-4 );
-    --text-size            : var( --text-widget-2 );
-    --kerning-nudge-amt    : 9;
-    padding                : 0 var( --line-thick );
-    margin                 : var( --micro-1-4 );
-    background-color       : var( --btn-bg-color );
-    color                  : var( --btn-color );
-    border                 : none;
-    cursor                 : pointer;
-    transition             : 200ms ease-in-out;
+.calPage.calendarButton {
+  --baseSize-h: var(--xTiny-1-8);
+  --squishGrowth-h-start: 1000px;
+  --squishGrowth-h-speed: 3;
+  --squishGrowth-h-max: var(--xTiny-2-4);
+  --text-size: var(--text-widget-2);
+  --kerning-nudge-amt: 9;
+  padding: 0 var(--line-thick);
+  margin: var(--micro-1-4);
+  background-color: var(--btn-bg-color);
+  color: var(--btn-color);
+  border: none;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
 }
 
-.calendarButton:hover{
-    background-color : var( --btn-bg-color-hover );
-    color            : var( --btn-color-hover );
+.calendarButton:hover {
+  background-color: var(--btn-bg-color-hover);
+  color: var(--btn-color-hover);
 }
 
-
-
-.filterButton{
-    --btn-bg-color       : hsl( var( --blue-600 ), 1 );
-    --btn-bg-color-hover : hsl( var( --blue-300 ), 1 );
-    --btn-color          : hsl( var( --blue-50  ), 1 );
-    --btn-color-hover    : hsl( var( --blue-950 ), 1 );
-    grid-area            : 1/1/2/2;    
-    justify-self         : left;
+.filterButton {
+  --btn-bg-color: hsl(var(--blue-600), 1);
+  --btn-bg-color-hover: hsl(var(--blue-300), 1);
+  --btn-color: hsl(var(--blue-50), 1);
+  --btn-color-hover: hsl(var(--blue-950), 1);
+  grid-area: 1/1/2/2;
+  justify-self: left;
 }
 
-
-
-.downloadButton{
-    display              : grid;
-    place-items          : center;
-    --btn-bg-color       : hsl( var( --green-700 ), 1 );
-    --btn-color          : hsl( var( --green-50  ), 1 );
-    --btn-bg-color-hover : hsl( var( --green-300 ), 1 );
-    --btn-color-hover    : hsl( var( --green-950 ), 1 );
-    grid-area            : 1/2/2/3;
-    justify-self         : right;
-    text-decoration      : none;
+.downloadButton {
+  display: grid;
+  place-items: center;
+  --btn-bg-color: hsl(var(--green-700), 1);
+  --btn-color: hsl(var(--green-50), 1);
+  --btn-bg-color-hover: hsl(var(--green-300), 1);
+  --btn-color-hover: hsl(var(--green-950), 1);
+  grid-area: 1/2/2/3;
+  justify-self: right;
+  text-decoration: none;
 }
 
-
-
-.calPage.calContainer{
-    display       : grid;
-    justify-items : center;
-    --crushGap-w  : var( --line-bold );
-    --baseSize-w  : var( --large-1-5 );
-    --edgeChase-w : var( --small-1-4 );
-    --chaseStop-w : var( --large-2-4 );
+.calPage.calContainer {
+  display: grid;
+  justify-items: center;
+  --crushGap-w: var(--line-bold);
+  --baseSize-w: var(--large-1-5);
+  --edgeChase-w: var(--small-1-4);
+  --chaseStop-w: var(--large-2-4);
 }
 
-
-
-.eventListing{
-    display          : grid;
-    grid-gap         : var( --line-semiBold );
-    width            : 100%;
-    height           : 100%;
-    padding          : var( --line-bold ) 0;
-    background-color : hsl( var( --blue-700 ), 1 );
-    color            : hsl( var( --blue-50  ), 1 );
-    transition       : 300ms ease-in-out;
+.eventListing {
+  display: grid;
+  grid-gap: var(--line-semiBold);
+  width: 100%;
+  height: 100%;
+  padding: var(--line-bold) 0;
+  background-color: hsl(var(--blue-700), 1);
+  color: hsl(var(--blue-50), 1);
+  transition: 300ms ease-in-out;
 }
 
-.eventListing:hover{
-    background-color : hsl( var( --blue-200 ), 1 );
-    color            : hsl( var( --blue-950 ), 1 );
+.eventListing:hover {
+  background-color: hsl(var(--blue-200), 1);
+  color: hsl(var(--blue-950), 1);
 }
 
-
-
-.eventText{
-    width      : calc( 100% - calc( var( --line-bold ) * 2 ) );
-    font-size  : var( --text-caption-1 );
-    word-wrap  : break-all;
-    word-break : break-all;
-    place-self : center;
+.eventText {
+  width: calc(100% - calc(var(--line-bold) * 2));
+  font-size: var(--text-caption-1);
+  word-wrap: break-all;
+  word-break: break-all;
+  place-self: center;
 }
 
-
-
-.filterContainer{
-    display          : grid;
-    justify-items    : center;
-    align-items      : top;
-    background-color : hsl( var( --gray-200 ), 1 );
-    position         : fixed;
-    top              : 0;
-    height           : 100vh;
-    z-index          : 555;
-    transform-style  : preserve-3d;
-    width            : 100%;
+.filterContainer {
+  display: grid;
+  justify-items: center;
+  align-items: top;
+  background-color: hsl(var(--gray-200), 1);
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 555;
+  transform-style: preserve-3d;
+  width: 100%;
 }
 
-
-
-@media screen and ( min-width : 850px ){
-
-    .eventText{ word-break : normal; }
-
+@media screen and (min-width: 850px) {
+  .eventText {
+    word-break: normal;
+  }
 }

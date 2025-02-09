@@ -1,16 +1,16 @@
-.mainContainer{
-    display  : grid;
-    grid-gap : var( --line-semiBold );
+.mainContainer {
+  display: grid;
+  grid-gap: var(--line-semiBold);
 }
 
-.title{
-    --text-size         : var( --text-widget-1 );
-    --kerning-nudge-amt : 7;
-    color               : hsl( var( --blue-800 ), 1 );
+.title {
+  --text-size: var(--text-widget-1);
+  --kerning-nudge-amt: 7;
+  color: hsl(var(--blue-800), 1);
 }
 
-.locationText{
-    --text-size         : var( --text-widget-2 );
-    --kerning-nudge-amt : 7;
-    color               : hsl( var( --blue-950 ), 1 );
+.locationText {
+  --text-size: var(--text-widget-2);
+  --kerning-nudge-amt: 7;
+  color: hsl(var(--blue-950), 1);
 }
